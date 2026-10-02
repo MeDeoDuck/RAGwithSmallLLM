@@ -1,0 +1,20 @@
+{
+    "accuracy": 0.21181887950882577,
+    "rouge1": 0.28895774967261667,
+    "rouge2": 0.1398889619802894,
+    "rougeL": 0.28812482520464167,
+    "rougeLsum": 0.2883168161850848,
+    "hasanswer_retrieved@5": 0.5284727551803531,
+    "hasanswer_in_prompt": 0.5284727551803531,
+    "mean_pred_words": 1.6009209516500384,
+    "pct_empty": 0.0,
+    "parse_stats": {
+        "format_ok": 6513,
+        "fallback": 2,
+        "n": 6515,
+        "mean_pred_words": 1.6009209516500384,
+        "pct_empty": 0.0
+    },
+    "assembly_stats": {},
+    "n": 6515
+}

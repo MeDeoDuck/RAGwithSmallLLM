@@ -1,0 +1,217 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>독자 진행 정리 · k_pool 해설</title>
+<style>
+
+:root{--fg:#1a1d21;--muted:#5f6672;--line:#e3e6ea;--bg:#fbfcfd;--card:#fff;
+ --ac:#4a7fd4;--ac-bg:#eef3fc;--ok:#3f8f5c;--ok-bg:#eef7f1;--wr:#c25b5b;--wr-bg:#fdf0f0;--cbg:#f7f8fa;}
+@media (prefers-color-scheme:dark){:root{--fg:#e7eaee;--muted:#9aa3ae;--line:#2b3138;--bg:#14171a;
+ --card:#1b1f23;--ac-bg:#1b2942;--ok-bg:#17301f;--wr-bg:#3a1f1f;--cbg:#15181c;}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);line-height:1.75;font-size:15px;
+ font-family:Pretendard,"Pretendard Variable","Apple SD Gothic Neo","맑은 고딕",Malgun Gothic,system-ui,sans-serif;
+ -webkit-font-smoothing:antialiased}
+.wrap{max-width:940px;margin:0 auto;padding:40px 22px 80px}
+h1{font-size:25px;font-weight:800;margin:0 0 8px;letter-spacing:-.4px}
+h2{font-size:20px;font-weight:700;margin:50px 0 14px;padding-left:11px;border-left:4px solid var(--ac)}
+h3{font-size:15.5px;font-weight:700;margin:0;flex:1 1 auto;min-width:220px}
+h3.dh{font-size:16px;font-weight:700;margin:30px 0 8px;color:var(--ac);border:none;padding:0}
+h4.dh2{font-size:14px;font-weight:700;margin:22px 0 6px;color:var(--fg)}
+.sub{color:var(--muted);margin:0 0 18px}
+header{border-bottom:2px solid var(--line);padding-bottom:16px;margin-bottom:6px}
+p{margin:0 0 13px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:11px;padding:15px 17px;margin:0 0 15px}
+.chead{display:flex;align-items:center;gap:9px;flex-wrap:wrap;margin-bottom:12px}
+.num{background:var(--ac);color:#fff;font-weight:800;font-size:12px;min-width:24px;height:24px;
+ border-radius:7px;display:grid;place-items:center}
+.topic{font-size:11.5px;font-weight:700;color:var(--ac);background:var(--ac-bg);padding:2px 9px;border-radius:99px}
+.tri{display:grid;grid-template-columns:1fr 1fr 1fr;gap:11px}
+@media(max-width:820px){.tri{grid-template-columns:1fr}}
+.cell{border-radius:8px;padding:10px 13px;font-size:13.6px}
+.cell b.lbl{display:block;font-size:11.5px;letter-spacing:.4px;margin-bottom:5px;text-transform:uppercase}
+.cell p{margin:0}
+.c1{background:var(--wr-bg);border-left:3px solid var(--wr)} .c1 b.lbl{color:var(--wr)}
+.c2{background:var(--ac-bg);border-left:3px solid var(--ac)} .c2 b.lbl{color:var(--ac)}
+.c3{background:var(--ok-bg);border-left:3px solid var(--ok)} .c3 b.lbl{color:var(--ok)}
+.callout{background:var(--ac-bg);border-left:4px solid var(--ac);padding:11px 15px;border-radius:0 8px 8px 0}
+.cap{font-size:13.5px;color:var(--muted);margin:0 0 14px}.cap b{color:var(--fg)}
+ol.steps{padding-left:20px;margin:6px 0 14px}ol.steps li{margin:8px 0}
+table{width:100%;border-collapse:collapse;font-size:13.5px;background:var(--card);
+ border:1px solid var(--line);border-radius:9px;overflow:hidden;margin:10px 0 14px}
+thead th{background:var(--ac-bg);text-align:left;padding:9px 12px;font-weight:700;border-bottom:2px solid var(--line)}
+td{padding:9px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+tbody tr:last-child td{border-bottom:none}
+tr.best{background:var(--ok-bg)}
+table.ex td:first-child{font-size:12.8px;color:var(--muted)}
+td.ok{color:var(--ok);font-weight:700}
+code{font-family:"D2Coding",Consolas,monospace;font-size:12.5px;background:var(--cbg);
+ padding:1px 5px;border-radius:4px;border:1px solid var(--line)}
+.f{font-family:"D2Coding",Consolas,monospace;font-size:12.5px;color:var(--muted)}
+footer{margin-top:48px;padding-top:16px;border-top:1px solid var(--line);font-size:12.5px;color:var(--muted)}
+@media(max-width:600px){.wrap{padding:24px 13px 60px}h1{font-size:21px}body{font-size:14px}}
+
+.svgwrap{background:var(--card);border:1px solid var(--line);border-radius:10px;
+ padding:16px 12px;margin:10px 0 16px;overflow-x:auto;text-align:center}
+.svgwrap svg{max-width:100%;height:auto}
+svg .bx{fill:var(--ac-bg);stroke:var(--ac);stroke-width:1.3}
+svg .bx2{fill:var(--cbg);stroke:var(--line);stroke-width:1.3}
+svg .bxg{fill:var(--ok-bg);stroke:var(--ok);stroke-width:1.3}
+svg .bxr{fill:var(--wr-bg);stroke:var(--wr);stroke-width:1.3}
+svg .grp{fill:none;stroke:var(--muted);stroke-width:1.1;stroke-dasharray:5 3}
+svg .t{fill:var(--fg);font-size:12px;font-family:Pretendard,system-ui,sans-serif}
+svg .tb{fill:var(--fg);font-size:12px;font-weight:700;font-family:Pretendard,system-ui,sans-serif}
+svg .ts{fill:var(--muted);font-size:10.5px;font-family:"D2Coding",Consolas,monospace}
+svg .tt{fill:var(--ac);font-size:10.5px;font-weight:700;font-family:Pretendard,system-ui,sans-serif}
+svg .ar{stroke:var(--muted);stroke-width:1.5;fill:none;marker-end:url(#ah)}
+svg .arr{stroke:var(--ok);stroke-width:1.5;fill:none;marker-end:url(#ahg);stroke-dasharray:4 3}
+svg .ahf{fill:var(--muted)} svg .ahg{fill:var(--ok)}
+.pbar{display:flex;height:30px;border-radius:7px;overflow:hidden;border:1px solid var(--line);margin:6px 0 4px}
+.pbar div{display:grid;place-items:center;font-size:11px;font-weight:700;color:#fff}
+.plegend{display:flex;gap:14px;flex-wrap:wrap;font-size:12.5px;color:var(--muted);margin-bottom:12px}
+.plegend b{color:var(--fg)}
+.sw{display:inline-block;width:11px;height:11px;border-radius:3px;margin-right:5px;vertical-align:-1px}
+
+</style>
+<div class="wrap">
+<header><h1>독자적으로 추가한 것들, 그리고 k_pool 실험 해설</h1><p class="sub">앞부분은 핸드아웃이 시키지 않았는데 제가 넣은 것들을 <b>원인 · 근거 · 이점</b>으로 정리한 것이고, 뒷부분은 <code>k_pool</code> 20/50/100 실험이 무엇이었는지 처음부터 풀어 쓴 것입니다. 모든 수치는 실측값입니다.</p></header>
+<h2>1. 독자적으로 추가한 것들 — 원인 · 근거 · 이점</h2>
+<p>핸드아웃이 지시하지 않았지만 결과의 신뢰도나 해석 가능성을 위해 넣은 것들입니다. 각 항목을 <b>왜 필요했는지(원인)</b>, <b>무엇에 근거해 그렇게 판단했는지(근거)</b>, <b>그래서 무엇을 얻었는지(이점)</b>로 나눠 적었습니다.</p>
+<article class="card"><div class="chead"><span class="num">1</span><h3>V0 통제군을 만들었다</h3><span class="topic">측정 설계</span></div><div class="tri"><div class="cell c1"><b class="lbl">원인</b><p>4.2.1에서 프롬프트를 바꿀 때 <b>디코딩 설정도 같이 바꿔야 했다</b>. 제공된 naive 경로는 <code>max_new_tokens=10</code>에 샘플링(<code>do_sample=True</code>, temp 0.6)이다. 그냥 chat template을 적용하면 “프롬프트가 좋아진 건지, 토큰을 6개 더 준 게 좋았던 건지, 샘플링을 끈 게 좋았던 건지” 구분이 안 된다.</p></div><div class="cell c2"><b class="lbl">근거</b><p>naive 참고값 0.2528은 샘플링 설정에서 측정된 값이라 실행마다 흔들린다(<span class="f">TODO_GUIDE §5-3</span>에도 명시돼 있다). 재현 가능한 비교를 하려면 전 설정을 greedy로 고정해야 하는데, 그 순간 기준선이 바뀐다.</p></div><div class="cell c3"><b class="lbl">이점</b><p><b>naive 프롬프트 + greedy + 16토큰 + 동일 파싱</b>을 V0로 따로 돌려, V1~V4의 델타를 온전히 “프롬프트 효과”로 귀속시킬 수 있게 됐다. 그리고 예상 못 한 소득이 있었다 — V0의 accuracy가 0.3176으로 1위인데 평균 답변이 <b>7.34단어</b>였다. 이 한 줄이 <b>지표가 길이를 보상한다</b>는 것을 드러냈고, 보고서의 중심 논지가 됐다.</p></div></div></article>
+<article class="card"><div class="chead"><span class="num">2</span><h3>모든 설정에 hasanswer와 답변 길이를 병기했다</h3><span class="topic">측정 설계</span></div><div class="tri"><div class="cell c1"><b class="lbl">원인</b><p>확장이 효과가 없을 때 <b>원인을 알 수 없다</b>. “재정렬이 나쁜 순서를 만들었다”와 “재정렬은 잘 됐는데 1B 생성기가 활용하지 못했다”는 end accuracy만 보면 똑같아 보인다.</p></div><div class="cell c2"><b class="lbl">근거</b><p>RAG는 검색과 생성이 <b>분리 가능한</b> 두 단계다. 검색 단계의 성공 여부는 생성기와 무관하게 측정할 수 있다 — 프롬프트에 들어간 passage가 정답 문자열을 포함하는지 보면 된다.</p></div><div class="cell c3"><b class="lbl">이점</b><p><code>hasanswer_in_prompt</code> 하나로 두 가설이 분리됐다. 실제로 재정렬은 <b>0.5285 → 0.6576</b>(+12.9pt)으로 검색을 크게 개선했는데 accuracy는 +6.4pt만 올랐다. 즉 재정렬은 성공했고 생성기가 절반만 활용한 것이다. <b>이 지표가 없었으면 “확장이 별로였다”로 잘못 결론지었을 것이다.</b> 답변 길이(<code>mean_pred_words</code>)도 같은 이유로 넣었고, accuracy와 ROUGE가 어긋나는 모든 경우를 설명했다.</p></div></div></article>
+<article class="card"><div class="chead"><span class="num">3</span><h3>GPU를 쓰기 전에 CPU만으로 검색 진단을 돌렸다</h3><span class="topic">사전 진단</span></div><div class="tri"><div class="cell c1"><b class="lbl">원인</b><p>4.3 확장 후보가 여러 개(PCW·압축·Self-RAG·RAFT·재정렬)였고, 각각 몇 시간짜리 GPU 실험이다. <b>아무거나 골라 돌리면 시간을 버린다.</b></p></div><div class="cell c2"><b class="lbl">근거</b><p>재정렬이 할 수 있는 일은 “후보군 안에 이미 있는 정답을 위로 올리는 것”뿐이다. 후보군에 정답이 아예 없으면 어떤 재정렬기도 소용없다. 따라서 <b>후보군을 깊게 팠을 때 정답이 얼마나 더 들어오는지</b>가 재정렬의 상한이고, 이건 LLM 없이 문자열 매칭만으로 잰다.</p></div><div class="cell c3"><b class="lbl">이점</b><p>BM25 top-100을 <b>한 번만</b> 검색해 캐시하고(12분, CPU), k별 <code>hasanswer@k</code>를 계산했다. <b>실행 전에</b> 규칙을 정해 뒀다 — “<code>hasanswer@50 − hasanswer@5 ≥ 0.15</code>면 재정렬, 아니면 query 재작성”. 측정값은 <b>0.2728</b>로 기준을 크게 넘었고, 재정렬을 선택했다. 사후 합리화가 아니라 <b>사전 등록된 판단</b>이라 보고서에서 방법론적 근거가 된다. 덤으로 oracle 값이 나와 <code>k_pool</code>을 얼마로 할지도 여기서 정해졌다.</p></div></div></article>
+<article class="card"><div class="chead"><span class="num">4</span><h3>프롬프트 변형을 1요인씩만 바꿨다</h3><span class="topic">실험 설계</span></div><div class="tri"><div class="cell c1"><b class="lbl">원인</b><p>핸드아웃은 “chat template, few-shot, CoT, 파싱을 시도하라”고만 한다. 한꺼번에 바꾸면 무엇이 효과를 냈는지 모른다.</p></div><div class="cell c2"><b class="lbl">근거</b><p>ablation의 기본이다. system message는 <b>출력 형식 절만</b> 다르고 나머지는 글자 단위로 동일하게 유지했다. V0→V1은 chat template만, V1→V2는 few-shot만, V2→V3은 JSON 계약만, V3→V4는 CoT만 바뀐다.</p></div><div class="cell c3"><b class="lbl">이점</b><p>결과가 해석 가능해졌다. few-shot(V2)은 ROUGE를 0.2577→0.2890으로 올렸지만 accuracy는 거의 그대로였고, <b>JSON 계약(V3)이 결정타</b>였다(0.2118→0.2724, ROUGE 0.2890→0.3332). CoT(V4)는 모든 지표에서 최하위였다. “무엇이 먹혔나”에 답할 수 있다.</p></div></div></article>
+<article class="card"><div class="chead"><span class="num">5</span><h3>전체 실행 전에 200문항 스모크 런을 넣었다</h3><span class="topic">실행 설계</span></div><div class="tri"><div class="cell c1"><b class="lbl">원인</b><p>6,515문항 × 8설정을 그냥 돌리면 <b>몇 시간 뒤에</b> 버그를 발견한다. 그리고 소요 시간을 예측할 수 없어 일정을 잡지 못한다.</p></div><div class="cell c2"><b class="lbl">근거</b><p>설정별 처리량과 파싱 통계는 200문항이면 충분히 측정된다. 점수의 신뢰구간은 넓지만(±6~7pt) <b>크래시·형식 위반·카운터 불일치</b>는 200개에서도 그대로 드러난다.</p></div><div class="cell c3"><b class="lbl">이점</b><p>3분 9초에 8설정 전부를 검증했다. 여기서 확인한 것 — 파싱 카테고리 합 = n(이중 집계 없음), <code>pct_empty = 0</code>, <code>avg_passages = 2.88</code>(적응형 조립이 1.0에 붙어 있지 않음). 그리고 <b>전체 ETA를 ±10% 안에서 산출</b>해 남은 일정을 계획할 수 있었다.</p></div></div></article>
+<article class="card"><div class="chead"><span class="num">6</span><h3>파싱을 별도 모듈로 분리하고 단위테스트를 붙였다</h3><span class="topic">엔지니어링</span></div><div class="tri"><div class="cell c1"><b class="lbl">원인</b><p>instruction-tuned 모델은 답을 산문으로 감싼다. 후처리가 틀리면 <b>모델이 맞혔는데 오답 처리</b>된다. 그런데 이걸 확인하려면 보통 GPU로 생성부터 해야 한다.</p></div><div class="cell c2"><b class="lbl">근거</b><p>파싱은 순수 문자열 함수다. 모델도 GPU도 Lucene 인덱스도 필요 없다. <code>rag_parsing.py</code>로 떼어내면 <b>노트북 없이</b> 테스트할 수 있다.</p></div><div class="cell c3"><b class="lbl">이점</b><p>29개 케이스로 GPU 0분에 검증했다. 핵심 불변식 하나를 assert로 박았다 — <b>비어 있지 않은 생성은 절대 빈 예측으로 파싱되지 않는다.</b> 채점식이 빈 예측을 무조건 오답으로 세기 때문이다. 전체 실행에서 <code>pct_empty = 0.0000</code>으로 확인됐고, V0에서 <code>clean_empty</code> 1건(생성문 전체가 환각된 턴 마커)이 이 폴백에 걸렸다. 없었으면 그 문항은 확정 오답이었다.</p></div></div></article>
+<article class="card"><div class="chead"><span class="num">7</span><h3>장시간 실행 전에 코드 리뷰를 한 번 돌렸다</h3><span class="topic">엔지니어링</span></div><div class="tri"><div class="cell c1"><b class="lbl">원인</b><p>사전학습 3.5시간 + 확장 실험 수 시간짜리다. <b>중간에 죽거나 조용히 틀린 수치를 내면</b> 전부 다시 돌려야 한다.</p></div><div class="cell c2"><b class="lbl">근거</b><p>내가 짠 코드를 내가 검수하면 같은 가정을 두 번 한다. 독립적인 시각이 필요하다.</p></div><div class="cell c3"><b class="lbl">이점</b><p>크래시 1건과 <b>조용히 틀리는 수치 4건</b>을 실행 전에 잡았다. 특히 ① 캐시 키 불일치(<code>docid</code> vs <code>id</code>) — 진단을 먼저 돌리면 확실히 터지는 크래시였고, ② <code>assembly_stats</code>가 마지막 배치만 담아 6,515문항 평균인 척하는 버그, ③ <code>tau_mass</code>가 점수 스케일에 종속돼 긴 질문마다 passage를 1개만 고르는 문제 — 전부 실행했으면 <b>틀린 숫자를 보고서에 실었을</b> 것들이다.</p></div></div></article>
+<article class="card"><div class="chead"><span class="num">8</span><h3>PCW와 context compression을 구현하지 않고 기각했다</h3><span class="topic">판단</span></div><div class="tri"><div class="cell c1"><b class="lbl">원인</b><p>핸드아웃 §4.3이 두 방법을 명시적으로 제안한다. 구현하는 것이 “지시를 따르는” 것처럼 보인다.</p></div><div class="cell c2"><b class="lbl">근거</b><p>PCW 논문이 스스로 전제를 밝힌다 — “최대 입력 길이가 <b>제한된</b> 모델에서”. 예시도 “1k 제한 모델에 1.5k 입력”이다. 그런데 Llama-3.2-1B는 <b>128k 컨텍스트</b>이고 우리 프롬프트는 약 900토큰이다. 압축도 같은 문제를 반대로 갖는다 — 검색 단위가 이미 100단어 passage인데 추출형 과제에서 압축하면 정답 span 자체를 지울 위험이 있다.</p></div><div class="cell c3"><b class="lbl">이점</b><p><b>존재하지 않는 문제에 GPU 시간을 쓰지 않았다.</b> 대신 그 판단 근거를 보고서 Related Work에 한 문단으로 적었다. 실제로 적응형 조립(= 컨텍스트를 줄이는 방향)을 돌려 보니 hasanswer가 0.528→0.442로 떨어지고 성능도 하락해, <b>이 판단이 측정으로 뒷받침됐다.</b></p></div></div></article>
+<article class="card"><div class="chead"><span class="num">9</span><h3>적응형 컨텍스트 조립도 돌려서 부정적 결과로 보고했다</h3><span class="topic">판단</span></div><div class="tri"><div class="cell c1"><b class="lbl">원인</b><p>재정렬만으로는 확장이 한 갈래뿐이다. 점수를 이미 계산했으니 “몇 개를 넣을지”도 정할 수 있다.</p></div><div class="cell c2"><b class="lbl">근거</b><p>점수 분포가 뾰족하면 나머지는 순수 distractor이고, 평평하면 검색이 불확실하니 커버리지를 늘리는 게 합리적이라는 가설. Self-RAG의 “검색할 것인가” 반성을 critic 학습 없이 임계값으로 근사했다.</p></div><div class="cell c3"><b class="lbl">이점</b><p><b>가설이 틀렸다는 것을 측정으로 확인했다.</b> passage를 평균 2.88개로 줄이자 hasanswer 0.442, accuracy 0.1975로 기준선(0.2118)보다 낮아졌다. 결합 변형도 재정렬 단독보다 나빴다. 900토큰 프롬프트에는 <b>완화할 길이 압력이 없어서</b> passage를 버리면 근거만 잃는다. 숨기지 않고 negative result로 실었고, PCW 기각 논거와 같은 결론을 가리킨다.</p></div></div></article>
+<article class="card"><div class="chead"><span class="num">10</span><h3>배치를 줄이면서 누적·로깅 간격을 같은 배수로 조정했다</h3><span class="topic">엔지니어링</span></div><div class="tri"><div class="cell c1"><b class="lbl">원인</b><p>VRAM 16GB에서 노트북 기본값 micro-batch 16이 안 들어간다(batch 8에서 피크 10.95 GiB, batch 12는 OOM). 배치를 줄여야 하는데, 그러면 핸드아웃 참고값과 비교가 깨진다.</p></div><div class="cell c2"><b class="lbl">근거</b><p>학습 루프를 읽어 보니 <code>global_steps</code>가 optimizer step이 아니라 <b>micro-batch 단위</b>로 증가한다(<code>num_training_steps = len(loader) × epochs</code>). 배치만 절반으로 줄이면 총 스텝이 2배가 되고, <code>eval_interval=2500</code>이 <b>절반의 토큰 위치</b>에서 찍힌다. 참고값과 같은 지점을 비교할 수 없게 된다.</p></div><div class="cell c3"><b class="lbl">이점</b><p>누적 2→4, <code>eval_interval</code> 2500→5000, <code>logging_interval</code> 10→20으로 같이 스케일했다. 그 결과 <b>실효 배치(32)·학습률 스케줄·평가의 토큰 위치가 모두 동일</b>하게 유지됐고, 사전학습 곡선이 핸드아웃 참고값 <b>6개 지점 전부</b>와 bf16 반올림 범위 안에서 일치했다. 이 일치가 곧 “구현이 맞다”는 증거가 됐다.</p></div></div></article>
+<article class="card"><div class="chead"><span class="num">11</span><h3>제공 코드를 고치지 않고 우회했다 (NQ OOM · pyserini)</h3><span class="topic">엔지니어링</span></div><div class="tri"><div class="cell c1"><b class="lbl">원인</b><p>두 가지가 막았다. ① <code>dataset/rag.py</code>가 7.37GB JSON을 <code>pd.read_json</code> 후 <code>from_pandas</code>로 복사하다 OOM-kill(rc=247). ② <code>pyserini</code>가 import 시점에 OpenAI 클라이언트를 생성해, BM25만 쓰는데도 RAG 케이스가 자격증명 오류로 죽는다.</p></div><div class="cell c2"><b class="lbl">근거</b><p>제출물은 <b>제공 코드를 최소한으로 건드려야</b> 채점자가 원본과 대조하기 쉽다. 그런데 두 문제 모두 제공 코드 안에 있다.</p></div><div class="cell c3"><b class="lbl">이점</b><p>①은 <code>prepare_nq_train.py</code>로 스트리밍 변환해 <b>같은 경로에 미리 저장</b>했다. 제공 함수가 “Dataset already exists”로 건너뛰므로 <code>dataset/rag.py</code>는 <b>한 글자도 바뀌지 않았다.</b> 7.37GB→314MB, 58,880행으로 핸드아웃 명시값과 일치. ②는 컨테이너에 더미 <code>OPENAI_API_KEY</code>를 넣어 해결했다(해당 인코더는 호출되지 않는다). 둘 다 <b>원본 파일 무수정</b>을 유지했다.</p></div></div></article>
+
+<h2>2. k_pool 20 / 50 / 100 — 이게 무슨 실험인가</h2>
+<p class="callout">먼저 정정 하나. 돌린 값은 <b>20 · 50 · 100</b>입니다(25가 아니라 20).
+그리고 이 셋은 제가 임의로 고른 게 아니라 <b>사전 진단이 정해 준 숫자</b>입니다. 아래에서 그 과정을 풉니다.</p>
+
+<h3 class="dh">2-1. 문제가 무엇이었나</h3>
+<p>기본 파이프라인은 BM25가 찾아 준 <b>상위 5개</b> passage를 프롬프트에 넣습니다. 그런데 BM25는
+<b>단어가 겹치는지</b>만 봅니다. 질문의 의도를 이해하지 못합니다.</p>
+<p>실제 사례입니다. <span class="f">"who sang the original me and bobby mcgee"</span>(정답: Roger Miller)를
+넣으면 BM25는 Janis Joplin 관련 문서를 잔뜩 올립니다 — 그 곡의 유명한 커버이기 때문에 단어가 훨씬 많이
+겹칩니다. 모델은 그걸 읽고 <b>"Janis Joplin"</b>이라 답했습니다. 원곡자를 묻는 질문인데도요.</p>
+
+<h3 class="dh">2-2. 진단 — 정답이 어디쯤에 묻혀 있나</h3>
+<p>GPU를 쓰기 전에 CPU로 먼저 쟀습니다. BM25 top-100을 <b>한 번만</b> 검색해 캐시하고(12분),
+“상위 k개 중에 정답 문자열을 담은 passage가 하나라도 있는가”를 k별로 세었습니다. 이걸
+<code>hasanswer@k</code>라고 부릅니다. <b>LLM을 한 번도 부르지 않습니다.</b></p>
+<table>
+<thead><tr><th>k</th><th>hasanswer@k</th><th>의미</th></tr></thead>
+<tbody>
+<tr><td>5</td><td><b>0.5285</b></td><td>현재 방식의 출발점. 절반 가까운 질문은 정답이 아예 프롬프트에 없다</td></tr>
+<tr><td>20</td><td>0.7174</td><td>20개까지 파면 71.7%의 질문에서 정답을 볼 수 있다</td></tr>
+<tr><td>50</td><td>0.8012</td><td>80.1%</td></tr>
+<tr><td>100</td><td>0.8479</td><td>84.8%</td></tr>
+</tbody></table>
+<p>즉 <b>정답의 상당수가 6~100등에 묻혀 있었습니다.</b> 첫 정답 보유 passage의 rank를 세어 보니
+<b>18.9%의 질문이 6등 밖</b>에 있었습니다. 기본 top-5는 그걸 통째로 버리고 있었던 겁니다.</p>
+<p class="callout"><b>여기서 20 · 50 · 100이라는 숫자가 나왔습니다.</b> 이 표의 k값이 그대로 실험 조건이
+된 것이고, 각 줄의 <code>hasanswer@k</code>가 그 조건의 <b>이론적 상한(oracle)</b>이 됩니다.
+50에서 100으로 갈 때 0.7174→0.8012보다 늘어나는 폭이 확실히 좁아지는 것도 이미 보였기 때문에, 100을 마지막 값으로 잡았습니다.</p>
+
+<h3 class="dh">2-3. k_pool이 정확히 무엇인가</h3>
+<div class="svgwrap"><svg viewBox="0 0 640 310" width="640"><defs><marker id="ah" markerWidth="7" markerHeight="7" refX="6" refY="2.5" orient="auto"><path d="M0,0 L6,2.5 L0,5 z" class="ahf"/></marker><marker id="ahg" markerWidth="7" markerHeight="7" refX="6" refY="2.5" orient="auto"><path d="M0,0 L6,2.5 L0,5 z" class="ahg"/></marker></defs><text x="10" y="18" class="tb">① BM25가 21M개 passage에서 후보를 가져온다</text><rect x="14" y="28" width="54" height="30" rx="5" class="bx"/><text x="41" y="48" text-anchor="middle" class="ts">#1</text><rect x="76" y="28" width="54" height="30" rx="5" class="bx"/><text x="103" y="48" text-anchor="middle" class="ts">#2</text><rect x="138" y="28" width="54" height="30" rx="5" class="bx"/><text x="165" y="48" text-anchor="middle" class="ts">#3</text><rect x="200" y="28" width="54" height="30" rx="5" class="bx"/><text x="227" y="48" text-anchor="middle" class="ts">#4</text><rect x="262" y="28" width="54" height="30" rx="5" class="bx"/><text x="289" y="48" text-anchor="middle" class="ts">#5</text><rect x="324" y="28" width="54" height="30" rx="5" class="bx2"/><text x="351" y="48" text-anchor="middle" class="ts">#6</text><rect x="386" y="28" width="54" height="30" rx="5" class="bx2"/><text x="413" y="48" text-anchor="middle" class="ts">#7</text><rect x="448" y="28" width="54" height="30" rx="5" class="bx2"/><text x="475" y="48" text-anchor="middle" class="ts">#8</text><rect x="510" y="28" width="54" height="30" rx="5" class="bx2"/><text x="537" y="48" text-anchor="middle" class="ts">#9</text><rect x="572" y="28" width="54" height="30" rx="5" class="bx2"/><text x="599" y="48" text-anchor="middle" class="ts">#10</text><text x="640" y="48" text-anchor="end" class="ts">… #100</text><text x="14" y="76" class="tt">기본값은 여기 상위 5개만 썼다</text><text x="10" y="106" class="tb">② k_pool = 몇 개를 다시 채점할 것인가</text><rect x="14" y="116" width="310" height="34" rx="6" class="bxg"/><text x="169" y="137" text-anchor="middle" class="tb">k_pool = 50 → 상위 50개를 재채점</text><rect x="330" y="116" width="296" height="34" rx="6" class="bx2"/><text x="478" y="137" text-anchor="middle" class="ts">나머지 50개는 버린다</text><text x="10" y="180" class="tb">③ 생성기가 각 후보를 채점한다  log P(질문 | passage)</text><rect x="14" y="190" width="112" height="40" rx="6" class="bxg"/><text x="70" y="207" text-anchor="middle" class="tb">#7</text><text x="70" y="222" text-anchor="middle" class="ts">−2.41</text><rect x="138" y="190" width="112" height="40" rx="6" class="bxg"/><text x="194" y="207" text-anchor="middle" class="tb">#1</text><text x="194" y="222" text-anchor="middle" class="ts">−2.58</text><rect x="262" y="190" width="112" height="40" rx="6" class="bxg"/><text x="318" y="207" text-anchor="middle" class="tb">#23</text><text x="318" y="222" text-anchor="middle" class="ts">−2.63</text><rect x="386" y="190" width="112" height="40" rx="6" class="bxg"/><text x="442" y="207" text-anchor="middle" class="tb">#2</text><text x="442" y="222" text-anchor="middle" class="ts">−2.71</text><rect x="510" y="190" width="112" height="40" rx="6" class="bxg"/><text x="566" y="207" text-anchor="middle" class="tb">#41</text><text x="566" y="222" text-anchor="middle" class="ts">−2.80</text><text x="14" y="248" class="ts">점수 높은 순으로 다시 줄을 세운다 (원래 rank는 무시)</text><text x="10" y="278" class="tb">④ 새 top-5만 프롬프트에 넣는다 → 나머지 단계는 그대로</text></svg></div>
+<p class="cap"><code>k_pool</code>은 <b>“BM25 결과 중 몇 개를 다시 채점할 것인가”</b>입니다.
+프롬프트에 들어가는 개수는 <b>항상 5개로 고정</b>입니다. 바뀌는 건 그 5개를 <b>몇 명 중에서 고르는가</b>뿐입니다.
+<code>k_pool=50</code>이면 “BM25 상위 50명을 다시 면접 봐서 5명을 뽑는다”는 뜻입니다.</p>
+
+<h3 class="dh">2-4. 어떻게 다시 채점하나 — 참고한 논문</h3>
+<p>참고 논문은 <b>Sachan et al. (2022), “Improving Passage Retrieval with Zero-Shot Question Generation”</b>
+(EMNLP 2022)입니다. 보통 <b>UPR</b>(Unsupervised Passage Reranking)이라고 부릅니다.</p>
+<p>아이디어가 거꾸로라서 처음엔 낯섭니다. 보통은 “이 passage가 질문과 얼마나 관련 있나”를 재려 하는데,
+UPR은 반대로 묻습니다 — <b>“이 passage를 읽고 나서, 이 질문이 나올 법한가?”</b></p>
+<div class="svgwrap"><svg viewBox="0 0 640 250" width="640"><defs><marker id="ah" markerWidth="7" markerHeight="7" refX="6" refY="2.5" orient="auto"><path d="M0,0 L6,2.5 L0,5 z" class="ahf"/></marker><marker id="ahg" markerWidth="7" markerHeight="7" refX="6" refY="2.5" orient="auto"><path d="M0,0 L6,2.5 L0,5 z" class="ahg"/></marker></defs><rect x="20" y="14" width="260" height="40" rx="7" class="bx2"/><text x="150.0" y="31.0" text-anchor="middle" class="tb">passage 후보 하나</text><text x="150.0" y="46.0" text-anchor="middle" class="ts">"Melanie (singer) …" (100 단어)</text><rect x="360" y="14" width="260" height="40" rx="7" class="bx2"/><text x="490.0" y="31.0" text-anchor="middle" class="tb">질문</text><text x="490.0" y="46.0" text-anchor="middle" class="ts">"who sang brand new roller skates"</text><path d="M150,54 L150,80 L320,80 L320,104" class="ar"/><path d="M490,54 L490,80 L320,80" class="ar"/><rect x="120" y="104" width="400" height="48" rx="7" class="bx"/><text x="320.0" y="125.0" text-anchor="middle" class="tb">생성기에 이렇게 넣는다</text><text x="320.0" y="140.0" text-anchor="middle" class="ts">Passage: … / Please write a question based on this passage. / Question: …</text><path d="M320,152 L320,176" class="ar"/><rect x="120" y="176" width="400" height="44" rx="7" class="bxg"/><text x="320.0" y="195.0" text-anchor="middle" class="tb">질문 토큰의 평균 로그 우도를 계산</text><text x="320.0" y="210.0" text-anchor="middle" class="ts">생성은 하지 않는다 — forward 한 번뿐</text><text x="632" y="200" text-anchor="end" class="tt">= 점수</text></svg></div>
+<p class="cap">passage를 조건으로 주고 언어모델이 그 <b>질문에 부여하는 확률</b>을 점수로 씁니다.
+passage가 정답을 담고 있으면 그 질문이 자연스럽게 나올 법하므로 확률이 높아집니다.
+Janis Joplin 문서는 "who sang the <b>original</b>…"이라는 질문을 잘 설명하지 못하므로 점수가 낮아집니다.</p>
+<p>우리 구현의 특징은 <b>새 모델을 전혀 쓰지 않는다</b>는 점입니다. 채점하는 모델이
+답을 생성하는 모델과 <b>같은</b> Llama-3.2-1B입니다. 학습도 없습니다. 원 논문은 T0-3B·T5-large를 썼는데,
+우리는 이미 메모리에 올라가 있는 생성기를 재활용했습니다.</p>
+<p>구현상 두 가지를 신경 썼습니다. ① 질문 토큰 수로 나눠 <b>평균</b> 로그 우도를 씁니다 — 한 질문 안에서는
+순위가 바뀌지 않지만 질문 간 스케일이 맞춰져 뒤따르는 조립 단계가 동작합니다. ② logits를 fp32로 올리기
+<b>전에</b> 질문 위치만 잘라냅니다 — 어휘가 128k라 전체 logit 텐서를 올리면 메모리가 터집니다.</p>
+
+<h3 class="dh">2-5. 어떻게 실험했나</h3>
+<ol class="steps">
+<li><b>검색을 한 번만 한다.</b> BM25 top-100을 전 질문에 대해 미리 뽑아
+<span class="f">output/results/bm25_top100.jsonl</span>(249MB)에 캐시했습니다. 세 조건이 <b>똑같은 후보군</b>에서
+출발해야 차이가 k_pool 때문이라고 말할 수 있습니다.</li>
+<li><b>k_pool만 바꾼다.</b> 프롬프트(V3 JSON), 디코딩(greedy), 최종 passage 수(5개), 파싱까지 전부 동일하게
+두고 <code>k_pool</code> 값 하나만 20 / 50 / 100으로 바꿔 각각 <b>전체 6,515문항</b>을 돌렸습니다.</li>
+<li><b>두 층위를 같이 잰다.</b> 최종 accuracy뿐 아니라 <code>hasanswer_in_prompt</code>(검색이 잘 됐는지)를
+함께 기록해, 검색 개선과 생성 활용을 분리했습니다.</li>
+<li><b>oracle과 비교한다.</b> 2-2에서 잰 <code>hasanswer@k</code>가 그 조건의 상한이므로,
+“상한 대비 몇 %를 회수했는가”를 계산했습니다.</li>
+</ol>
+
+<h3 class="dh">2-6. 결과</h3>
+<div class="svgwrap"><svg viewBox="0 0 640 290" width="640"><defs><marker id="ah" markerWidth="7" markerHeight="7" refX="6" refY="2.5" orient="auto"><path d="M0,0 L6,2.5 L0,5 z" class="ahf"/></marker><marker id="ahg" markerWidth="7" markerHeight="7" refX="6" refY="2.5" orient="auto"><path d="M0,0 L6,2.5 L0,5 z" class="ahg"/></marker></defs><text x="10" y="16" class="tb">프롬프트에 정답이 들어 있는 비율 (hasanswer)</text><text x="10" y="50" class="t">BM25 top-5 (재정렬 없음)</text><rect x="200" y="34" width="27" height="26" rx="5" class="bx2"/><text x="208" y="51" class="tb">0.5285</text><text x="586" y="51" class="tt">acc 0.2724</text><text x="10" y="104" class="t">k_pool = 20</text><rect x="200" y="88" width="207" height="26" rx="5" class="bx2"/><text x="401" y="105" text-anchor="end" class="ts">oracle 0.717</text><rect x="200" y="88" width="118" height="26" rx="5" class="bx"/><text x="208" y="105" class="tb">0.6246</text><text x="586" y="105" class="tt">acc 0.3213</text><text x="10" y="158" class="t">k_pool = 50</text><rect x="200" y="142" width="286" height="26" rx="5" class="bx2"/><text x="480" y="159" text-anchor="end" class="ts">oracle 0.801</text><rect x="200" y="142" width="150" height="26" rx="5" class="bx"/><text x="208" y="159" class="tb">0.6576</text><text x="586" y="159" class="tt">acc 0.3361</text><text x="10" y="212" class="t">k_pool = 100</text><rect x="200" y="196" width="331" height="26" rx="5" class="bx2"/><text x="525" y="213" text-anchor="end" class="ts">oracle 0.848</text><rect x="200" y="196" width="156" height="26" rx="5" class="bxg"/><text x="208" y="213" class="tb">0.6645</text><text x="586" y="213" class="tt">acc 0.3431</text><text x="10" y="270" class="ts">막대 길이는 0.50~0.90 구간. 연한 막대 = 그 깊이까지 파면 <tspan class="tt">이론상</tspan> 도달 가능한 한계(oracle), 진한 막대 = 실제 달성치.</text></svg></div>
+<table>
+<thead><tr><th>조건</th><th>hasanswer</th><th>oracle</th><th>회수율</th><th>accuracy</th><th>ROUGE-1</th><th>소요</th></tr></thead>
+<tbody>
+<tr><td>재정렬 없음 (V3)</td><td>0.5285</td><td>—</td><td>—</td><td>0.2724</td><td>0.3332</td><td>약 7분</td></tr>
+<tr><td>k_pool = 20</td><td>0.6246</td><td>0.7174</td><td>50.9%</td><td>0.3213</td><td>0.3828</td><td>약 20분</td></tr>
+<tr><td>k_pool = 50</td><td>0.6576</td><td>0.8012</td><td>47.3%</td><td>0.3361</td><td>0.3978</td><td>41분 33초</td></tr>
+<tr class="best"><td>k_pool = 100</td><td><b>0.6645</b></td><td>0.8479</td><td>42.6%</td><td><b>0.3431</b></td><td><b>0.4052</b></td><td>107분 50초</td></tr>
+</tbody></table>
+
+<h3 class="dh">2-7. 이 표에서 읽어야 할 세 가지</h3>
+<p><b>① 포화한다.</b> 20→50은 hasanswer를 +3.3pt 올렸는데 50→100은 <b>+0.7pt</b>뿐입니다.
+oracle은 계속 커지는데(0.717→0.801→0.848) 회수율은 50.9%→47.3%→42.6%로 <b>떨어집니다</b>.
+후보가 많아질수록 1B 모델의 판별력이 약해져서, 51~100등에 묻힌 진짜 정답을 끌어올리지 못합니다.</p>
+<p><b>② 비용은 거의 선형이다.</b> 20분 → 41분 → 108분. 후보 하나당 forward 한 번이니 당연합니다.
+100은 20보다 <b>5.4배</b> 비싼데 accuracy는 +2.2pt입니다.</p>
+<p><b>③ 그래서 제안 운영점은 50이다.</b> 최고 수치는 100이지만, 절반 비용으로 거의 같은 성능을 내는 50을
+보고서의 제안 설정으로 삼고, 100은 “이 재정렬 방식이 천장에 근접했다”는 증거로 실었습니다.</p>
+
+<h3 class="dh">2-8. 재정렬은 정확히 무엇을 고쳤나</h3>
+<p>재정렬(k_pool=50)이 <b>새로 맞힌 문항 850개</b>를 하나씩 되짚어, 정답이 원래 BM25 몇 등에 있었는지
+세어 봤습니다.</p>
+<table>
+<thead><tr><th>유형</th><th>문항 수</th><th>설명</th></tr></thead>
+<tbody>
+<tr><td><b>후보군 심화</b></td><td>434개 (51.1%)</td><td>정답이 top-5 <b>밖</b>에 있었다. 깊게 파지 않았으면 볼 수 없었다</td></tr>
+<tr><td><b>순서 재배치</b></td><td>405개 (47.6%)</td><td>정답이 이미 top-5에 <b>있었지만</b> 모델이 다른 걸 골랐다. 순서를 바꾸니 맞혔다</td></tr>
+<tr><td>그 외</td><td>11개 (1.3%)</td><td>정답이 top-50에도 없었다 (우연히 맞음)</td></tr>
+</tbody></table>
+<p><b>이득이 거의 반반입니다.</b> k_pool을 키우는 것(심화)과 다시 줄 세우는 것(재배치)이 각각 절반씩
+기여했습니다. 두 효과가 합쳐져야 제 성능이 나온다는 뜻이고, 그래서 k_pool=20에서도 이미
++4.9pt가 나왔던 것입니다(그 정도는 재배치만으로도 얻어집니다).</p>
+
+<h4 class="dh2">실제 사례 — 후보군 심화로 고친 것</h4>
+<table class="ex">
+<thead><tr><th>질문</th><th>정답</th><th>원래 rank</th><th>재정렬 전</th><th>재정렬 후</th></tr></thead>
+<tbody>
+<tr><td>who is the youngest judge currently sitting on the u.s. supreme court</td><td>Neil Gorsuch</td><td><b>18</b></td><td>Fazal Ali</td><td class="ok">Neil Gorsuch</td></tr>
+<tr><td>i've got a brand new pair of roller skates original artist</td><td>Melanie</td><td><b>10</b></td><td>Labeda</td><td class="ok">Melanie</td></tr>
+<tr><td>who does the voice for love island australia</td><td>Eoghan McDermott</td><td><b>7</b></td><td>Georgia Nicholas</td><td class="ok">Eoghan McDermott</td></tr>
+<tr><td>when was the last time loyola made march madness</td><td>2018</td><td><b>6</b></td><td>2014</td><td class="ok">2018</td></tr>
+</tbody></table>
+<p class="cap">전부 정답 passage가 6~18등에 있었습니다. 기본 top-5로는 도달할 수 없던 문항들입니다.</p>
+
+<h4 class="dh2">실제 사례 — 순서 재배치로 고친 것</h4>
+<table class="ex">
+<thead><tr><th>질문</th><th>정답</th><th>원래 rank</th><th>재정렬 전</th><th>재정렬 후</th></tr></thead>
+<tbody>
+<tr><td>who sang the original me and bobby mcgee</td><td>Roger Miller</td><td>1, 2</td><td>Janis Joplin</td><td class="ok">Roger Miller</td></tr>
+<tr><td>who sings does he love me with reba</td><td>Linda Davis</td><td>top-5 내</td><td>Reba McEntire</td><td class="ok">Linda Davis</td></tr>
+</tbody></table>
+<p class="cap">정답 passage가 이미 들어와 있었는데도 모델이 <b>더 유명한 이름</b>을 골랐습니다.
+재정렬이 “질문을 가장 잘 설명하는 passage”를 앞으로 보내자 올바른 쪽을 읽었습니다.</p>
+
+<h3 class="dh">2-9. 한 줄 요약</h3>
+<p class="callout"><code>k_pool</code>은 <b>BM25 후보를 몇 명까지 다시 면접 볼 것인가</b>입니다.
+20·50·100은 사전 진단이 보여 준 <code>hasanswer@k</code> 곡선에서 그대로 가져온 값이고,
+채점은 생성기 자신에게 <b>“이 passage를 보면 이 질문이 나올 법한가”</b>를 물어(UPR, Sachan et al. 2022)
+확률로 매겼습니다. 프롬프트에 들어가는 개수는 <b>언제나 5개</b>입니다.</p>
+
+<footer><p>수치 출처: <span class="f">output/results/*.json</span>, <span class="f">runs/run_all.log</span>, <span class="f">output/results/bm25_top100.jsonl</span>. 참고 논문: Sachan et al., <i>Improving Passage Retrieval with Zero-Shot Question Generation</i>, EMNLP 2022.</p></footer>
+</div>

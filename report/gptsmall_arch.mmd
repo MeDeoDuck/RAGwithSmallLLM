@@ -1,0 +1,38 @@
+flowchart BT
+  IN["Inputs"]:::io
+  EMB["Token Embedding   50,258 × 512"]:::emb
+  IN --> EMB
+
+  subgraph BLOCK["Transformer Layer    × 4"]
+    direction BT
+    N1["RMSNorm"]:::norm
+    ATT["Grouped-Query Attention  ·  RoPE<br/>16 q : 4 kv heads   causal + padding mask"]:::attn
+    ADD1(("＋")):::add
+    N2["RMSNorm"]:::norm
+    FFN["SwiGLU Feed Forward   512 → 2048 → 512"]:::ffn
+    ADD2(("＋")):::add
+
+    N1 --> ATT --> ADD1
+    ADD1 --> N2 --> FFN --> ADD2
+  end
+
+  EMB --> N1
+  EMB -. "residual" .-> ADD1
+  ADD1 -. "residual" .-> ADD2
+
+  NF["RMSNorm"]:::norm
+  LM["Linear · LM Head   512 → 50,258"]:::lin
+  SM["Softmax"]:::soft
+  OUT["Next-token Probabilities"]:::io
+
+  ADD2 --> NF --> LM --> SM --> OUT
+
+  classDef io fill:#ffffff,stroke:#333,stroke-width:1px,color:#111
+  classDef emb fill:#f9c9d4,stroke:#c9738c,stroke-width:1.2px,color:#111
+  classDef norm fill:#fbd38a,stroke:#d19b33,stroke-width:1.2px,color:#111
+  classDef attn fill:#f9b98a,stroke:#cf7a33,stroke-width:1.2px,color:#111
+  classDef ffn fill:#bcd7ef,stroke:#4a7fd4,stroke-width:1.2px,color:#111
+  classDef lin fill:#bcd7ef,stroke:#4a7fd4,stroke-width:1.2px,color:#111
+  classDef soft fill:#c3e6c8,stroke:#3f8f5c,stroke-width:1.2px,color:#111
+  classDef add fill:#ffffff,stroke:#555,stroke-width:1.4px,color:#111
+  style BLOCK fill:#fbfbfb,stroke:#555,stroke-width:1.2px,stroke-dasharray:0

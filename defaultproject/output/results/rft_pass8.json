@@ -1,0 +1,11 @@
+{
+ "group": 8,
+ "temperature": 0.9,
+ "n": 6514,
+ "pass_at_k": 0.3959164875652441,
+ "pass_at_k_m_positive": 0.640798786653185,
+ "pass_at_k_m_zero": 0.017200938232994525,
+ "valid_format_rate": 0.9687787841571999,
+ "n_m_positive": 3956,
+ "n_m_zero": 2558
+}

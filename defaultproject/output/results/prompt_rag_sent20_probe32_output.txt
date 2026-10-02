@@ -1,0 +1,200 @@
+eval_0000	who sings does he love me with reba	['Linda Davis']	Linda Ronstadt	{"answer": "Linda Ronstadt"}
+eval_0001	where do the great lakes meet the ocean	['the Saint Lawrence River']	Atlantic Ocean	{"answer": "Atlantic Ocean"}
+eval_0002	when does the new my hero academia movie come out	['July 5 , 2018']	March 18, 2017	{"answer": "March 18, 2017"}
+eval_0003	who was the creator of victoria 's secret	['Roy Raymond']	Robert Duffy	{"answer": "Robert Duffy"}
+eval_0004	when did wesley leave last of the summer wine	['2002']	1999	{"answer": "1999"}
+eval_0005	who introduced the system of civil services in india	['Charles Cornwallis']	Northcote-Trevelyan	{"answer": "Northcote-Trevelyan"}
+eval_0006	southern soul was considered the sound of what independent record label	['Motown']	Soul City Records	{"answer": "Soul City Records"}
+eval_0007	who is the bad guy in lord of the rings	['Sauron']	Gollum	{"answer": "Gollum"}
+eval_0008	where is the most distortion on a robinson projection	['close to the poles']	high latitudes	{"answer": "high latitudes"}
+eval_0009	what is the name of wonder womans mother	['Queen Hippolyta']	Hippolyta	{"answer": "Hippolyta"}
+eval_0010	which apostle had a thorn in his side	['Paul']	Paul	{"answer": "Paul"}
+eval_0011	where is each type of cartilage located in the body	['ear', 'nose', 'intervertebral discs', 'many other body components', 'bronchial tubes', 'rib cage']	Hyaline cartilage: rib cage	{"answer": "Hyaline cartilage: rib cage, larynx, trachea, bronchi; Fibrous cartilage: meniscus
+eval_0012	who wrote the song two out of three ai n 't bad	['Meat Loaf']	Nicki Minaj	{"answer": "Nicki Minaj"}
+eval_0013	where is human sperm stored in the body	['in the epididymis']	Spermathecae	{"answer": "Spermathecae"}
+eval_0014	when did bat out of hell get released	['September 1977']	1977	{"answer": "1977"}
+eval_0015	when were manatees put on the endangered list	['1966']	1977	{"answer": "1977"}
+eval_0016	when was the first manmade object sent into space	['3 October 1942']	Sputnik 1	{"answer": "Sputnik 1"}
+eval_0017	who is the chief legal advisor to the government	['Law Officers of the Crown']	Teresa Cheng	{"answer": "Teresa Cheng"}
+eval_0018	what do they call snowboarders in johnny tsunami	['Urchins']	Tsunami	{"answer": "Tsunami"}
+eval_0019	who is tanyas husband in real housewives of cheshire	['Phil Bardsley']	Daran Little	{"answer": "Daran Little"}
+eval_0020	where are tight junctions found in the human body	['vertebrates']	epithelial cells	{"answer": "epithelial cells"}
+eval_0021	where was the mona lisa kept during ww2	['the Ingres Museum', "Château d'Amboise", 'Château de Chambord', 'the Loc - Dieu Abbey']	Palace of Versailles	{"answer": "Palace of Versailles"}
+eval_0022	who is the old man in waiting on a woman	['Andy Griffith']	Daniel	{"answer": "Daniel"}
+eval_0023	who have won the world cup the most times	['Brazil']	Brazil	{"answer": "Brazil"}
+eval_0024	who sang the original version of true colors	['Cyndi Lauper']	Tim James	{"answer": "Tim James"}
+eval_0025	what is the horses name in never-ending story	['Artax']	That Feeling	{"answer": "That Feeling"}
+eval_0026	who made the first telephone in the world	['Alexander Graham Bell']	Alexander Graham Bell	{"answer": "Alexander Graham Bell"}
+eval_0027	who is charles off of pretty little liars	['Drake', 'CeCe']	CeCe Drake	{"answer": "CeCe Drake"}
+eval_0028	who got pregnant in gossip girl season 5	['Blair']	Ivy Dickens	{"answer": "Ivy Dickens"}
+eval_0029	where is the new england patriots stadium located	['Foxborough , Massachusetts']	Gillette Stadium	{"answer": "Gillette Stadium"}
+eval_0030	who played jason in friday the 13th part 1	['Ari Lehman']	Ari Lehman	{"answer": "Ari Lehman"}
+eval_0031	who won the pittsburgh steeler baltimore raven game	['Pittsburgh Steelers']	Steelers	{"answer": "Steelers"}
+eval_0032	who wrote the song the beat goes on	['Sonny Bono']	Madonna	{"answer": "Madonna"}
+eval_0033	who won women 's cricket world cup 2016	['England']	England	{"answer": "England"}
+eval_0034	who played v in the movie v for vendetta	['Hugo Weaving']	Hugo Weaving	{"answer": "Hugo Weaving"}
+eval_0035	who wins the 2017 australian open men 's single title	['Roger Federer']	Roger Federer	{"answer": "Roger Federer"}
+eval_0036	how many judges currently serve on the supreme court	['nine']	160	{"answer": "160"}
+eval_0037	who is the youngest judge currently sitting on the u.s. supreme court	['Neil Gorsuch']	John Sackar	{"answer": "John Sackar"}
+eval_0038	who does the voice for love island australia	['Eoghan McDermott']	Eoghan McDermott	{"answer": "Eoghan McDermott"}
+eval_0039	when did beauty and the beast come out on dvd	['June 6 , 2017']	2003	{"answer": "2003"}
+eval_0040	when was the last time the 76ers went to the finals	['2001']	2001	{"answer": "2001"}
+eval_0041	who wrote variations on twinkle twinkle little star	['Jane Taylor']	Mozart	{"answer": "Mozart"}
+eval_0042	when did the king kong ride burn down	['2008']	2008	{"answer": "2008"}
+eval_0043	who plays mrs. potato head in toy story	['Estelle Harris']	Lori Alan	{"answer": "Lori Alan"}
+eval_0044	who sang the original me and bobby mcgee	['Roger Miller']	Jerry Lee Lewis	{"answer": "Jerry Lee Lewis"}
+eval_0045	who plays the fairy god mother in shrek 2	['Jennifer Saunders']	Jennifer Saunders	{"answer": "Jennifer Saunders"}
+eval_0046	5 types of control that could be programmed on a gui	['Slider', 'Button', 'List box', 'Spinner', 'Drop - down list']	Cancel, Button, Text Box, Label	{"answer": "OK, Cancel, Button, Text Box, Label"}
+eval_0047	p diddy nicki minaj hello good morning lyrics	['Official Remix']	Diddy, Nicki Minaj, Rick Ross, and Tinchy Stryder	{"answer": "Diddy, Nicki Minaj, Rick Ross, and Tinchy Stryder"}
+eval_0048	who plays caroline on the bold and beautiful	['Linsey Godfrey']	Linsey Godfrey	{"answer": "Linsey Godfrey"}
+eval_0049	when does the second part of season 3 fuller house	['December 22 , 2017']	December 22, 2017	{"answer": "December 22, 2017"}
+eval_0050	who narrated the original 1966 how the grinch stole christmas	['Boris Karloff']	Boris Karloff	{"answer": "Boris Karloff"}
+eval_0051	i 've got a brand new pair of roller skates original artist	['Melanie']	Melanie	{"answer": "Melanie"}
+eval_0052	who is the head coach of the minnesota timberwolves	['Thomas Joseph Thibodeau Jr.']	Kevin McHale	{"answer": "Kevin McHale"}
+eval_0053	who plays zack and cody in the suite life	['Dylan and Cole Sprouse']	Dylan Sprouse and Cole Sprouse	{"answer": "Dylan Sprouse and Cole Sprouse"}
+eval_0054	who was the last person executed in ireland	['Michael Manning']	Robert McGladdery	{"answer": "Robert McGladdery"}
+eval_0055	where are the fruits of the spirit found in the bible	['Epistle to the Galatians']	Galatians 5:22-23	{"answer": "Galatians 5:22-23"}
+eval_0056	when was the planning commission set up to prepare a blue print of development for the country	['15 March 1950']	1953	{"answer": "1953"}
+eval_0057	who is the coach of arizona state men 's basketball	['Bobby Hurley']	Bill Frieder	{"answer": "Bill Frieder"}
+eval_0058	who won i want to work for diddy	['Suzanne Siegel']	Ebony Jones	{"answer": "Ebony Jones"}
+eval_0059	who played mason on wizards of waverly place	['Sulkin']	David Henrie	{"answer": "David Henrie"}
+eval_0060	where is the mesophyll located in a plant	['In leaves']	mesophyll cells	{"answer": "mesophyll cells"}
+eval_0061	who directed one flew over the cuckoos nest	['Miloš Forman']	Miloš Forman	{"answer": "Miloš Forman"}
+eval_0062	who plays mayor hamilton on ncis new orleans	['Steven Robert Weber']	Daryl Mitchell	{"answer": "Daryl Mitchell"}
+eval_0063	who is the owner of phoenix mall pune	['Phoenix Mills Limited']	RP-Sanjiv Goenka Group	{"answer": "RP-Sanjiv Goenka Group"}
+eval_0064	what is the postal code for warri nigeria	['332']	311101	{"answer": "311101"}
+eval_0065	who wrote somebody like you by keith urban	['John Shanks', 'Keith Urban']	Richard Marx	{"answer": "Richard Marx"}
+eval_0066	when was the last time loyola made march madness	['2018']	2013-14	{"answer": "2013-14"}
+eval_0067	who plays christian grey in 50 shades of grey	['James Dornan']	Jamie Dornan	{"answer": "Jamie Dornan"}
+eval_0068	where was sir gawain and the green knight written	['late 14th - century']	Blewbury, Oxfordshire	{"answer": "Blewbury, Oxfordshire"}
+eval_0069	in what year did japan attack pearl harbor	['1941']	1941	{"answer": "1941"}
+eval_0070	when did country boy can survive come out	['January 1982']	1985	{"answer": "1985"}
+eval_0071	when did michael jordan retired from basketball for good	['2003']	1993	{"answer": "1993"}
+eval_0072	the story idea for the yellow wallpaper was based on a civil war treatment called	['rest cure']	rest cure	{"answer": "rest cure"}
+eval_0073	when is the show six coming back on	['May 28 , 2018']	2024	{"answer": "2024"}
+eval_0074	when was the first time the word catholic was used	['in the early 2nd century']	6th century	{"answer": "6th century"}
+eval_0075	how many o'reilly auto parts stores are there	['5,100']	5,100	{"answer": "5,100"}
+eval_0076	when did ipad pro 2nd generation come out	['June 5 , 2017']	2018	{"answer": "2018"}
+eval_0077	what is the name of the college in the classic movie animal house	['Faber College']	Faber College	{"answer": "Faber College"}
+eval_0078	who was the first woman appointed to the supreme court	["Sandra Day O'Connor"]	Helen Kinnear	{"answer": "Helen Kinnear"}
+eval_0079	who sang the song i love to love	['Tina Charles']	Donna Summer	{"answer": "Donna Summer"}
+eval_0080	who controlled blue cross when it was formed	['1929']	Iowa Medical Service	{"answer": "Iowa Medical Service"}
+eval_0081	who sings i 'm back in the saddle again	['Gene Autry']	Gene Autry	{"answer": "Gene Autry"}
+eval_0082	which type of triangle must have perpendicular lines	['a right triangle']	right	{"answer": "right"}
+eval_0083	the most readily absorbed form of iron in the diet is	['animal products']	heme	{"answer": "heme"}
+eval_0084	who plays lorelai in hannah montana the movie	['Melora Hardin']	Melora Hardin	{"answer": "Melora Hardin"}
+eval_0085	where does salt come from in the sea	['the evaporation of seawater']	ocean surface	{"answer": "ocean surface"}
+eval_0086	when did the second amendment go into effect	['December 15 , 1791']	1977	{"answer": "1977"}
+eval_0087	who has the highest minimum wage in the usa	['Washington']	Denmark	{"answer": "Denmark"}
+eval_0088	who is the only kaurava who survived the kurukshetra war	['Yuyutsu']	Dussasana	{"answer": "Dussasana"}
+eval_0089	where does tap water in london come from	['River Lea', 'River Thames']	Sidcup	{"answer": "Sidcup"}
+eval_0090	when does fairy tail dragon cry come out in canada	['August 14 , 2017']	2017	{"answer": "2017"}
+eval_0091	what cities are in santa rosa county florida	['Gulf Breeze', 'Milton']	["Milton	{"answer": ["Milton", "Gulf Breeze", "Navarre", "Holley", "Pensacola Beach", "Ori
+eval_0092	who is known as the father of humanism	['Petrarch']	G.K. Chesterton	{"answer": "G.K. Chesterton"}
+eval_0093	who played young bobby brown in new edition	['Tyler Marcel Williams']	Travis Pettus	{"answer": "Travis Pettus"}
+eval_0094	who plays helena cassa dine on general hospital	['Constance Towers']	Kimberly McCullough	{"answer": "Kimberly McCullough"}
+eval_0095	who said and down the stretch they come	['Dave Johnson']	Peter Eurton	{"answer": "Peter Eurton"}
+eval_0096	where does the pulmonary artery take blood to	['the lungs']	lungs	{"answer": "lungs"}
+eval_0097	where did the doctrine of once saved always saved come from	['1689']	Jesper Swedberg	{"answer": "Jesper Swedberg"}
+eval_0098	when did piracy hit its apex in the caribbean	['1660s to 1730s']	1713	{"answer": "1713"}
+eval_0099	how long do finch eggs take to hatch	['12 to 14 days']	12 days	{"answer": "12 days"}
+eval_0100	where does the president 's helicopter land at the white house	['The south lawn']	South Lawn	{"answer": "South Lawn"}
+eval_0101	what is the deepest depth in the oceans	['Mariana Trench']	11,000 m	{"answer": "11,000 m"}
+eval_0102	who is talking at the beginning of wale matrimony	['Jerry Seinfeld']	Jerry Seinfeld	{"answer": "Jerry Seinfeld"}
+eval_0103	where did the french national anthem come from	['Strasbourg']	Paris	{"answer": "Paris"}
+eval_0104	what is the style of arch found at the great mosque at cordoba	['an upper semi-circular arch', 'a lower horseshoe arch']	Umayyad	{"answer": "Umayyad"}
+eval_0105	dwarfs in snow white and the huntsman movie	['Bob Hoskins', 'Ray Winstone', 'Ian McShane', 'Nick Frost', 'Eddie Marsan', 'Toby Jones', 'Brian Gleeson', 'Johnny Harris']	The Dwarfs	{"answer": "The Dwarfs"}
+eval_0106	who sings the song where have all the flowers gone	['Pete Seeger']	Pete Seeger	{"answer": "Pete Seeger"}
+eval_0107	when did they put warnings on cigarette packs	['2003']	2003	{"answer": "2003"}
+eval_0108	what afl teams home ground is the mcg	['Collingwood', 'Essendon', 'Richmond', 'North Melbourne', 'Hawthorn']	Melbourne United	{"answer": "Melbourne United"}
+eval_0109	where does it talk about the census in the constitution	['Article I , Section 2']	United States Census	{"answer": "United States Census"}
+eval_0110	who did the killing in the first friday the 13th movie	['Mrs. Voorhees']	Jason Voorhees	{"answer": "Jason Voorhees"}
+eval_0111	when did honolulu become the capital of hawaii	['1845']	1845	{"answer": "1845"}
+eval_0112	what episode of law and order svu is mike tyson in	["Monster 's Legacy"]	Monster's Legacy	{"answer": "Monster's Legacy"}
+eval_0113	when did the grand canyon became a national monument	['1908']	1908	{"answer": "1908"}
+eval_0114	who discovered some islands in the bahamas in 1492	['Christopher Columbus']	Columbus	{"answer": "Columbus"}
+eval_0115	when did italy host the fifa world cup	['1934', '1990']	1934	{"answer": "1934"}
+eval_0116	how many hockey games are in a season	['82']	45	{"answer": "45"}
+eval_0117	when did butterfly effect come out travis scott	['May 15 , 2017']	2017	{"answer": "2017"}
+eval_0118	when did the movie uncle drew come out	['on June 29 , 2018']	2018	{"answer": "2018"}
+eval_0119	when did they start using daylight savings time	['April 30 , 1916']	1940–1945	{"answer": "1940–1945"}
+eval_0120	which technique measures the electrical activity of brain cells directly	['Electroencephalography ( EEG )']	fMRI	{"answer": "fMRI"}
+eval_0121	the part of peripheral nerve tissue that forms the myelin sheath is the	['Schwann cells']	Schwann cell	{"answer": "Schwann cell"}
+eval_0122	who is the actor that plays tobias on ncis	['Joseph Peter Spano']	Joe Spano	{"answer": "Joe Spano"}
+eval_0123	who are the heirs to the british throne	['Charles , Prince of Wales', 'Prince Henry', 'Prince George']	Prince Charles	{"answer": "Prince Charles"}
+eval_0124	which type of wave requires a medium for transmission	['mechanical waves', 'heat energy', 'Sound']	Mechanical wave	{"answer": "Mechanical wave"}
+eval_0125	land conversion through burning of biomass releases which gas	['traces of methane', 'carbon monoxide', 'hydrogen']	black carbon	{"answer": "black carbon"}
+eval_0126	the sum of the kinetic and potential energies of all particles in the system is called the	['internal energy']	total energy	{"answer": "total energy"}
+eval_0127	who used the springfield rifle in the civil war	['United States', 'Confederate States of America']	Union infantrymen	{"answer": "Union infantrymen"}
+eval_0128	who is the chair person of rajya sabha	['Venkaiah Naidu )']	Venkaiah Naidu	{"answer": "Venkaiah Naidu"}
+eval_0129	where is the university of northern iowa located	['Cedar Falls , Iowa']	Cedar Falls, Iowa	{"answer": "Cedar Falls, Iowa"}
+eval_0130	who played jack frost in the santa clause movie	['Martin Short']	Michael Keaton	{"answer": "Michael Keaton"}
+eval_0131	how many volumes of darkwing duck are there	['six volumes']	18	{"answer": "18"}
+eval_0132	who does rachel end up with in friends	['Ross Geller']	Ross	{"answer": "Ross"}
+eval_0133	who wrote my mama do n 't like you	['Ed Sheeran']	Sheeran	{"answer": "Sheeran"}
+eval_0134	how many sword art online games are there	['Six']	5	{"answer": "5"}
+eval_0135	who did the us lend money to in ww1	['Germany']	Bortolo Ricetti	{"answer": "Bortolo Ricetti"}
+eval_0136	who did seattle beat in the super bowl	['Denver Broncos']	Pittsburgh Steelers	{"answer": "Pittsburgh Steelers"}
+eval_0137	what is the american indian name for mount rushmore	['The Six Grandfathers']	Mount Rushmore in popular culture	{"answer": "Mount Rushmore in popular culture"}
+eval_0138	when was the last time university of michigan won the ncaa men 's basketball tournament	['1989']	2018	{"answer": "2018"}
+eval_0139	who was the voice of sally in a charlie brown christmas	['Kathy Steinberg']	Kathy Steinberg	{"answer": "Kathy Steinberg"}
+eval_0140	how many episodes are going to be in game of thrones season 7	['seven']	7	{"answer": "7"}
+eval_0141	name of bad witch on wizard of oz	['Wicked Witch of the West']	Mombi	{"answer": "Mombi"}
+eval_0142	who sang the original shake your tail feather	['The Five Du - Tones']	Ozzy Osbourne	{"answer": "Ozzy Osbourne"}
+eval_0143	who plays davy jones in pirates of the caribbean	['Bill Nighy']	Bill Nighy	{"answer": "Bill Nighy"}
+eval_0144	what is the name of the girl romeo loved before juliet	['Rosaline']	Rosaline	{"answer": "Rosaline"}
+eval_0145	who was the first person killed in a car accident	['Bridget Driscoll']	Tony Gahan	{"answer": "Tony Gahan"}
+eval_0146	who was entombed in the great pyramid of giza	['fourth dynasty Egyptian Pharaoh Khufu']	Khufu	{"answer": "Khufu"}
+eval_0147	when did dodge caravan start stow and go	['2005']	2005	{"answer": "2005"}
+eval_0148	who will get relegated from the premier league 2016/17	['Middlesbrough', 'Sunderland', 'Hull City']	Butha-Buthe Warriors	{"answer": "Butha-Buthe Warriors"}
+eval_0149	what part of the carrot is the seed	['mericarp']	taproot	{"answer": "taproot"}
+eval_0150	when did daylight savings begin in the united states	['March 19 , 1918']	1918	{"answer": "1918"}
+eval_0151	who stars in the movie the quiet place	['John Krasinski', 'Noah Jupe', 'Emily Blunt', 'Millicent Simmonds']	Millicent Simmonds	{"answer": "Millicent Simmonds"}
+eval_0152	when was tasmania cut off from the mainland	['10,000 years ago']	10,000 years ago	{"answer": "10,000 years ago"}
+eval_0153	who wrote the song do n 't give up on me	['Solomon Burke']	Mako	{"answer": "Mako"}
+eval_0154	where did most of the fighting take place in ww1	['European theatre']	France	{"answer": "France"}
+eval_0155	when does not going out series 9 start	['8 March 2018']	2013	{"answer": "2013"}
+eval_0156	who led an armed uprising and seized fort garry	['Louis Riel']	Louis Riel	{"answer": "Louis Riel"}
+eval_0157	when did wet n wild close las vegas	['2004']	2016	{"answer": "2016"}
+eval_0158	who sings i want to rock with you	['Michael Jackson']	Michael Jackson	{"answer": "Michael Jackson"}
+eval_0159	what is the botanical name of lady finger	['Abelmoschus esculentus']	Musa acuminata	{"answer": "Musa acuminata"}
+eval_0160	1 . what city was built as the new capital for the abbasids	['Samarra', 'Baghdad', 'Raqqa']	Baghdad	{"answer": "Baghdad"}
+eval_0161	actress in the girl with the dragon tattoo swedish	['Noomi Rapace']	Noomi Rapace	{"answer": "Noomi Rapace"}
+eval_0162	who played stands with fists in dances with wolves	['Mary Eileen McDonnell']	Mary McDonnell	{"answer": "Mary McDonnell"}
+eval_0163	when did the first mammal appear on earth	['late Carboniferous period']	200 million years ago	{"answer": "200 million years ago"}
+eval_0164	who drove the number 16 car in nascar	['Gregory Jack Biffle']	Greg Biffle	{"answer": "Greg Biffle"}
+eval_0165	when does mlb 2018 the show come out	['March 27 , 2018']	May 23, 2018	{"answer": "May 23, 2018"}
+eval_0166	who kills the main character in happy death day	['Lori']	Tracy	{"answer": "Tracy"}
+eval_0167	what is the body of water between england and ireland	['The Irish Sea']	St George's Channel	{"answer": "St George's Channel"}
+eval_0168	one hundred thousand is equal to how many lakhs	['one']	10,000,000	{"answer": "10,000,000"}
+eval_0169	the most common type of rock in earth 's crust is	['igneous']	granite	{"answer": "granite"}
+eval_0170	a spinning neutron star that appears to give off radio waves is called a	['pulsars']	Pulsar	{"answer": "Pulsar"}
+eval_0171	who played brad carlton on young and the restless	['Don Diamont']	Don Diamont	{"answer": "Don Diamont"}
+eval_0172	who does dwight howard play for right now	['the Charlotte Hornets']	Washington Wizards	{"answer": "Washington Wizards"}
+eval_0173	who wrote the song eye of the tiger	['Jim Peterik', 'Frankie Sullivan']	Bill Medley	{"answer": "Bill Medley"}
+eval_0174	leader of sikh empire who became maharajah of punjab	['Ranjit Singh']	Ranjit Singh	{"answer": "Ranjit Singh"}
+eval_0175	who 's playing in the rose bowl january 1st 2018	['Georgia Bulldogs', 'Oklahoma Sooners']	Georgia Bulldogs	{"answer": "Georgia Bulldogs"}
+eval_0176	when was the last time the seattle seahawks went to the superbowl	['2014']	2014	{"answer": "2014"}
+eval_0177	what episode of law and order was ludacris on	['Screwed', 'Venom']	Season 4 episode	{"answer": "Season 4 episode ""Sanctuary"""}
+eval_0178	who has won the most trophies man utd or liverpool	['Manchester United']	Sir Alex Ferguson	{"answer": "Sir Alex Ferguson"}
+eval_0179	who prayed for saul to regain his sight	['Ananias']	Triduana	{"answer": "Triduana"}
+eval_0180	what season is the plane crash greys anatomy	['the eighth season']	Season 8	{"answer": "Season 8"}
+eval_0181	who played alfalfa in the original little rascals	['Carl Dean Switzer']	Woody Allen	{"answer": "Woody Allen"}
+eval_0182	who signed the 1900 buganda agreement on behalf of the british	['Sir Harry Johnston']	Sir Harry Johnston	{"answer": "Sir Harry Johnston"}
+eval_0183	when did the king size bed come out	['mid-1950s']	1950s	{"answer": "1950s"}
+eval_0184	who founded jamestown in what is now virginia	['the Virginia Company of London']	John Smith	{"answer": "John Smith"}
+eval_0185	when was the first hydrogen fuel cell created	['1842']	1839	{"answer": "1839"}
+eval_0186	when did jackie robinson retire from the brooklyn dodgers	['1956']	1956	{"answer": "1956"}
+eval_0187	real name of gwen stacy in amazing spiderman	['Emma Stone']	Gwen Stacy (real name)	{"answer": "Gwen Stacy (real name)"
+eval_0188	who is responsible for preparing the presentence investigation report	['the probation officer']	Mueller	{"answer": "Mueller"}
+eval_0189	how many teams are in the world cup in russia	['32 teams']	4	{"answer": "4"}
+eval_0190	who sang the original devil went down to georgia	['Charlie Daniels Band']	Charlie Daniels	{"answer": "Charlie Daniels"}
+eval_0191	when do the college championship game come on	['January 8 , 2018']	late August or early September	{"answer": "late August or early September"}
+eval_0192	what is the name of the time zone for london	['Europe / London']	GMT	{"answer": "GMT"}
+eval_0193	when did the last living survivor of the titanic die	['31 May 2009']	1998	{"answer": "1998"}
+eval_0194	when did season 6 of voltron come out	['June 15 , 2018']	2018	{"answer": "2018"}
+eval_0195	where was the movie how to be a latin lover filmed	['Santa Monica']	St. Mary's, Georgia	{"answer": "St. Mary's, Georgia"}
+eval_0196	when does batman gotham by gaslight come out	['January 12 , 2018']	2018	{"answer": "2018"}
+eval_0197	who played draco malfoy in the harry potter movies	['Thomas Andrew Felton']	Tom Felton	{"answer": "Tom Felton"}
+eval_0198	who ensures that the states abide by constitutional and federal law	['Supreme Court']	Supreme Court	{"answer": "Supreme Court"}
+eval_0199	who was leah married to in the bible	['Jacob']	Rachel	{"answer": "Rachel"}

@@ -1,0 +1,19 @@
+{
+    "accuracy": 0.235,
+    "rouge1": 0.3417380952380952,
+    "rouge2": 0.175,
+    "rougeL": 0.3397261904761904,
+    "rougeLsum": 0.33963095238095226,
+    "hasanswer_retrieved@5": 0.65,
+    "hasanswer_in_prompt": 0.65,
+    "mean_pred_words": 1.64,
+    "pct_empty": 0.0,
+    "parse_stats": {
+        "format_ok": 200,
+        "n": 200,
+        "mean_pred_words": 1.64,
+        "pct_empty": 0.0
+    },
+    "assembly_stats": {},
+    "n": 200
+}

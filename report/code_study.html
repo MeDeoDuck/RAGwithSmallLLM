@@ -1,0 +1,509 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CSE402 빈칸 18개 학습 노트</title>
+<style>
+
+:root{--fg:#1a1d21;--muted:#5f6672;--line:#e3e6ea;--bg:#fbfcfd;--card:#fff;
+ --ac:#4a7fd4;--ac-bg:#eef3fc;--ok:#3f8f5c;--ok-bg:#eef7f1;--wr:#c25b5b;--wr-bg:#fdf0f0;
+ --ck:#0b3d91;--cs:#a03a6b;--cc:#6b7280;--cn:#9a5b00;--cf:#7a3fa8;--cb:#1a7f72;
+ --cbg:#f7f8fa;}
+@media (prefers-color-scheme:dark){:root{--fg:#e7eaee;--muted:#9aa3ae;--line:#2b3138;--bg:#14171a;
+ --card:#1b1f23;--ac-bg:#1b2942;--ok-bg:#17301f;--wr-bg:#3a1f1f;--cbg:#15181c;
+ --ck:#7aa7ff;--cs:#e79ac0;--cc:#7b8492;--cn:#e0a45e;--cf:#c29ae7;--cb:#5fd3c4;}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);line-height:1.72;font-size:15px;
+ font-family:Pretendard,"Pretendard Variable","Apple SD Gothic Neo","맑은 고딕",Malgun Gothic,system-ui,sans-serif;
+ -webkit-font-smoothing:antialiased}
+.wrap{max-width:900px;margin:0 auto;padding:40px 22px 80px}
+h1{font-size:25px;font-weight:800;margin:0 0 8px;letter-spacing:-.4px}
+h2{font-size:19px;font-weight:700;margin:48px 0 14px;padding-left:11px;border-left:4px solid var(--ac)}
+h3{font-size:15.5px;font-weight:700;margin:0;flex:1 1 auto;min-width:200px}
+h4{margin:0 0 6px;font-size:14px;font-weight:700}
+.sub{color:var(--muted);margin:0 0 20px}
+header{border-bottom:2px solid var(--line);padding-bottom:18px}
+.toc{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+.tg{background:var(--card);border:1px solid var(--line);border-radius:9px;padding:12px 14px}
+.tg h4{color:var(--ac);font-size:13px}
+.tg h4 span{color:var(--muted);font-weight:500}
+.tg ol{margin:6px 0 0;padding-left:20px;font-size:13px}
+.tg li{margin:3px 0;overflow-wrap:anywhere;word-break:break-word}
+a{color:var(--ac);text-decoration:none} a:hover{text-decoration:underline}
+.card{background:var(--card);border:1px solid var(--line);border-radius:11px;
+ padding:16px 18px;margin:0 0 18px;scroll-margin-top:16px}
+.chead{display:flex;align-items:center;gap:9px;flex-wrap:wrap;margin-bottom:10px}
+.num{background:var(--ac);color:#fff;font-weight:800;font-size:12px;min-width:24px;height:24px;
+ border-radius:7px;display:grid;place-items:center}
+.topic{font-size:11.5px;font-weight:700;color:var(--ac);background:var(--ac-bg);
+ padding:2px 9px;border-radius:99px}
+.loc{font-size:11.5px;color:var(--muted);font-family:"D2Coding",Consolas,monospace}
+.spec{background:var(--ac-bg);border-left:3px solid var(--ac);padding:9px 13px;
+ border-radius:0 7px 7px 0;font-size:14px;margin-bottom:10px}
+.math{font-family:"D2Coding",Consolas,monospace;font-size:13px;background:var(--cbg);
+ border:1px dashed var(--line);border-radius:7px;padding:9px 13px;margin-bottom:10px;
+ white-space:pre-wrap;color:var(--fg)}
+details.ans{margin-bottom:10px}
+details.ans summary{cursor:pointer;font-size:13px;font-weight:700;color:var(--ac);
+ background:var(--ac-bg);padding:7px 13px;border-radius:7px;list-style:none;user-select:none}
+details.ans summary::-webkit-details-marker{display:none}
+details.ans summary::before{content:"▶ ";font-size:10px}
+details.ans[open] summary::before{content:"▼ "}
+details.ans[open] summary{border-radius:7px 7px 0 0}
+pre.code{margin:0;background:var(--cbg);border:1px solid var(--line);border-top:none;
+ border-radius:0 0 7px 7px;padding:13px 15px;overflow-x:auto;
+ font-family:"D2Coding",Consolas,"Courier New",monospace;font-size:12.6px;line-height:1.65;
+ white-space:pre;tab-size:4}
+.code .k{color:var(--ck);font-weight:700} .code .st{color:var(--cs)}
+.code .co{color:var(--cc);font-style:italic} .code .num{color:var(--cn);background:none;
+ min-width:auto;height:auto;display:inline;border-radius:0;font-weight:400}
+.code .fn{color:var(--cf)} .code .bi{color:var(--cb)} .code .self{color:var(--cb);font-style:italic}
+.code .op{color:var(--muted)}
+.why ul{margin:6px 0 0;padding-left:19px} .why li{margin:7px 0;font-size:14px}
+.why>b,.verify>b,.spec>b{font-size:12.5px;letter-spacing:.2px}
+.verify{margin-top:10px;background:var(--ok-bg);border-left:3px solid var(--ok);
+ padding:9px 13px;border-radius:0 7px 7px 0;font-size:13.5px}
+code{font-family:"D2Coding",Consolas,monospace;font-size:12.5px;
+ background:var(--cbg);padding:1px 5px;border-radius:4px;border:1px solid var(--line)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:13px}
+.pcard{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 16px}
+.pcard h4{color:var(--ac)} .pcard p{margin:0;font-size:13.5px}
+table{width:100%;border-collapse:collapse;font-size:13.5px;background:var(--card);
+ border:1px solid var(--line);border-radius:9px;overflow:hidden}
+thead th{background:var(--wr-bg);text-align:left;padding:9px 12px;font-weight:700;
+ border-bottom:2px solid var(--line)}
+td{padding:9px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+tbody tr:last-child td{border-bottom:none}
+footer{margin-top:50px;padding-top:16px;border-top:1px solid var(--line);
+ font-size:12.5px;color:var(--muted)}
+.f{font-family:"D2Coding",Consolas,monospace}
+h3.dh{font-size:14.5px;font-weight:700;margin:22px 0 4px;color:var(--ac)}
+.cap{font-size:13.5px;color:var(--muted);margin:0 0 14px}
+.cap b{color:var(--fg)}
+table.arch{margin:10px 0 6px}
+table.arch thead th{background:var(--ac-bg)}
+table.arch td:nth-child(3){text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+@media(max-width:600px){.wrap{padding:24px 13px 60px}h1{font-size:21px}body{font-size:14px}}
+
+.svgwrap{background:var(--card);border:1px solid var(--line);border-radius:10px;
+ padding:16px 12px;margin:10px 0 16px;overflow-x:auto;text-align:center}
+.svgwrap svg{max-width:100%;height:auto}
+svg .bx{fill:var(--ac-bg);stroke:var(--ac);stroke-width:1.3}
+svg .bx2{fill:var(--cbg);stroke:var(--line);stroke-width:1.3}
+svg .bxg{fill:var(--ok-bg);stroke:var(--ok);stroke-width:1.3}
+svg .bxr{fill:var(--wr-bg);stroke:var(--wr);stroke-width:1.3}
+svg .grp{fill:none;stroke:var(--muted);stroke-width:1.1;stroke-dasharray:5 3}
+svg .t{fill:var(--fg);font-size:12px;font-family:Pretendard,system-ui,sans-serif}
+svg .tb{fill:var(--fg);font-size:12px;font-weight:700;font-family:Pretendard,system-ui,sans-serif}
+svg .ts{fill:var(--muted);font-size:10.5px;font-family:"D2Coding",Consolas,monospace}
+svg .tt{fill:var(--ac);font-size:10.5px;font-weight:700;font-family:Pretendard,system-ui,sans-serif}
+svg .ar{stroke:var(--muted);stroke-width:1.5;fill:none;marker-end:url(#ah)}
+svg .arr{stroke:var(--ok);stroke-width:1.5;fill:none;marker-end:url(#ahg);stroke-dasharray:4 3}
+svg .ahf{fill:var(--muted)} svg .ahg{fill:var(--ok)}
+.pbar{display:flex;height:30px;border-radius:7px;overflow:hidden;border:1px solid var(--line);margin:6px 0 4px}
+.pbar div{display:grid;place-items:center;font-size:11px;font-weight:700;color:#fff}
+.plegend{display:flex;gap:14px;flex-wrap:wrap;font-size:12.5px;color:var(--muted);margin-bottom:12px}
+.plegend b{color:var(--fg)}
+.sw{display:inline-block;width:11px;height:11px;border-radius:3px;margin-right:5px;vertical-align:-1px}
+
+</style>
+<div class="wrap">
+<header><h1>빈칸 18개 — 무엇을, 왜 그렇게 채웠나</h1><p class="sub">먼저 <b>문제</b>만 읽고 직접 써 본 뒤 정답을 펼치도록 구성했습니다. 코드는 실제 제출 파일에서 그대로 추출한 것이고, “검증된 사실”은 제가 실행해 측정한 값입니다.</p><div class="toc">
+<div class="tg"><h4>model.py — GPT-small 본체 <span>10개</span></h4><ol>
+<li><a href="#b1">apply_rotary_emb — RoPE 적용</a></li>
+<li><a href="#b2">RMSNorm.forward</a></li>
+<li><a href="#b3">RotaryEmbedding.__init__ — 주파수 초기화</a></li>
+<li><a href="#b4">RotaryEmbedding.forward — cos/sin 계산</a></li>
+<li><a href="#b5">MultiHeadAttention.__init__ — Q/K/V/O projection</a></li>
+<li><a href="#b6">MultiHeadAttention.forward — attention 계산</a></li>
+<li><a href="#b7">FeedForwardNetwork.forward — SwiGLU</a></li>
+<li><a href="#b8">TransformerLayer.forward — Pre-Norm 블록</a></li>
+<li><a href="#b9">_prepare_attention_mask — causal + padding</a></li>
+<li><a href="#b10">TransformerForCausalLM.forward — causal LM loss</a></li>
+</ol></div>
+<div class="tg"><h4>model_rag.py — RAG 파이프라인 <span>3개</span></h4><ol>
+<li><a href="#b11">ModelRAG.search — BM25 검색</a></li>
+<li><a href="#b12">make_augmented_inputs_for_generate — 프롬프트 구성</a></li>
+<li><a href="#b13">retrieval_augmented_generate — 추론 입력 생성</a></li>
+</ol></div>
+<div class="tg"><h4>dataset/*.py — 태스크별 데이터 <span>3개</span></h4><ol>
+<li><a href="#b14">_preprocess — CNN/DailyMail 요약</a></li>
+<li><a href="#b15">collate_fn_for_classification — 20 Newsgroups</a></li>
+<li><a href="#b16">RAGDataset.__getitem__ — RAG 학습 샘플</a></li>
+</ol></div>
+<div class="tg"><h4>main.ipynb — 노트북 <span>2개</span></h4><ol>
+<li><a href="#b17">셀 0 — PROJ_PATH (Colab 경로)</a></li>
+<li><a href="#b18">셀 5 — eval_for_rag 결과 후처리</a></li>
+</ol></div>
+</div>
+<p class="sub" style="margin-top:14px">구조를 먼저 보고 싶다면 <a href="#arch">GPT-small 구조</a> · <a href="#ragarch">RAG 구조</a>부터 읽으세요.</p>
+</header>
+<div id="arch"></div>
+<h2>GPT-small 구조</h2>
+<p>빈칸들이 어디에 들어가는지 보려면 전체 그림이 먼저 필요합니다. 아래는 <span class="f">model.py</span>의
+실제 모듈 이름과 노트북 셀 7이 고르는 설정(hidden 512 / 4 layer / q head 16 / kv head 4 / head_dim 32 /
+컨텍스트 1024 / rope_theta 20000)을 그대로 옮긴 것입니다.</p>
+
+<h3 class="dh">전체 스택</h3>
+<div class="svgwrap"><svg viewBox="0 0 560 490" width="560"><defs><marker id="ah" markerWidth="7" markerHeight="7" refX="6" refY="2.5" orient="auto"><path d="M0,0 L6,2.5 L0,5 z" class="ahf"/></marker><marker id="ahg" markerWidth="7" markerHeight="7" refX="6" refY="2.5" orient="auto"><path d="M0,0 L6,2.5 L0,5 z" class="ahg"/></marker></defs><rect x="170" y="14" width="240" height="34" rx="7" class="bx2"/><text x="290.0" y="35.0" text-anchor="middle" class="tb">input_ids</text><text x="422" y="36" class="ts">(B, S)   S ≤ 1024</text><path d="M290.0,48 L290.0,72" class="ar"/><rect x="170" y="72" width="240" height="44" rx="7" class="bxr"/><text x="290.0" y="91.0" text-anchor="middle" class="tb">embed_tokens</text><text x="290.0" y="106.0" text-anchor="middle" class="ts">nn.Embedding(50258, 512)</text><text x="407" y="67" text-anchor="end" class="tt">38.6%</text><text x="422" y="99" class="ts">(B, S, 512)</text><path d="M290.0,116 L290.0,140" class="ar"/><rect x="12" y="146" width="140" height="40" rx="7" class="bxg"/><text x="82.0" y="163.0" text-anchor="middle" class="tb">rotary_emb</text><text x="82.0" y="178.0" text-anchor="middle" class="ts">cos, sin (B, S, 16)</text><path d="M152,166 L164,166" class="arr"/><rect x="156" y="136" width="268" height="150" rx="10" class="grp"/><text x="430" y="156" class="tt">× 4 layers</text><rect x="170" y="140" width="240" height="40" rx="7" class="bx"/><text x="290.0" y="157.0" text-anchor="middle" class="tb">TransformerLayer</text><text x="290.0" y="172.0" text-anchor="middle" class="ts">RMSNorm → MHSA(GQA) → +</text><rect x="170" y="192" width="240" height="40" rx="7" class="bx"/><text x="290.0" y="209.0" text-anchor="middle" class="tb"></text><text x="290.0" y="224.0" text-anchor="middle" class="ts">RMSNorm → SwiGLU FFN → +</text><text x="290.0" y="208" text-anchor="middle" class="ts">같은 블록의 뒷부분</text><text x="290.0" y="258" text-anchor="middle" class="ts">⋮</text><text x="446" y="218" class="ts">(B, S, 512) 유지</text><path d="M290.0,278 L290.0,300" class="ar"/><rect x="170" y="300" width="240" height="34" rx="7" class="bx"/><text x="290.0" y="314.0" text-anchor="middle" class="tb">norm</text><text x="290.0" y="329.0" text-anchor="middle" class="ts">RMSNorm</text><path d="M290.0,334 L290.0,358" class="ar"/><rect x="170" y="358" width="240" height="44" rx="7" class="bxr"/><text x="290.0" y="377.0" text-anchor="middle" class="tb">lm_head</text><text x="290.0" y="392.0" text-anchor="middle" class="ts">nn.Linear(512, 50258, bias=False)</text><text x="407" y="353" text-anchor="end" class="tt">38.6%</text><text x="422" y="385" class="ts">(B, S, 50258)</text><path d="M290.0,402 L290.0,426" class="ar"/><rect x="170" y="426" width="240" height="40" rx="7" class="bxg"/><text x="290.0" y="443.0" text-anchor="middle" class="tb">cross-entropy</text><text x="290.0" y="458.0" text-anchor="middle" class="ts">logits[:, :−1] vs labels[:, 1:]</text><text x="422" y="451" class="ts">ignore_index = −100</text></svg></div>
+<p class="cap">B = 배치, S = 시퀀스 길이. 레이어를 통과하는 동안 <b>(B, S, 512)</b> 모양은 변하지 않습니다.
+모양이 바뀌는 곳은 입구(embed)와 출구(lm_head) 둘뿐입니다.</p>
+
+<h3 class="dh">TransformerLayer 하나의 내부 — Pre-Norm</h3>
+<div class="svgwrap"><svg viewBox="0 0 560 375" width="560"><defs><marker id="ah" markerWidth="7" markerHeight="7" refX="6" refY="2.5" orient="auto"><path d="M0,0 L6,2.5 L0,5 z" class="ahf"/></marker><marker id="ahg" markerWidth="7" markerHeight="7" refX="6" refY="2.5" orient="auto"><path d="M0,0 L6,2.5 L0,5 z" class="ahg"/></marker></defs><rect x="150" y="16" width="250" height="30" rx="7" class="bx2"/><text x="275.0" y="35.0" text-anchor="middle" class="tb">x</text><path d="M275.0,46 L275.0,68" class="ar"/><path d="M150,31 L60,31 L60,176 L144,176" class="arr"/><text x="64" y="106" class="tt">residual</text><rect x="150" y="68" width="250" height="34" rx="7" class="bx"/><text x="275.0" y="82.0" text-anchor="middle" class="tb">input_layernorm</text><text x="275.0" y="97.0" text-anchor="middle" class="ts">RMSNorm</text><path d="M275.0,102 L275.0,120" class="ar"/><rect x="150" y="120" width="250" height="38" rx="7" class="bx"/><text x="275.0" y="136.0" text-anchor="middle" class="tb">self_attn</text><text x="275.0" y="151.0" text-anchor="middle" class="ts">MultiHeadAttention (GQA)</text><path d="M275.0,158 L275.0,176" class="ar"/><circle cx="275.0" cy="188" r="12" class="bxg"/><text x="275.0" y="193" text-anchor="middle" class="tb">+</text><text x="416" y="192" class="ts">h = x + Attn(Norm(x))</text><path d="M275.0,202 L275.0,224" class="ar"/><path d="M400,212 L500,212 L500,330 L406,330" class="arr"/><rect x="150" y="224" width="250" height="34" rx="7" class="bx"/><text x="275.0" y="238.0" text-anchor="middle" class="tb">post_attention_layernorm</text><text x="275.0" y="253.0" text-anchor="middle" class="ts">RMSNorm</text><path d="M275.0,258 L275.0,276" class="ar"/><rect x="150" y="276" width="250" height="38" rx="7" class="bx"/><text x="275.0" y="292.0" text-anchor="middle" class="tb">feed_forward</text><text x="275.0" y="307.0" text-anchor="middle" class="ts">SwiGLU  512 → 2048 → 512</text><path d="M275.0,314 L275.0,332" class="ar"/><circle cx="275.0" cy="344" r="12" class="bxg"/><text x="275.0" y="349" text-anchor="middle" class="tb">+</text><text x="24" y="348" class="ts">out = h + FFN(Norm(h))</text></svg></div>
+<p class="cap">정규화가 <b>residual 경로 밖</b>에 있습니다(Pre-Norm). 그래서 입력 x가 덧셈만 거쳐 출력까지
+곧장 이어지고, 기울기가 감쇠 없이 흐릅니다. 원 Transformer 논문의 Post-Norm
+<code>Norm(x + Sublayer(x))</code>은 깊어지면 warmup에 민감해져 현대 LLM은 대부분 이 배치를 씁니다.
+<b>빈칸 8</b>이 이 구조를 짜는 문제였습니다.</p>
+
+<h3 class="dh">MultiHeadAttention 내부 — GQA의 모양 흐름</h3>
+<div class="svgwrap"><svg viewBox="0 0 620 330" width="620"><defs><marker id="ah" markerWidth="7" markerHeight="7" refX="6" refY="2.5" orient="auto"><path d="M0,0 L6,2.5 L0,5 z" class="ahf"/></marker><marker id="ahg" markerWidth="7" markerHeight="7" refX="6" refY="2.5" orient="auto"><path d="M0,0 L6,2.5 L0,5 z" class="ahg"/></marker></defs><rect x="230" y="10" width="160" height="32" rx="7" class="bx2"/><text x="310.0" y="23.0" text-anchor="middle" class="tb">hidden_states</text><text x="310.0" y="38.0" text-anchor="middle" class="ts">(B, S, 512)</text><path d="M310,42 L110,70" class="ar"/><rect x="30" y="70" width="160" height="44" rx="7" class="bx"/><text x="110.0" y="89.0" text-anchor="middle" class="tb">q_proj</text><text x="110.0" y="104.0" text-anchor="middle" class="ts">512 → 512</text><text x="110" y="130" text-anchor="middle" class="ts">(B, 16, S, 32)</text><path d="M310,42 L310,70" class="ar"/><rect x="230" y="70" width="160" height="44" rx="7" class="bxg"/><text x="310.0" y="89.0" text-anchor="middle" class="tb">k_proj</text><text x="310.0" y="104.0" text-anchor="middle" class="ts">512 → 128</text><text x="310" y="130" text-anchor="middle" class="ts">(B, 4, S, 32)</text><path d="M310,42 L510,70" class="ar"/><rect x="430" y="70" width="160" height="44" rx="7" class="bxg"/><text x="510.0" y="89.0" text-anchor="middle" class="tb">v_proj</text><text x="510.0" y="104.0" text-anchor="middle" class="ts">512 → 128</text><text x="510" y="130" text-anchor="middle" class="ts">(B, 4, S, 32)</text><path d="M310,114 L310,146" class="ar"/><path d="M510,114 L510,146" class="ar"/><rect x="230" y="146" width="160" height="36" rx="7" class="bxg"/><text x="310.0" y="161.0" text-anchor="middle" class="tb">repeat_kv(×4)</text><text x="310.0" y="176.0" text-anchor="middle" class="ts">(B, 16, S, 32)</text><rect x="430" y="146" width="160" height="36" rx="7" class="bxg"/><text x="510.0" y="161.0" text-anchor="middle" class="tb">repeat_kv(×4)</text><text x="510.0" y="176.0" text-anchor="middle" class="ts">(B, 16, S, 32)</text><text x="612" y="140" text-anchor="end" class="tt">GQA: kv 4 → 16 복제</text><path d="M110,114 L110,200 L230,200" class="ar"/><path d="M310,182 L310,200" class="ar"/><rect x="190" y="200" width="240" height="40" rx="7" class="bx"/><text x="310.0" y="217.0" text-anchor="middle" class="tb">QKᵀ · scale  +  mask</text><text x="310.0" y="232.0" text-anchor="middle" class="ts">(B, 16, S, S+cache)</text><text x="440" y="216" class="ts">scale = 32^(−0.5)</text><text x="440" y="232" class="ts">mask: 0 / finfo.min</text><path d="M310,240 L310,262" class="ar"/><rect x="190" y="262" width="240" height="34" rx="7" class="bx"/><text x="310.0" y="276.0" text-anchor="middle" class="tb">softmax(fp32) · V → o_proj</text><text x="310.0" y="291.0" text-anchor="middle" class="ts">(B, S, 512)</text><path d="M510,182 L510,279 L434,279" class="ar"/></svg></div>
+<p class="cap">query는 16 head인데 key/value는 <b>4 head만</b> 만들고(<b>빈칸 5</b>),
+<code>repeat_kv</code>가 4배 복제해 짝을 맞춥니다. KV 캐시와 projection 파라미터가 1/4이 됩니다.
+MHA로 짰다면 레이어당 attention 파라미터가 655,360 → 1,048,576으로 늘어납니다.
+점수 계산·마스크·softmax·head 합치기가 <b>빈칸 6</b>, 마스크 생성이 <b>빈칸 9</b>입니다.</p>
+
+<h3 class="dh">파라미터 66,673,152개는 어디에 있나</h3>
+<div class="pbar"><div style="width:38.6%;background:#c25b5b">38.6%</div><div style="width:38.6%;background:#d68b3f">38.6%</div><div style="width:18.9%;background:#4a7fd4">18.9%</div><div style="width:3.9%;background:#4a9e63">3.9%</div><div style="width:0.6%;background:#8a8f98"></div></div><div class="plegend"><span><i class="sw" style="background:#c25b5b"></i><b>임베딩 embed_tokens</b> 25,732,096</span><span><i class="sw" style="background:#d68b3f"></i><b>출력 lm_head</b> 25,732,096</span><span><i class="sw" style="background:#4a7fd4"></i><b>FFN (4 layers)</b> 12,582,912</span><span><i class="sw" style="background:#4a9e63"></i><b>Attention (4 layers)</b> 2,621,440</span><span><i class="sw" style="background:#8a8f98"></i><b>RMSNorm (9개)</b> 4,608</span></div>
+<p class="cap"><b>임베딩과 lm_head가 77.2%입니다.</b> 정작 Transformer 본체(attention + FFN + norm)는
+22.8%뿐입니다. 어휘가 50,258인데 hidden이 512뿐이라 입·출력 행렬이 압도적으로 커지는 것으로,
+소형 모델에서 흔한 구조입니다.</p>
+<p class="cap">이 때문에 <b>weight tying</b>(embed와 lm_head가 같은 행렬을 공유)이 큰 차이를 만듭니다 —
+묶으면 25.7M이 사라져 39.04M이 됩니다. transformers 4.54부터 이 tying이 자동으로 켜지는데, 그러면
+핸드아웃의 63.58M과 모델이 달라지고 <code>save_pretrained</code>도 깨집니다. 버전을 4.52.4로 고정한
+이유입니다.</p>
+
+<table class="arch">
+<thead><tr><th>모듈</th><th>구성</th><th>레이어당 파라미터</th></tr></thead>
+<tbody>
+<tr><td>Attention</td><td>q(512×512) + k(128×512) + v(128×512) + o(512×512)</td><td>655,360</td></tr>
+<tr><td>FFN (SwiGLU)</td><td>gate(512×2048) + up(512×2048) + down(2048×512)</td><td>3,145,728</td></tr>
+<tr><td>RMSNorm ×2</td><td>512 + 512</td><td>1,024</td></tr>
+<tr><td><b>레이어 합계</b></td><td>× 4 layers</td><td><b>3,802,112</b></td></tr>
+</tbody></table>
+<p class="cap">FFN이 attention보다 <b>4.8배</b> 큽니다. intermediate가 hidden의 4배인 데다 SwiGLU는
+행렬이 셋(gate·up·down)이라 그렇습니다. 일반 FFN이라면 둘이었을 것입니다.</p>
+
+<div id="ragarch"></div>
+<h2>RAG 구조</h2>
+<p>빈칸 11·12·13은 <span class="f">model_rag.py</span>의 <code>ModelRAG</code> 세 메서드이고,
+빈칸 16은 학습 샘플, 빈칸 18은 결과 후처리입니다. 다섯 개가 하나의 흐름 위에 놓입니다.</p>
+
+<h3 class="dh">ModelRAG 파이프라인과 빈칸 위치</h3>
+<div class="svgwrap"><svg viewBox="0 0 620 400" width="620"><defs><marker id="ah" markerWidth="7" markerHeight="7" refX="6" refY="2.5" orient="auto"><path d="M0,0 L6,2.5 L0,5 z" class="ahf"/></marker><marker id="ahg" markerWidth="7" markerHeight="7" refX="6" refY="2.5" orient="auto"><path d="M0,0 L6,2.5 L0,5 z" class="ahg"/></marker></defs><rect x="190" y="12" width="240" height="32" rx="7" class="bx2"/><text x="310.0" y="25.0" text-anchor="middle" class="tb">question</text><text x="310.0" y="40.0" text-anchor="middle" class="ts">NQ-open dev 6,515문항</text><path d="M310.0,44 L310.0,66" class="ar"/><rect x="190" y="66" width="240" height="44" rx="7" class="bx"/><text x="310.0" y="85.0" text-anchor="middle" class="tb">search()</text><text x="310.0" y="100.0" text-anchor="middle" class="ts">BM25 · Pyserini · top-k</text><text x="427" y="61" text-anchor="end" class="tt">빈칸 11</text><rect x="8" y="68" width="160" height="40" rx="7" class="bxg"/><text x="88.0" y="85.0" text-anchor="middle" class="tb">Lucene 인덱스</text><text x="88.0" y="100.0" text-anchor="middle" class="ts">wikipedia-dpr-100w</text><path d="M168,88 L184,88" class="arr"/><text x="442" y="86" class="ts">21M passages</text><text x="442" y="101" class="ts">→ [{title, text}] × k</text><path d="M310.0,110 L310.0,132" class="ar"/><rect x="190" y="132" width="240" height="44" rx="7" class="bx"/><text x="310.0" y="151.0" text-anchor="middle" class="tb">make_augmented_inputs</text><text x="310.0" y="166.0" text-anchor="middle" class="ts">Title/Passage × k + Question</text><text x="427" y="127" text-anchor="end" class="tt">빈칸 12</text><text x="442" y="159" class="ts">context ≤ 768 tok</text><path d="M310.0,176 L310.0,198" class="ar"/><rect x="190" y="198" width="240" height="44" rx="7" class="bx"/><text x="310.0" y="217.0" text-anchor="middle" class="tb">retrieval_augmented_generate</text><text x="310.0" y="232.0" text-anchor="middle" class="ts">left padding → generate</text><text x="427" y="193" text-anchor="end" class="tt">빈칸 13</text><text x="442" y="225" class="ts">프롬프트 길이만큼 잘라냄</text><path d="M310.0,242 L310.0,264" class="ar"/><rect x="190" y="264" width="240" height="40" rx="7" class="bxg"/><text x="310.0" y="281.0" text-anchor="middle" class="tb">후처리</text><text x="310.0" y="296.0" text-anchor="middle" class="ts">첫 줄만 남기기</text><text x="427" y="259" text-anchor="end" class="tt">빈칸 18</text><path d="M310.0,304 L310.0,326" class="ar"/><rect x="190" y="326" width="240" height="36" rx="7" class="bxr"/><text x="310.0" y="341.0" text-anchor="middle" class="tb">best_subspan_exact_match</text><text x="310.0" y="356.0" text-anchor="middle" class="ts">+ ROUGE</text></svg></div>
+<p class="cap">중요한 점은 이 클래스가 <b>GPT-small과 Llama 양쪽에 그대로 쓰인다</b>는 것입니다.
+<code>set_model()</code>로 어떤 모델을 꽂느냐만 다릅니다. 그래서 프롬프트 형식을 한 곳에서만 정의하면
+학습 경로와 추론 경로가 자동으로 일치합니다.</p>
+
+<h3 class="dh">두 갈래 — 학습하는 쪽과 프롬프트만 바꾸는 쪽</h3>
+<div class="svgwrap"><svg viewBox="0 0 620 300" width="620"><defs><marker id="ah" markerWidth="7" markerHeight="7" refX="6" refY="2.5" orient="auto"><path d="M0,0 L6,2.5 L0,5 z" class="ahf"/></marker><marker id="ahg" markerWidth="7" markerHeight="7" refX="6" refY="2.5" orient="auto"><path d="M0,0 L6,2.5 L0,5 z" class="ahg"/></marker></defs><rect x="230" y="10" width="160" height="32" rx="7" class="bx2"/><text x="310.0" y="23.0" text-anchor="middle" class="tb">같은 ModelRAG</text><text x="310.0" y="38.0" text-anchor="middle" class="ts">search/prompt/generate</text><path d="M290,42 L150,74" class="ar"/><path d="M330,42 L470,74" class="ar"/><rect x="14" y="74" width="270" height="200" rx="10" class="grp"/><text x="149" y="94" text-anchor="middle" class="tt">④ RAG 파인튜닝</text><rect x="30" y="104" width="238" height="40" rx="7" class="bx"/><text x="149.0" y="121.0" text-anchor="middle" class="tb">GPT-small 63.58M</text><text x="149.0" y="136.0" text-anchor="middle" class="ts">① 사전학습 체크포인트에서 출발</text><path d="M149,144 L149,162" class="ar"/><rect x="30" y="162" width="238" height="40" rx="7" class="bx"/><text x="149.0" y="179.0" text-anchor="middle" class="tb">NQ train 58,880개로 학습</text><text x="149.0" y="194.0" text-anchor="middle" class="ts">positive_ctxs로 프롬프트 · 빈칸 16</text><path d="M149,202 L149,220" class="ar"/><rect x="30" y="220" width="238" height="36" rx="7" class="bxr"/><text x="149.0" y="235.0" text-anchor="middle" class="tb">accuracy 0.0480</text><text x="149.0" y="250.0" text-anchor="middle" class="ts">3 epoch · 59분</text><rect x="336" y="74" width="270" height="200" rx="10" class="grp"/><text x="471" y="94" text-anchor="middle" class="tt">⑤⑥ 프롬프트 RAG</text><rect x="352" y="104" width="238" height="40" rx="7" class="bxg"/><text x="471.0" y="121.0" text-anchor="middle" class="tb">Llama-3.2-1B-Instruct</text><text x="471.0" y="136.0" text-anchor="middle" class="ts">가중치 고정 · 학습 없음</text><path d="M471,144 L471,162" class="ar"/><rect x="352" y="162" width="238" height="40" rx="7" class="bxg"/><text x="471.0" y="179.0" text-anchor="middle" class="tb">프롬프트만 바꿈</text><text x="471.0" y="194.0" text-anchor="middle" class="ts">chat template · few-shot · JSON</text><path d="M471,202 L471,220" class="ar"/><rect x="352" y="220" width="238" height="36" rx="7" class="bxr"/><text x="471.0" y="235.0" text-anchor="middle" class="tb">accuracy 0.2451 → 0.3431</text><text x="471.0" y="250.0" text-anchor="middle" class="ts">학습 0회</text></svg></div>
+<p class="cap">④는 <b>① 사전학습 체크포인트에서 출발</b>해 NQ로 이어 학습합니다(무작위 초기화가 아닙니다).
+⑤⑥은 Llama 가중치를 전혀 건드리지 않고 프롬프트와 검색만 바꿉니다. 점수 차이(0.048 vs 0.343)는
+모델 규모 차이지 방법의 우열이 아닙니다 — 핸드아웃 §4.1.2가 지적하듯 63M 모델은 zero-shot 능력이 없어
+파인튜닝이 <b>필수</b>이고, 1B instruct 모델은 파인튜닝 없이도 되니 프롬프트를 고치는 쪽이 남습니다.</p>
+
+<h3 class="dh">토큰 예산 — 768과 992가 어디서 나온 숫자인가</h3>
+<div class="svgwrap"><svg viewBox="0 0 620 222" width="620"><defs><marker id="ah" markerWidth="7" markerHeight="7" refX="6" refY="2.5" orient="auto"><path d="M0,0 L6,2.5 L0,5 z" class="ahf"/></marker><marker id="ahg" markerWidth="7" markerHeight="7" refX="6" refY="2.5" orient="auto"><path d="M0,0 L6,2.5 L0,5 z" class="ahg"/></marker></defs><text x="10" y="18" class="tb">학습 샘플 (RAGCollator, max_len 992)</text><rect x="10" y="28" width="464" height="34" rx="5" class="bx"/><text x="242.0" y="49" text-anchor="middle" class="tb">context ≤ 768</text><rect x="474" y="28" width="96" height="34" rx="5" class="bxg"/><text x="522.0" y="49" text-anchor="middle" class="t">Question</text><rect x="570" y="28" width="40" height="34" rx="5" class="bxr"/><text x="590.0" y="49" text-anchor="middle" class="t">Answer</text><text x="10" y="78" class="ts">← 0</text><text x="610" y="78" text-anchor="end" class="ts">992 →</text><path d="M612,28 L612,62" stroke="var(--wr)" stroke-width="2"/><text x="10" y="98" class="ts">collator가 여기서 <tspan class="tt">오른쪽을 잘라낸다</tspan> — context가 길면 Question/Answer가 먼저 사라진다.</text><text x="10" y="113" class="ts">그래서 context에 768 상한을 둔다 (빈칸 12 · 16)</text><text x="10" y="142" class="tb">요약 샘플 (고정 1024)</text><rect x="10" y="152" width="525" height="34" rx="5" class="bx"/><text x="272.5" y="173" text-anchor="middle" class="tb">[pad…][bos] Context: … Summary:
+  (896)</text><rect x="535" y="152" width="75" height="34" rx="5" class="bxr"/><text x="572.5" y="173" text-anchor="middle" class="t">요약 (128)</text><text x="10" y="204" class="ts">labels: 앞은 전부 <tspan class="tt">−100</tspan>, 요약문과 eos에만 loss (빈칸 14)</text></svg></div>
+<p class="cap">빈칸 12·14·16에 등장하는 숫자들의 출처입니다. 제공된 collator가 <b>오른쪽을 잘라내기</b>
+때문에, context를 제한하지 않으면 정작 필요한 <code>Question:</code>과 <code>Answer:</code>가 먼저
+사라집니다. 빈칸을 채울 때 <b>빈칸 밖 코드가 무엇을 전제하는지</b> 읽어야 하는 대표적인 예입니다.</p>
+
+<h3 class="dh">4.3 확장이 끼어드는 지점</h3>
+<p>제안 시스템은 위 파이프라인에서 <code>search()</code> 하나만 교체합니다. BM25가 top-5 대신
+top-50을 가져오고, 생성기 자신이 <code>log P(question | passage)</code>로 다시 줄을 세운 뒤 상위 5개만
+프롬프트에 넣습니다. 나머지 단계는 손대지 않으므로 <code>make_augmented_inputs</code>와
+<code>retrieval_augmented_generate</code>를 그대로 상속받아 씁니다. 그 결과 프롬프트에 정답이 실제로
+들어 있는 비율이 <b>0.528 → 0.658</b>로 올랐습니다.</p>
+
+<h2>model.py — GPT-small 본체</h2>
+<article class="card" id="b1">
+<div class="chead"><span class="num">1</span><h3>apply_rotary_emb — RoPE 적용</h3><span class="topic">RoPE</span><span class="loc">model.py:66</span></div>
+<div class="spec"><b>문제</b> — 위치 m의 query/key 벡터를 각 θᵢ에 대해 2차원 회전시킨다. 주어진 shape 힌트: cos,sin은 (B, S, D/2), x는 (B, H, S, D).</div>
+<div class="math">[x₁′, x₂′] = [x₁·cos − x₂·sin,  x₁·sin + x₂·cos]</div>
+<details class="ans"><summary>정답 코드 보기</summary><pre class="code">cos <span class="op">=</span> cos.<span class="fn">unsqueeze</span>(<span class="num">1</span>)  <span class="co"># (batch_size, 1, seq_len, head_dim // 2): broadcast over heads</span>
+sin <span class="op">=</span> sin.<span class="fn">unsqueeze</span>(<span class="num">1</span>)
+x1, x2 <span class="op">=</span> x.<span class="fn">chunk</span>(<span class="num">2</span>, dim<span class="op">=-</span><span class="num">1</span>)  <span class="co"># (x1[i], x2[i]) is the 2D pair rotated by angle m * theta_i</span>
+x <span class="op">=</span> torch.<span class="fn">cat</span>([x1 <span class="op">*</span> cos <span class="op">-</span> x2 <span class="op">*</span> sin, x1 <span class="op">*</span> sin <span class="op">+</span> x2 <span class="op">*</span> cos], dim<span class="op">=-</span><span class="num">1</span>)</pre></details>
+<div class="why"><b>왜 이렇게 되는가</b><ul><li><b>왜 회전인가.</b> 회전 후 내적이 <code>⟨R_m q, R_n k⟩ = f(q, k, m−n)</code>이 되어 <b>상대 위치에만 의존</b>한다. 절대 위치 임베딩을 더하는 방식과 달리 길이 외삽에 유리하다.</li><li><b>unsqueeze(1)의 이유.</b> cos/sin에는 head 축이 없다. 1을 끼워 넣으면 16개 head 전부에 같은 각도가 broadcast된다.</li><li><b>앞/뒤 절반 쌍 vs 인접 쌍.</b> 논문 원형은 (x₀,x₁),(x₂,x₃)… 처럼 인접 원소를 묶지만, 여기서는 HuggingFace Llama와 같은 앞절반/뒤절반 방식을 썼다. q와 k에 <b>같은 순열</b>을 적용하는 것이라 내적 값은 동일하고, 처음부터 학습하는 모델이라 표현력 차이도 없다. 대신 slicing 비용이 적고 HF Llama와 수치 비교로 검증할 수 있다.</li></ul></div>
+<div class="verify"><b>검증된 사실</b> — (m,n)=(10,4)와 (106,100), (500,494)의 내적이 소수 5자리까지 동일 — 상대성 확인. 회전이 노름을 보존하는 것도 확인.</div>
+</article>
+<article class="card" id="b2">
+<div class="chead"><span class="num">2</span><h3>RMSNorm.forward</h3><span class="topic">정규화</span><span class="loc">model.py:91</span></div>
+<div class="spec"><b>문제</b> — RMS 정규화를 구현한다.</div>
+<div class="math">RMSNorm(x) = x / √(mean(x²) + ε) ⊙ γ</div>
+<details class="ans"><summary>정답 코드 보기</summary><pre class="code">input_dtype <span class="op">=</span> x.dtype
+x <span class="op">=</span> x.<span class="fn">to</span>(torch.float32)  <span class="co"># compute the statistics in fp32 for numerical stability</span>
+variance <span class="op">=</span> x.<span class="fn">pow</span>(<span class="num">2</span>).<span class="fn">mean</span>(<span class="op">-</span><span class="num">1</span>, keepdim<span class="op">=</span><span class="k">True</span>)
+x <span class="op">=</span> x <span class="op">*</span> torch.<span class="fn">rsqrt</span>(variance <span class="op">+</span> <span class="self">self</span>.eps)
+output <span class="op">=</span> <span class="self">self</span>.weight <span class="op">*</span> x.<span class="fn">to</span>(input_dtype)</pre></details>
+<div class="why"><b>왜 이렇게 되는가</b><ul><li><b>LayerNorm과의 차이.</b> 평균을 빼지 않고 bias도 없다. 스케일만 맞추므로 연산이 더 싸고, 실제로 성능 저하 없이 동작한다는 것이 RMSNorm 논문의 주장이다.</li><li><b>fp32로 올리는 이유가 핵심이다.</b> 노트북이 모델을 bfloat16으로 캐스팅해 학습한다(<code>model_dtype="cast_bf16"</code>). bf16은 가수부가 7비트뿐이라 제곱 평균을 bf16으로 누적하면 오차가 크고, 그 값으로 나누는 정규화가 오차를 <b>증폭</b>시킨다. 통계만 fp32로 계산하고 원래 dtype으로 되돌린다.</li><li><code>torch.rsqrt</code>는 역제곱근을 한 번에 계산한다. <code>1/torch.sqrt(...)</code>보다 빠르다.</li></ul></div>
+</article>
+<article class="card" id="b3">
+<div class="chead"><span class="num">3</span><h3>RotaryEmbedding.__init__ — 주파수 초기화</h3><span class="topic">RoPE</span><span class="loc">model.py:112</span></div>
+<div class="spec"><b>문제</b> — 회전 각속도 inv_freq를 계산해 버퍼로 등록한다.</div>
+<div class="math">θᵢ = base^(−2i/d),   i = 0 … d/2−1,   base = rope_theta (노트북에서 20000.0)</div>
+<details class="ans"><summary>정답 코드 보기</summary><pre class="code">base <span class="op">=</span> config.rope_theta
+dim <span class="op">=</span> config.head_dim
+<span class="co"># theta_i = base^(-2i / head_dim), i = 0, 1, ..., head_dim // 2 - 1</span>
+inv_freq <span class="op">=</span> <span class="num">1.0</span> <span class="op">/</span> (base <span class="op">**</span> (torch.<span class="fn">arange</span>(<span class="num">0</span>, dim, <span class="num">2</span>, dtype<span class="op">=</span>torch.int64).<span class="fn">to</span>(device<span class="op">=</span>device, dtype<span class="op">=</span>torch.<span class="bi">float</span>) <span class="op">/</span> dim))</pre></details>
+<div class="why"><b>왜 이렇게 되는가</b><ul><li><b>왜 지수적으로 감소하는가.</b> i가 커질수록 θᵢ가 작아져 회전이 느려진다. 낮은 차원은 빠르게 돌아 <b>가까운 위치</b>를 구분하고, 높은 차원은 느리게 돌아 <b>먼 위치</b>를 구분한다. 여러 주파수를 겹쳐 위치를 인코딩하는 구조다.</li><li><b>shape 힌트와 다르게 1차원으로 만든 이유.</b> 주석은 <code>(1, head_dim//2)</code>라고 하지만, 빈칸 아래의 원본 <code>forward</code>가 <code>self.inv_freq[None, :, None]</code> 형태로 <b>1차원 텐서를 전제</b>한다. 2차원이면 expand에서 에러가 난다. 원소 개수는 힌트와 같다.</li><li><code>persistent=False</code> 버퍼라 체크포인트에 저장되지 않고 로드할 때마다 재계산된다. transformers 5.x에서는 이 재계산이 깨져 초기화되지 않은 메모리가 들어가는 문제가 있어 버전을 4.52.4로 고정했다.</li></ul></div>
+</article>
+<article class="card" id="b4">
+<div class="chead"><span class="num">4</span><h3>RotaryEmbedding.forward — cos/sin 계산</h3><span class="topic">RoPE</span><span class="loc">model.py:132</span></div>
+<div class="spec"><b>문제</b> — 위치 × 주파수로 각도를 만들고 cos, sin을 낸다.</div>
+<div class="math">freqs[b, s, i] = position[b, s] × θᵢ   →   cos(freqs), sin(freqs)</div>
+<details class="ans"><summary>정답 코드 보기</summary><pre class="code">freqs <span class="op">=</span> (inv_freq_expanded.<span class="bi">float</span>() <span class="op">@</span> position_ids_expanded.<span class="bi">float</span>()).<span class="fn">transpose</span>(<span class="num">1</span>, <span class="num">2</span>)  <span class="co"># m * theta_i</span>
+cos <span class="op">=</span> freqs.<span class="fn">cos</span>()
+sin <span class="op">=</span> freqs.<span class="fn">sin</span>()</pre></details>
+<div class="why"><b>왜 이렇게 되는가</b><ul><li><b>shape 흐름.</b> <code>(B, D/2, 1) @ (B, 1, S)</code> → <code>(B, D/2, S)</code> → transpose → <code>(B, S, D/2)</code>. 행렬곱 한 번으로 모든 (위치, 주파수) 조합의 각도를 만든다.</li><li><b>원본 코드가 이 블록을 <code>autocast(enabled=False)</code>로 감싸 놓았다.</b> 위치가 크면 m·θᵢ가 커지는데, bf16으로 계산하면 각도 오차가 누적돼 회전이 어긋난다. fp32 고정이 필수다.</li></ul></div>
+</article>
+<article class="card" id="b5">
+<div class="chead"><span class="num">5</span><h3>MultiHeadAttention.__init__ — Q/K/V/O projection</h3><span class="topic">GQA</span><span class="loc">model.py:153</span></div>
+<div class="spec"><b>문제</b> — query·key·value·output projection을 선언한다. key/value는 num_key_value_heads개만 만든다.</div>
+<details class="ans"><summary>정답 코드 보기</summary><pre class="code"><span class="self">self</span>.q_proj <span class="op">=</span> nn.<span class="fn">Linear</span>(config.hidden_size, config.num_attention_heads <span class="op">*</span> <span class="self">self</span>.head_dim, bias<span class="op">=</span><span class="k">False</span>)
+<span class="self">self</span>.k_proj <span class="op">=</span> nn.<span class="fn">Linear</span>(config.hidden_size, config.num_key_value_heads <span class="op">*</span> <span class="self">self</span>.head_dim, bias<span class="op">=</span><span class="k">False</span>)
+<span class="self">self</span>.v_proj <span class="op">=</span> nn.<span class="fn">Linear</span>(config.hidden_size, config.num_key_value_heads <span class="op">*</span> <span class="self">self</span>.head_dim, bias<span class="op">=</span><span class="k">False</span>)
+<span class="self">self</span>.o_proj <span class="op">=</span> nn.<span class="fn">Linear</span>(config.num_attention_heads <span class="op">*</span> <span class="self">self</span>.head_dim, config.hidden_size, bias<span class="op">=</span><span class="k">False</span>)</pre></details>
+<div class="why"><b>왜 이렇게 되는가</b><ul><li><b>GQA의 핵심.</b> query head는 16개지만 key/value head는 4개만 만든다. forward의 <code>repeat_kv</code>가 K/V를 4배 복제해 16개 query head와 짝을 맞춘다. KV 캐시 크기와 파라미터가 1/4로 줄어드는 대신 성능 저하는 작다는 것이 GQA 논문의 요지다.</li><li><b>bias=False의 근거가 측정으로 확정된다.</b> bias를 넣으면 파라미터가 63.59M, 빼면 <b>63.58M</b>이 되어 핸드아웃 로그 <code>Training Total size=63.58M params</code>와 정확히 일치한다. 원본 <code>FeedForwardNetwork</code>도 bias가 없다.</li><li><b>이름을 마음대로 정할 수 없다.</b> <code>q_proj</code>는 원본 <code>TransformerForCausalLM.forward</code>가, <code>k_proj</code>/<code>v_proj</code>는 이 클래스의 forward가 참조한다. 출력 projection은 Llama 관례대로 <code>o_proj</code>로 했다.</li></ul></div>
+<div class="verify"><b>검증된 사실</b> — 실측 shape — q_proj (512,512), k_proj (128,512), v_proj (128,512), o_proj (512,512). K/V가 정확히 1/4.</div>
+</article>
+<article class="card" id="b6">
+<div class="chead"><span class="num">6</span><h3>MultiHeadAttention.forward — attention 계산</h3><span class="topic">Attention</span><span class="loc">model.py:196</span></div>
+<div class="spec"><b>문제</b> — scaled dot-product attention을 계산하고 head를 합쳐 o_proj를 통과시킨다.</div>
+<div class="math">Attention(Q, K, V) = softmax(QKᵀ/√d_k + M) · V,   scale = head_dim^(−0.5)</div>
+<details class="ans"><summary>정답 코드 보기</summary><pre class="code">attention_weights <span class="op">=</span> torch.<span class="fn">matmul</span>(query_states, key_states.<span class="fn">transpose</span>(<span class="num">2</span>, <span class="num">3</span>)) <span class="op">*</span> <span class="self">self</span>.scale
+<span class="k">if</span> attention_mask <span class="k">is</span> <span class="k">not</span> <span class="k">None</span>:
+    attention_weights <span class="op">=</span> attention_weights <span class="op">+</span> attention_mask  <span class="co"># additive mask: 0 = keep, dtype min = masked</span>
+attention_weights <span class="op">=</span> F.<span class="fn">softmax</span>(attention_weights, dim<span class="op">=-</span><span class="num">1</span>, dtype<span class="op">=</span>torch.float32).<span class="fn">to</span>(query_states.dtype)
+attention_weights <span class="op">=</span> F.<span class="fn">dropout</span>(attention_weights, p<span class="op">=</span><span class="self">self</span>.dropout, training<span class="op">=</span><span class="self">self</span>.training)
+attn_output <span class="op">=</span> torch.<span class="fn">matmul</span>(attention_weights, value_states)  <span class="co"># (batch_size, num_attention_heads, seq_len, head_dim)</span>
+attn_output <span class="op">=</span> attn_output.<span class="fn">transpose</span>(<span class="num">1</span>, <span class="num">2</span>).<span class="fn">contiguous</span>().<span class="fn">reshape</span>(batch_size, seq_len, <span class="op">-</span><span class="num">1</span>)
+attn_output <span class="op">=</span> <span class="self">self</span>.<span class="fn">o_proj</span>(attn_output)</pre></details>
+<div class="why"><b>왜 이렇게 되는가</b><ul><li><b>마스크를 더하는(additive) 이유.</b> 빈칸 9에서 만드는 마스크는 허용 위치가 0, 차단 위치가 <code>finfo(dtype).min</code>인 형태다. softmax 전에 더하면 차단 위치의 exp가 0에 수렴한다. <b>−inf 대신 dtype 최솟값</b>을 쓰는 이유는 다음 항목에서 설명한다.</li><li><b>softmax를 fp32로.</b> bf16에서 exp와 합산을 하면 정밀도가 부족하다. <code>dtype=torch.float32</code>로 계산한 뒤 원래 dtype으로 되돌린다.</li><li><b>transpose(1,2).contiguous().reshape</b> — (B,H,S,D)를 (B,S,H·D)로 합친다. transpose는 메모리 배치를 바꾸지 않으므로 <code>contiguous()</code> 없이는 reshape가 실패한다.</li><li><b>KV 캐시.</b> 빈칸 위 원본 코드가 이전 key/value를 이어 붙이므로 key 길이는 <code>S + cache_len</code>이다. 생성 단계에서는 S=1이고 T가 지금까지 길이가 된다.</li></ul></div>
+<div class="verify"><b>검증된 사실</b> — 마지막 토큰을 바꿔도 이전 위치 logits가 전혀 변하지 않음(diff 0.0) — causal 확인. KV 캐시 greedy 생성이 캐시 없는 생성과 토큰 단위로 동일.</div>
+</article>
+<article class="card" id="b7">
+<div class="chead"><span class="num">7</span><h3>FeedForwardNetwork.forward — SwiGLU</h3><span class="topic">FFN</span><span class="loc">model.py:224</span></div>
+<div class="spec"><b>문제</b> — 원본 __init__이 선언해 둔 gate_proj, up_proj, down_proj, SiLU를 조합한다.</div>
+<div class="math">FFN(x) = W_down( SiLU(W_gate x) ⊙ W_up x )</div>
+<details class="ans"><summary>정답 코드 보기</summary><pre class="code"><span class="co"># SwiGLU: down(SiLU(gate(x)) * up(x))</span>
+outputs <span class="op">=</span> <span class="self">self</span>.<span class="fn">down_proj</span>(<span class="self">self</span>.<span class="fn">act_fn</span>(<span class="self">self</span>.<span class="fn">gate_proj</span>(x)) <span class="op">*</span> <span class="self">self</span>.<span class="fn">up_proj</span>(x))
+outputs <span class="op">=</span> <span class="self">self</span>.<span class="fn">dropout</span>(outputs)</pre></details>
+<div class="why"><b>왜 이렇게 되는가</b><ul><li><b>게이팅 구조.</b> 일반 FFN은 <code>W₂(act(W₁x))</code>인데, SwiGLU는 경로를 둘로 나눠 한쪽에 활성함수를 걸고 <b>원소별 곱</b>으로 합친다. 게이트가 어떤 성분을 통과시킬지 학습한다.</li><li><b>SiLU</b>(= Swish) <code>x·σ(x)</code>는 ReLU와 달리 음수 구간에서 완전히 죽지 않아 기울기가 더 잘 흐른다.</li><li>dropout(<code>ffn_dropout</code>, 노트북 0.05)은 residual에 더해지기 <b>직전</b>인 FFN 출력에 건다.</li></ul></div>
+</article>
+<article class="card" id="b8">
+<div class="chead"><span class="num">8</span><h3>TransformerLayer.forward — Pre-Norm 블록</h3><span class="topic">Transformer</span><span class="loc">model.py:254</span></div>
+<div class="spec"><b>문제</b> — attention과 FFN을 residual로 잇는다. attention이 돌려준 past_key_value도 함께 반환한다.</div>
+<div class="math">h = x + Attn(Norm(x));   out = h + FFN(Norm(h))</div>
+<details class="ans"><summary>정답 코드 보기</summary><pre class="code"><span class="co"># Pre-Norm: h = x + Attn(RMSNorm(x)), out = h + FFN(RMSNorm(h))</span>
+residual <span class="op">=</span> hidden_states
+hidden_states <span class="op">=</span> <span class="self">self</span>.<span class="fn">input_layernorm</span>(hidden_states)
+hidden_states, past_key_value <span class="op">=</span> <span class="self">self</span>.<span class="fn">self_attn</span>(
+    hidden_states<span class="op">=</span>hidden_states,
+    position_embeddings<span class="op">=</span>position_embeddings,
+    attention_mask<span class="op">=</span>attention_mask,
+    past_key_value<span class="op">=</span>past_key_value,
+)
+hidden_states <span class="op">=</span> residual <span class="op">+</span> hidden_states
+
+residual <span class="op">=</span> hidden_states
+hidden_states <span class="op">=</span> <span class="self">self</span>.<span class="fn">post_attention_layernorm</span>(hidden_states)
+hidden_states <span class="op">=</span> <span class="self">self</span>.<span class="fn">feed_forward</span>(hidden_states)
+hidden_states <span class="op">=</span> residual <span class="op">+</span> hidden_states</pre></details>
+<div class="why"><b>왜 이렇게 되는가</b><ul><li><b>Pre-Norm vs Post-Norm.</b> 원 Transformer 논문은 <code>Norm(x + Sublayer(x))</code>(Post-Norm)였지만, 깊어지면 학습이 불안정해 warmup에 민감하다. Pre-Norm은 residual 경로에 정규화가 끼지 않아 <b>기울기가 입력까지 곧장 흐른다</b>. 현대 LLM의 표준이다.</li><li><b>이름이 구조를 알려준다.</b> 원본 <code>__init__</code>의 <code>input_layernorm</code>/<code>post_attention_layernorm</code>이라는 이름 자체가 Llama식 Pre-Norm 배치를 뜻한다.</li><li>residual을 <b>정규화 이전 값</b>으로 잡아 두는 것이 포인트다. 정규화된 값을 더하면 Pre-Norm이 아니다.</li></ul></div>
+</article>
+<article class="card" id="b9">
+<div class="chead"><span class="num">9</span><h3>_prepare_attention_mask — causal + padding</h3><span class="topic">Attention mask</span><span class="loc">model.py:385</span></div>
+<div class="spec"><b>문제</b> — causal 마스크와 padding 마스크를 합쳐 (batch, 1, seq_len, target_len) additive 마스크를 만든다.</div>
+<details class="ans"><summary>정답 코드 보기</summary><pre class="code">min_dtype <span class="op">=</span> torch.<span class="fn">finfo</span>(dtype).<span class="bi">min</span>
+<span class="co"># causal: query i (absolute position seen_token_length + i) can attend to key j only if j &lt;= seen_token_length + i</span>
+query_positions <span class="op">=</span> torch.<span class="fn">arange</span>(sequence_length, device<span class="op">=</span>device) <span class="op">+</span> seen_token_length
+key_positions <span class="op">=</span> torch.<span class="fn">arange</span>(target_length, device<span class="op">=</span>device)
+allowed <span class="op">=</span> key_positions[<span class="k">None</span>, :] <span class="op">&lt;=</span> query_positions[:, <span class="k">None</span>]  <span class="co"># (sequence_length, target_length)</span>
+allowed <span class="op">=</span> allowed[<span class="k">None</span>, <span class="k">None</span>, :, :].<span class="fn">expand</span>(batch_size, <span class="num">1</span>, sequence_length, target_length)
+<span class="co"># padding: never attend to padded keys (attention_mask == 0)</span>
+<span class="k">if</span> attention_mask <span class="k">is</span> <span class="k">not</span> <span class="k">None</span>:
+    allowed <span class="op">=</span> allowed <span class="op">&amp;</span> attention_mask[:, <span class="k">None</span>, <span class="k">None</span>, :].<span class="fn">to</span>(device<span class="op">=</span>device, dtype<span class="op">=</span>torch.<span class="bi">bool</span>)
+mask <span class="op">=</span> torch.<span class="fn">zeros</span>((batch_size, <span class="num">1</span>, sequence_length, target_length), dtype<span class="op">=</span>dtype, device<span class="op">=</span>device)
+mask <span class="op">=</span> mask.<span class="fn">masked_fill</span>(<span class="op">~</span>allowed, min_dtype)</pre></details>
+<div class="why"><b>왜 이렇게 되는가</b><ul><li><b>두 가지를 합친다.</b> ① causal — query i는 자기 자신과 이전 토큰(key j ≤ i)만 본다. ② padding — <code>attention_mask == 0</code>인 pad key는 어떤 query도 못 본다.</li><li><b>KV 캐시가 있으면 위치가 밀린다.</b> query의 절대 위치가 <code>seen_token_length + i</code>이므로 그만큼 이동시켜야 한다. 이걸 빼먹으면 캐시를 쓸 때만 조용히 틀린다.</li><li><b>−inf가 아니라 finfo.min을 쓰는 이유.</b> left padding에서는 <b>모든 key가 막힌 행</b>이 생길 수 있다. −inf로 채우면 softmax가 <code>exp(−inf)/Σexp(−inf) = 0/0 = NaN</code>을 내고 그 NaN이 역전파로 전체를 오염시킨다. dtype 최솟값을 쓰면 그 행은 <b>균등분포로 퇴화</b>할 뿐 NaN이 나지 않는다. 어차피 그 위치의 출력은 loss에서 −100으로 제외된다.</li><li>head 축을 1로 두면 16개 head에 broadcast된다. 메모리를 16배 아낀다.</li></ul></div>
+<div class="verify"><b>검증된 사실</b> — S=6까지 넣고 캐시를 만든 뒤 S=4를 이어 넣은 결과가, 10개를 한 번에 넣은 결과와 <b>diff 0.0</b>으로 일치 — 위치 오프셋이 정확하다는 증거. 전부 pad인 행도 NaN 없이 통과.</div>
+</article>
+<article class="card" id="b10">
+<div class="chead"><span class="num">10</span><h3>TransformerForCausalLM.forward — causal LM loss</h3><span class="topic">Loss</span><span class="loc">model.py:441</span></div>
+<div class="spec"><b>문제</b> — 다음 토큰 예측 cross-entropy를 계산한다. 결과는 스칼라여야 한다.</div>
+<div class="math">loss = CE( logits[:, :−1, :],  labels[:, 1:] ),  ignore_index = −100</div>
+<details class="ans"><summary>정답 코드 보기</summary><pre class="code"><span class="co"># next-token prediction: the logits at position t predict the label at position t + 1</span>
+shift_logits <span class="op">=</span> logits[..., :<span class="op">-</span><span class="num">1</span>, :].<span class="fn">contiguous</span>()
+shift_labels <span class="op">=</span> labels[..., <span class="num">1</span>:].<span class="fn">contiguous</span>().<span class="fn">to</span>(shift_logits.device)
+loss <span class="op">=</span> F.<span class="fn">cross_entropy</span>(shift_logits.<span class="fn">view</span>(<span class="op">-</span><span class="num">1</span>, shift_logits.<span class="fn">size</span>(<span class="op">-</span><span class="num">1</span>)), shift_labels.<span class="fn">view</span>(<span class="op">-</span><span class="num">1</span>), ignore_index<span class="op">=-</span><span class="num">100</span>)</pre></details>
+<div class="why"><b>왜 이렇게 되는가</b><ul><li><b>왜 모델 안에서 shift하는가.</b> 데이터 쪽 collator들이 <code>labels = input_ids.clone()</code>으로 <b>shift 없이</b> 넘긴다. 위치 t의 logits가 t+1의 토큰을 맞혀야 하므로 모델이 한 칸 어긋나게 맞춰야 한다. 노트북의 <code>eval_loop_for_pretraining</code>도 같은 방식으로 shift한다.</li><li><b>contiguous()가 필요한 이유.</b> <code>logits[..., :-1, :]</code>는 연속 메모리가 아니라서 <code>.view()</code>가 실패한다.</li><li><code>ignore_index=-100</code>으로 패딩과 프롬프트 구간이 제외되고, 남은 토큰에 대한 <b>평균</b>이 나온다.</li></ul></div>
+<div class="verify"><b>검증된 사실</b> — 모델이 낸 loss가 수동으로 계산한 <code>CE(logits[:,:-1], labels[:,1:])</code>와 11.016145로 정확히 일치. shift하지 않은 버전은 10.8890으로 다름.</div>
+</article>
+<h2>model_rag.py — RAG 파이프라인</h2>
+<article class="card" id="b11">
+<div class="chead"><span class="num">11</span><h3>ModelRAG.search — BM25 검색</h3><span class="topic">Retrieval</span><span class="loc">model_rag.py:26</span></div>
+<div class="spec"><b>문제</b> — retriever로 질문마다 top-k 문서를 찾아 {title, text} 형태로 파싱하고 점수와 함께 반환한다.</div>
+<details class="ans"><summary>정답 코드 보기</summary><pre class="code">qids <span class="op">=</span> [<span class="bi">str</span>(qid) <span class="k">for</span> qid <span class="k">in</span> qids]
+<span class="co"># BM25 top-k for every query in the batch: {qid: [hit, ...]}</span>
+batch_hits <span class="op">=</span> <span class="self">self</span>.retriever.<span class="fn">batch_search</span>(queries<span class="op">=</span><span class="bi">list</span>(queries), qids<span class="op">=</span>qids, k<span class="op">=</span>k, threads<span class="op">=</span><span class="num">8</span>)
+<span class="k">for</span> qid <span class="k">in</span> qids:
+    passages <span class="op">=</span> []
+    scores <span class="op">=</span> []
+    <span class="k">for</span> hit <span class="k">in</span> batch_hits[qid]:
+        doc <span class="op">=</span> <span class="fn">hit2docdict</span>(hit)  <span class="co"># {&quot;id&quot;: ..., &quot;contents&quot;: &#x27;&quot;&lt;title&gt;&quot;\n&lt;passage text&gt;&#x27;}</span>
+        title, sep, text <span class="op">=</span> doc[<span class="st">&quot;contents&quot;</span>].<span class="fn">partition</span>(<span class="st">&quot;\n&quot;</span>)
+        <span class="k">if</span> <span class="k">not</span> sep:
+            title, text <span class="op">=</span> <span class="st">&quot;&quot;</span>, title
+        passages.<span class="fn">append</span>({<span class="st">&quot;id&quot;</span>: doc.<span class="fn">get</span>(<span class="st">&quot;id&quot;</span>, hit.docid), <span class="st">&quot;title&quot;</span>: title.<span class="fn">strip</span>().<span class="fn">strip</span>(<span class="st">&#x27;&quot;&#x27;</span>), <span class="st">&quot;text&quot;</span>: text.<span class="fn">strip</span>()})
+        scores.<span class="fn">append</span>(hit.score)
+    list_passages.<span class="fn">append</span>(passages)
+    list_scores.<span class="fn">append</span>(scores)</pre></details>
+<div class="why"><b>왜 이렇게 되는가</b><ul><li><b>batch_search를 쓴다.</b> 질문을 하나씩 돌리지 않고 배치 전체를 한 번에 멀티스레드로 검색한다. 실측에서 6,515문항 검색이 병목이 아니었다.</li><li><b>인덱스 원문 형식.</b> <code>wikipedia-dpr-100w</code>의 contents는 <code>"제목"\n본문</code> 형식이다. 첫 줄을 제목(따옴표 제거), 나머지를 본문으로 나눈다.</li><li><b>{title, text} 형식을 고른 이유.</b> 학습 데이터의 <code>positive_ctxs</code>와 같은 형식이라 프롬프트 생성 코드를 학습·추론이 <b>공유</b>할 수 있다.</li><li><code>hit2docdict</code>는 <code>utils.etc</code>에 이미 import돼 있던 헬퍼다.</li></ul></div>
+</article>
+<article class="card" id="b12">
+<div class="chead"><span class="num">12</span><h3>make_augmented_inputs_for_generate — 프롬프트 구성</h3><span class="topic">Prompting</span><span class="loc">model_rag.py:55</span></div>
+<div class="spec"><b>문제</b> — 검색된 passage들로 프롬프트를 만든다.</div>
+<div class="math">Title: …\nPassage: …  (k개)\nQuestion: …\nAnswer:</div>
+<details class="ans"><summary>정답 코드 보기</summary><pre class="code"><span class="co"># same format as RAGDataset (training): &quot;Title: ..\nPassage: ..\n...\nQuestion: ..\nAnswer:&quot;</span>
+<span class="k">for</span> query, passages <span class="k">in</span> <span class="bi">zip</span>(queries, list_passages):
+    input_text_ctx <span class="op">=</span> <span class="st">&quot;\n&quot;</span>.<span class="fn">join</span>(<span class="st">f&quot;Title: {p[&#x27;title&#x27;]}\nPassage: {p[&#x27;text&#x27;]}&quot;</span> <span class="k">for</span> p <span class="k">in</span> passages)
+    ctx_ids <span class="op">=</span> <span class="self">self</span>.<span class="fn">tokenizer</span>(input_text_ctx, add_special_tokens<span class="op">=</span><span class="k">False</span>)[<span class="st">&quot;input_ids&quot;</span>]
+    <span class="k">if</span> <span class="bi">len</span>(ctx_ids) <span class="op">&gt;</span> <span class="num">768</span>:  <span class="co"># same context budget as RAGDataset, keeps GPT-small inside its 1024 window</span>
+        input_text_ctx <span class="op">=</span> <span class="self">self</span>.tokenizer.<span class="fn">decode</span>(ctx_ids[:<span class="num">768</span>], clean_up_tokenization_spaces<span class="op">=</span><span class="k">False</span>)
+    list_input_text_without_answer.<span class="fn">append</span>(<span class="st">f&quot;{input_text_ctx}\nQuestion: {query}\nAnswer:&quot;</span>)</pre></details>
+<div class="why"><b>왜 이렇게 되는가</b><ul><li><b>학습 형식과 글자 단위로 같아야 한다.</b> GPT-small은 zero-shot 능력이 없어서, 파인튜닝 때 본 형식과 추론 형식이 다르면 아무것도 못 한다. 빈칸 15와 같은 템플릿을 쓴다.</li><li><b>768토큰 예산.</b> GPT-small의 최대 길이는 1024이고 학습 collator가 992에서 <b>오른쪽을 잘라낸다</b>. passage가 길면 뒤에 있는 <code>Question/Answer:</code>가 잘려 나간다. 768로 제한해 그 일이 없게 한다.</li><li>Llama에 이 프롬프트를 그대로 쓰면 핸드아웃이 말하는 <b>naive RAG</b>가 된다. 4.2.1의 개선은 이 클래스를 상속한 새 클래스에서 한다.</li></ul></div>
+</article>
+<article class="card" id="b13">
+<div class="chead"><span class="num">13</span><h3>retrieval_augmented_generate — 추론 입력 생성</h3><span class="topic">Generation</span><span class="loc">model_rag.py:72</span></div>
+<div class="spec"><b>문제</b> — 프롬프트를 토크나이즈해 generate에 넘길 inputs를 만든다. 아래 원본 코드가 device 이동과 generate를 처리한다.</div>
+<details class="ans"><summary>정답 코드 보기</summary><pre class="code">input_texts <span class="op">=</span> <span class="self">self</span>.<span class="fn">make_augmented_inputs_for_generate</span>(queries, qids, k<span class="op">=</span>k)
+<span class="self">self</span>.tokenizer.padding_side <span class="op">=</span> <span class="st">&quot;left&quot;</span>  <span class="co"># decoder-only generation continues from the right end</span>
+inputs <span class="op">=</span> <span class="self">self</span>.<span class="fn">tokenizer</span>(input_texts, padding<span class="op">=</span><span class="st">&quot;longest&quot;</span>, return_tensors<span class="op">=</span><span class="st">&quot;pt&quot;</span>, return_token_type_ids<span class="op">=</span><span class="k">False</span>)</pre></details>
+<div class="why"><b>왜 이렇게 되는가</b><ul><li><b>left padding이 필수다.</b> decoder-only 모델은 시퀀스의 <b>오른쪽 끝에서 이어서</b> 생성한다. 오른쪽에 패딩이 있으면 패딩 뒤에서 생성이 시작돼 완전히 망가진다. 커스텀 generate도 <code>attention_mask.cumsum</code>으로 위치를 계산하므로 left padding을 전제한다.</li><li><code>return_token_type_ids=False</code> — 커스텀 generate가 그 인자를 받지 않는다. GPT-2/Llama 토크나이저는 원래 반환하지 않지만 안전장치로 넣었다.</li><li>빈칸이 할 일은 <code>inputs</code>를 만드는 것까지다. 그 아래 원본이 <code>outputs[:, inputs["input_ids"].size(1):]</code>로 프롬프트를 잘라내 <b>답변 토큰만</b> 돌려준다.</li></ul></div>
+</article>
+<h2>dataset/*.py — 태스크별 데이터</h2>
+<article class="card" id="b14">
+<div class="chead"><span class="num">14</span><h3>_preprocess — CNN/DailyMail 요약</h3><span class="topic">Summarization</span><span class="loc">dataset/summary.py:80</span></div>
+<div class="spec"><b>문제</b> — 프롬프트+요약을 고정 길이 1024로 만들고, 요약 부분에만 loss가 걸리게 labels를 구성한다.</div>
+<div class="math">input_ids : [pad…][bos] &quot;Context: …\n Summary:\n&quot; 요약문 [eos]   (896 + 128 = 1024 고정)
+labels    : [−100 ………………………………] 요약문 [eos]</div>
+<details class="ans"><summary>정답 코드 보기</summary><pre class="code"><span class="co"># input_ids: [pad ... pad][bos] prompt(context) target [eos]   (fixed length = context_max_length + target_max_length)</span>
+<span class="co"># labels   : [-100 ........................ -100] target [eos]   -&gt; the loss is computed on the summary only</span>
+max_length <span class="op">=</span> context_max_length <span class="op">+</span> target_max_length
+inputs <span class="op">=</span> {<span class="st">&quot;input_ids&quot;</span>: [], <span class="st">&quot;attention_mask&quot;</span>: [], <span class="st">&quot;labels&quot;</span>: []}
+<span class="k">for</span> context, target <span class="k">in</span> <span class="bi">zip</span>(contexts, targets):
+    prompt_ids <span class="op">=</span> [tokenizer.bos_token_id] <span class="op">+</span> <span class="fn">tokenizer</span>(prompt.<span class="fn">format</span>(context<span class="op">=</span>context), add_special_tokens<span class="op">=</span><span class="k">False</span>)[<span class="st">&quot;input_ids&quot;</span>]
+    prompt_ids <span class="op">=</span> prompt_ids[<span class="op">-</span>context_max_length:]
+    target_ids <span class="op">=</span> <span class="fn">tokenizer</span>(target, add_special_tokens<span class="op">=</span><span class="k">False</span>)[<span class="st">&quot;input_ids&quot;</span>][:target_max_length <span class="op">-</span> <span class="num">1</span>] <span class="op">+</span> [tokenizer.eos_token_id]
+
+    input_ids <span class="op">=</span> prompt_ids <span class="op">+</span> target_ids
+    labels <span class="op">=</span> [<span class="op">-</span><span class="num">100</span>] <span class="op">*</span> <span class="bi">len</span>(prompt_ids) <span class="op">+</span> target_ids
+    attention_mask <span class="op">=</span> [<span class="num">1</span>] <span class="op">*</span> <span class="bi">len</span>(input_ids)
+
+    pad_length <span class="op">=</span> max_length <span class="op">-</span> <span class="bi">len</span>(input_ids)
+    <span class="k">if</span> tokenizer.padding_side <span class="op">==</span> <span class="st">&quot;left&quot;</span>:
+        input_ids <span class="op">=</span> [tokenizer.pad_token_id] <span class="op">*</span> pad_length <span class="op">+</span> input_ids
+        labels <span class="op">=</span> [<span class="op">-</span><span class="num">100</span>] <span class="op">*</span> pad_length <span class="op">+</span> labels
+        attention_mask <span class="op">=</span> [<span class="num">0</span>] <span class="op">*</span> pad_length <span class="op">+</span> attention_mask
+    <span class="k">else</span>:
+        input_ids <span class="op">=</span> input_ids <span class="op">+</span> [tokenizer.pad_token_id] <span class="op">*</span> pad_length
+        labels <span class="op">=</span> labels <span class="op">+</span> [<span class="op">-</span><span class="num">100</span>] <span class="op">*</span> pad_length
+        attention_mask <span class="op">=</span> attention_mask <span class="op">+</span> [<span class="num">0</span>] <span class="op">*</span> pad_length
+
+    inputs[<span class="st">&quot;input_ids&quot;</span>].<span class="fn">append</span>(input_ids)
+    inputs[<span class="st">&quot;attention_mask&quot;</span>].<span class="fn">append</span>(attention_mask)
+    inputs[<span class="st">&quot;labels&quot;</span>].<span class="fn">append</span>(labels)</pre></details>
+<div class="why"><b>왜 이렇게 되는가</b><ul><li><b>왜 길이를 고정하는가.</b> 원본 <code>collate_fn_for_summary</code>가 <code>torch.tensor(리스트의 리스트)</code>로 텐서를 바로 만든다. 길이가 다르면 여기서 터진다.</li><li><b>프롬프트에 −100을 거는 이유.</b> 입력을 따라 쓰는 법이 아니라 <b>요약하는 법</b>을 배워야 한다. 프롬프트 구간까지 loss에 넣으면 모델이 기사 본문을 복사하는 쪽으로 학습된다.</li><li><b>eos를 라벨에 포함시킨다.</b> 그래야 생성할 때 <b>멈출 줄</b> 안다. 빼먹으면 max_new_tokens까지 계속 지껄인다.</li><li><b>bos로 시작하는 이유.</b> 사전학습 데이터가 <code>bos + 텍스트 + eos</code> 형식이라 같은 분포를 유지한다.</li><li><b>평가 코드와의 계약.</b> 노트북 <code>eval_for_summary</code>는 <code>labels != -100</code>인 위치를 지워 프롬프트만 남긴 뒤 생성한다. 그래서 프롬프트가 반드시 <code>Summary:\n</code>으로 끝나야 한다.</li></ul></div>
+</article>
+<article class="card" id="b15">
+<div class="chead"><span class="num">15</span><h3>collate_fn_for_classification — 20 Newsgroups</h3><span class="topic">Classification</span><span class="loc">dataset/classification.py:76</span></div>
+<div class="spec"><b>문제</b> — 배치를 모아 (input_ids, attention_mask, labels)를 만든다.</div>
+<details class="ans"><summary>정답 코드 보기</summary><pre class="code"><span class="co"># drop the padding added per map-batch in _preprocessing, then left-pad to the longest sequence of this batch</span>
+<span class="co"># (left padding: TransformerForSequenceClassification classifies with the hidden state of the last position)</span>
+sequences <span class="op">=</span> [
+    [token <span class="k">for</span> token, mask <span class="k">in</span> <span class="bi">zip</span>(example[<span class="st">&quot;input_ids&quot;</span>], example[<span class="st">&quot;attention_mask&quot;</span>]) <span class="k">if</span> mask <span class="op">==</span> <span class="num">1</span>]
+    <span class="k">for</span> example <span class="k">in</span> batch
+]
+max_length <span class="op">=</span> <span class="bi">max</span>(<span class="bi">max</span>(<span class="bi">len</span>(seq) <span class="k">for</span> seq <span class="k">in</span> sequences), <span class="num">1</span>)
+input_ids <span class="op">=</span> torch.<span class="fn">full</span>((<span class="bi">len</span>(batch), max_length), tokenizer.pad_token_id, dtype<span class="op">=</span>torch.long)
+attention_mask <span class="op">=</span> torch.<span class="fn">zeros</span>((<span class="bi">len</span>(batch), max_length), dtype<span class="op">=</span>torch.long)
+<span class="k">for</span> i, seq <span class="k">in</span> <span class="bi">enumerate</span>(sequences):
+    <span class="k">if</span> <span class="bi">len</span>(seq) <span class="op">&gt;</span> <span class="num">0</span>:
+        input_ids[i, <span class="op">-</span><span class="bi">len</span>(seq):] <span class="op">=</span> torch.<span class="fn">tensor</span>(seq, dtype<span class="op">=</span>torch.long)
+        attention_mask[i, <span class="op">-</span><span class="bi">len</span>(seq):] <span class="op">=</span> <span class="num">1</span>
+inputs <span class="op">=</span> {
+    <span class="st">&quot;input_ids&quot;</span>: input_ids,
+    <span class="st">&quot;attention_mask&quot;</span>: attention_mask,
+    <span class="st">&quot;labels&quot;</span>: torch.<span class="fn">tensor</span>([example[<span class="st">&quot;labels&quot;</span>] <span class="k">for</span> example <span class="k">in</span> batch], dtype<span class="op">=</span>torch.long),
+}</pre></details>
+<div class="why"><b>왜 이렇게 되는가</b><ul><li><b>먼저 기존 패딩을 걷어내야 한다.</b> 원본 <code>_preprocessing</code>이 <code>map(batched=True)</code>의 <b>1000개 단위 map-batch마다</b> <code>padding="longest"</code>를 적용한다. 그래서 저장된 샘플 길이가 map-batch마다 다르고 이미 pad 토큰이 섞여 있다. <code>attention_mask == 1</code>인 실제 토큰만 남긴다.</li><li><b>left padding이어야 하는 결정적 이유.</b> <code>TransformerForSequenceClassification</code>이 <code>hidden_states[:, -1, :]</code>(마지막 위치)로 분류한다. 오른쪽에 패딩을 두면 <b>패딩 토큰의 은닉 상태로 분류</b>하게 된다.</li><li>RoPE는 상대 위치만 쓰므로 left padding으로 절대 위치가 밀려도 결과가 같다.</li><li><b>빈 문서 방어.</b> 20 Newsgroups에는 빈 문자열 샘플이 있다. GPT-2 토크나이저가 0토큰을 내므로 전부 마스크된 행이 되는데, 빈칸 9의 finfo.min 마스크 덕에 NaN 없이 통과한다.</li></ul></div>
+<div class="verify"><b>검증된 사실</b> — left-pad 배치와 패딩 없는 입력의 logits 차이 1.55e-06 (fp32 노이즈 수준).</div>
+</article>
+<article class="card" id="b16">
+<div class="chead"><span class="num">16</span><h3>RAGDataset.__getitem__ — RAG 학습 샘플</h3><span class="topic">RAG finetune</span><span class="loc">dataset/rag.py:123</span></div>
+<div class="spec"><b>문제</b> — 학습 샘플은 positive_ctxs로 프롬프트를 만든다. 평가 샘플은 원본 코드대로 질문/정답/uid만 넘긴다.</div>
+<details class="ans"><summary>정답 코드 보기</summary><pre class="code"><span class="co"># the gold passages (positive_ctxs) play the role of the retrieved passages, in the same format ModelRAG uses</span>
+positive_ctxs <span class="op">=</span> inputs[<span class="st">&#x27;positive_ctxs&#x27;</span>]
+ctxs <span class="op">=</span> random.<span class="fn">sample</span>(positive_ctxs, k<span class="op">=</span><span class="bi">min</span>(<span class="num">5</span>, <span class="bi">len</span>(positive_ctxs)))
+input_text_ctx <span class="op">=</span> <span class="st">&quot;\n&quot;</span>.<span class="fn">join</span>(<span class="st">f&quot;{self.prefix_title}{ctx[&#x27;title&#x27;]}\n{self.prefix_passage}{ctx[&#x27;text&#x27;]}&quot;</span> <span class="k">for</span> ctx <span class="k">in</span> ctxs)
+ctx_ids <span class="op">=</span> <span class="self">self</span>.<span class="fn">tokenizer</span>(input_text_ctx, add_special_tokens<span class="op">=</span><span class="k">False</span>)[<span class="st">&#x27;input_ids&#x27;</span>]
+<span class="k">if</span> <span class="bi">len</span>(ctx_ids) <span class="op">&gt;</span> <span class="num">768</span>:  <span class="co"># RAGCollator truncates from the right (max_len=992): keep room for the question and &quot;Answer:&quot;</span>
+    input_text_ctx <span class="op">=</span> <span class="self">self</span>.tokenizer.<span class="fn">decode</span>(ctx_ids[:<span class="num">768</span>], clean_up_tokenization_spaces<span class="op">=</span><span class="k">False</span>)
+input_text_without_answer <span class="op">=</span> <span class="st">f&quot;{input_text_ctx}\nQuestion: {question}\nAnswer:&quot;</span></pre></details>
+<div class="why"><b>왜 이렇게 되는가</b><ul><li><b>핸드아웃 4.1.2의 지시.</b> "Training samples use positive contexts (positive_ctxs)". 평가 때의 검색은 <code>ModelRAG</code>가 한다.</li><li><b>최대 5개를 랜덤 샘플링하는 이유.</b> 평가 때 <code>eval_for_rag</code>가 BM25 top-<b>5</b>를 넣으므로 학습 입력의 passage 개수와 길이를 맞춘다. 순서를 섞으면 "정답은 항상 첫 passage"라는 <b>위치 편향</b>도 줄어든다. 파일 상단에 <code>import random</code>이 미리 있던 것도 이 용도로 보인다.</li><li><b>768토큰 예산은 빈칸 12와 같은 이유.</b> <code>RAGCollator</code>가 <code>max_length = 992 − 정답길이</code>에서 오른쪽을 잘라내므로, context가 길면 <code>Question/Answer:</code>가 사라진다.</li><li>정답이 붙는 형식은 원본이 정한다: <code>f"{input_text_without_answer} {answer}&lt;eos&gt;"</code></li></ul></div>
+</article>
+<h2>main.ipynb — 노트북</h2>
+<article class="card" id="b17">
+<div class="chead"><span class="num">17</span><h3>셀 0 — PROJ_PATH (Colab 경로)</h3><span class="topic">설정</span><span class="loc">main.ipynb 셀 0</span></div>
+<div class="spec"><b>문제</b> — Colab에서 쓸 프로젝트 경로를 적는다.</div>
+<details class="ans"><summary>정답 코드 보기</summary><pre class="code">PROJ_PATH <span class="op">=</span> <span class="st">&#x27;/content/drive/MyDrive/Colab Notebooks/repository/default_proj&#x27;</span></pre></details>
+<div class="why"><b>왜 이렇게 되는가</b><ul><li><b>비워 두면 노트북 전체가 죽는다.</b> 원본은 <code>PROJ_PATH =</code>(값 없음)이라 <b>셀 전체가 SyntaxError</b>다. 파이썬은 셀을 통째로 컴파일하므로 로컬/Docker에서도 셀 0이 실행되지 않고 이후 모든 셀이 연쇄 실패한다.</li><li><b>Docker/로컬에서는 이 줄이 쓰이지 않는다.</b> <code>import google.colab</code>이 실패해 <code>except</code> 분기의 <code>PROJ_PATH = "."</code>가 적용된다. Colab에서 돌린다면 본인 Drive 경로로 바꿔야 한다.</li></ul></div>
+</article>
+<article class="card" id="b18">
+<div class="chead"><span class="num">18</span><h3>셀 5 — eval_for_rag 결과 후처리</h3><span class="topic">Parsing</span><span class="loc">main.ipynb 셀 5</span></div>
+<div class="spec"><b>문제</b> — 생성 결과에서 정답 부분만 뽑아낸다. 원래 주석에 힌트가 있다: <code># predictions = [pred.split("\n")[0] for pred in predictions]</code></div>
+<details class="ans"><summary>정답 코드 보기</summary><pre class="code">predictions <span class="op">=</span> [pred.<span class="fn">strip</span>().<span class="fn">split</span>(<span class="st">&quot;\n&quot;</span>)[<span class="num">0</span>].<span class="fn">strip</span>() <span class="k">for</span> pred <span class="k">in</span> predictions]</pre></details>
+<div class="why"><b>왜 이렇게 되는가</b><ul><li><b>힌트대로 첫 줄만 쓰되, 먼저 strip해야 한다.</b> Llama는 <code>"\n\nParis …"</code>처럼 개행으로 시작하는 경우가 많다. 그냥 <code>split("\n")[0]</code>을 하면 <b>빈 문자열</b>이 나오고, <code>best_subspan_exact_match</code>는 빈 예측을 <b>무조건 오답</b>으로 센다.</li><li>GPT-small은 <code>" 정답&lt;eos&gt;"</code>를 생성하도록 학습되므로 첫 줄이 곧 정답이다. Llama는 <code>"Paris\nQuestion: …"</code>처럼 다음 턴을 지어내는 일이 잦아 첫 줄만 남기는 게 맞다.</li><li><b>여기까지가 빈칸의 범위다.</b> JSON 파싱 같은 정교한 후처리는 핸드아웃 4.2.1에서 직접 설계할 부분이라 별도 모듈(<code>rag_parsing.py</code>)로 분리했다.</li></ul></div>
+<div class="verify"><b>검증된 사실</b> — 이 한 줄 덕에 naive RAG의 ROUGE-1이 핸드아웃 참고값 0.1526보다 높은 0.2124로 나왔다.</div>
+</article>
+
+<h2>전체를 관통하는 설계 원칙 4가지</h2>
+<div class="grid">
+  <div class="pcard"><h4>정밀도는 필요한 곳에서만 올린다</h4>
+  <p>모델 전체는 bf16으로 돌리되, <b>통계와 확률</b>을 다루는 세 곳만 fp32로 올린다 —
+  RMSNorm의 제곱평균(2), RoPE의 각도(4), attention softmax(6). 나누기와 지수함수가 오차를 증폭시키는
+  지점들이다.</p></div>
+
+  <div class="pcard"><h4>학습과 추론의 입력 분포를 같게 만든다</h4>
+  <p>RAG 학습 프롬프트(16)와 추론 프롬프트(12)가 <b>글자 단위로 같은 템플릿</b>이고, 768토큰 예산도
+  같다. zero-shot 능력이 없는 63M 모델에서는 이 일치가 성능을 좌우한다.</p></div>
+
+  <div class="pcard"><h4>left padding이 곳곳을 규정한다</h4>
+  <p>분류가 마지막 위치로 판단하고(15) decoder가 오른쪽 끝에서 생성하므로(13), 패딩은 반드시 왼쪽이다.
+  그 결과 “전부 마스크된 행”이 생기고, 그래서 마스크를 −inf가 아닌 <b>finfo.min</b>으로 채워야 한다(9).
+  세 빈칸이 하나의 제약으로 엮여 있다.</p></div>
+
+  <div class="pcard"><h4>빈칸 밖의 코드가 빈칸의 답을 결정한다</h4>
+  <p><code>inv_freq</code>를 1차원으로 만들어야 하는 것(3), loss를 모델 안에서 shift해야 하는 것(10),
+  <code>o_proj</code>라는 이름(5), 길이를 1024로 고정해야 하는 것(14) — 전부 <b>이미 주어진 코드가
+  무엇을 전제하는지</b>를 읽어야 알 수 있다. 빈칸만 보고 짜면 틀린다.</p></div>
+</div>
+
+<h2>자주 틀리는 지점</h2>
+<table>
+<thead><tr><th>실수</th><th>증상</th><th>왜 놓치기 쉬운가</th></tr></thead>
+<tbody>
+<tr><td>loss shift를 안 함</td><td>학습은 되는데 수렴이 이상함</td><td>collator가 shift해 줄 거라 착각. 실제로는 <code>clone()</code>만 한다</td></tr>
+<tr><td>마스크에 −inf 사용</td><td>left padding 배치에서 NaN</td><td>전부 막힌 행이 생긴다는 걸 떠올리기 어렵다</td></tr>
+<tr><td>KV 캐시 위치 오프셋 누락</td><td>학습은 정상, <b>생성만</b> 이상함</td><td>forward 테스트로는 안 잡힌다</td></tr>
+<tr><td><code>inv_freq</code>를 2차원으로</td><td>expand 에러</td><td>주석 힌트가 <code>(1, D/2)</code>라고 잘못 적혀 있다</td></tr>
+<tr><td>projection에 bias 포함</td><td>63.59M — 참고값과 불일치</td><td>기본값이 <code>bias=True</code>다</td></tr>
+<tr><td>분류를 right padding으로</td><td>정확도가 무작위 수준</td><td>마지막 위치가 패딩이 된다</td></tr>
+<tr><td><code>contiguous()</code> 누락</td><td>view/reshape 런타임 에러</td><td>transpose·슬라이싱 후에만 발생</td></tr>
+<tr><td>요약 라벨에 eos 제외</td><td>생성이 안 멈춤</td><td>학습 지표로는 드러나지 않는다</td></tr>
+</tbody></table>
+
+<footer><p>코드 출처: <span class="f">E:\cse402\defaultproject</span>의 실제 제출 파일에서 추출.
+측정값 출처: <span class="f">logs/</span>, <span class="f">output/results/</span>.</p></footer>
+
+</div>

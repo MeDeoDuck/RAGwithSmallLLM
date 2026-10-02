@@ -1,0 +1,21 @@
+{
+    "accuracy": 0.3430544896392939,
+    "rouge1": 0.40517658947075286,
+    "rouge2": 0.22478843361805778,
+    "rougeL": 0.4042498582582557,
+    "rougeLsum": 0.4045575205271158,
+    "hasanswer_retrieved@5": 0.6644666155026862,
+    "hasanswer_in_prompt": 0.6644666155026862,
+    "mean_pred_words": 1.9413660782808904,
+    "pct_empty": 0.0,
+    "parse_stats": {
+        "format_ok": 6434,
+        "json_repaired": 80,
+        "fallback": 1,
+        "n": 6515,
+        "mean_pred_words": 1.9413660782808904,
+        "pct_empty": 0.0
+    },
+    "assembly_stats": {},
+    "n": 6515
+}

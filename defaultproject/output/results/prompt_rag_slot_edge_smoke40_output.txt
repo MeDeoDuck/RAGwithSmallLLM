@@ -1,0 +1,40 @@
+eval_0000	who sings does he love me with reba	['Linda Davis']	Billy Stritch	{"answer": "Billy Stritch"}
+eval_0001	where do the great lakes meet the ocean	['the Saint Lawrence River']	Saint Lawrence River	{"answer": "Saint Lawrence River"}
+eval_0002	when does the new my hero academia movie come out	['July 5 , 2018']	February 13, 2019	{"answer": "February 13, 2019"}
+eval_0003	who was the creator of victoria 's secret	['Roy Raymond']	Nicholas Kirkwood	{"answer": "Nicholas Kirkwood"}
+eval_0004	when did wesley leave last of the summer wine	['2002']	2006	{"answer": "2006"}
+eval_0005	who introduced the system of civil services in india	['Charles Cornwallis']	Warren Hastings	{"answer": "Warren Hastings"}
+eval_0006	southern soul was considered the sound of what independent record label	['Motown']	Stax Records	{"answer": "Stax Records"}
+eval_0007	who is the bad guy in lord of the rings	['Sauron']	Sauron	{"answer": "Sauron"}
+eval_0008	where is the most distortion on a robinson projection	['close to the poles']	high latitudes	{"answer": "high latitudes"}
+eval_0009	what is the name of wonder womans mother	['Queen Hippolyta']	Hippolyta	{"answer": "Hippolyta"}
+eval_0010	which apostle had a thorn in his side	['Paul']	Paul	{"answer": "Paul"}
+eval_0011	where is each type of cartilage located in the body	['ear', 'nose', 'intervertebral discs', 'many other body components', 'bronchial tubes', 'rib cage']	Eustachian tube and epiglottis	{"answer": "Eustachian tube and epiglottis"}
+eval_0012	who wrote the song two out of three ai n 't bad	['Meat Loaf']	Jim Steinman	{"answer": "Jim Steinman"}
+eval_0013	where is human sperm stored in the body	['in the epididymis']	Epididymis	{"answer": "Epididymis"}
+eval_0014	when did bat out of hell get released	['September 1977']	1977	{"answer": "1977"}
+eval_0015	when were manatees put on the endangered list	['1966']	1973	{"answer": "1973"}
+eval_0016	when was the first manmade object sent into space	['3 October 1942']	1957	{"answer": "1957"}
+eval_0017	who is the chief legal advisor to the government	['Law Officers of the Crown']	Dipendra Jha	{"answer": "Dipendra Jha"}
+eval_0018	what do they call snowboarders in johnny tsunami	['Urchins']	Urchins	{"answer": "Urchins"}
+eval_0019	who is tanyas husband in real housewives of cheshire	['Phil Bardsley']	Phil Bardsley	{"answer": "Phil Bardsley"}
+eval_0020	where are tight junctions found in the human body	['vertebrates']	epithelia	{"answer": "epithelia"}
+eval_0021	where was the mona lisa kept during ww2	['the Ingres Museum', "Château d'Amboise", 'Château de Chambord', 'the Loc - Dieu Abbey']	Louvre	{"answer": "Louvre"}
+eval_0022	who is the old man in waiting on a woman	['Andy Griffith']	Kinesias	{"answer": "Kinesias"}
+eval_0023	who have won the world cup the most times	['Brazil']	Australia	{"answer": "Australia"}
+eval_0024	who sang the original version of true colors	['Cyndi Lauper']	Tim James	{"answer": "Tim James"}
+eval_0025	what is the horses name in never-ending story	['Artax']	Bastian	{"answer": "Bastian"}
+eval_0026	who made the first telephone in the world	['Alexander Graham Bell']	Alexander Graham Bell	{"answer": "Alexander Graham Bell"}
+eval_0027	who is charles off of pretty little liars	['Drake', 'CeCe']	Charles	{"answer": "Charles"
+eval_0028	who got pregnant in gossip girl season 5	['Blair']	Vanessa Abrams	{"answer": "Vanessa Abrams"}
+eval_0029	where is the new england patriots stadium located	['Foxborough , Massachusetts']	Gillette Stadium	{"answer": "Gillette Stadium"}
+eval_0030	who played jason in friday the 13th part 1	['Ari Lehman']	Dan Bradley	{"answer": "Dan Bradley"}
+eval_0031	who won the pittsburgh steeler baltimore raven game	['Pittsburgh Steelers']	Steelers	{"answer": "Steelers"}
+eval_0032	who wrote the song the beat goes on	['Sonny Bono']	Sonny Bono	{"answer": "Sonny Bono"}
+eval_0033	who won women 's cricket world cup 2016	['England']	England	{"answer": "England"}
+eval_0034	who played v in the movie v for vendetta	['Hugo Weaving']	Hugo Weaving	{"answer": "Hugo Weaving"}
+eval_0035	who wins the 2017 australian open men 's single title	['Roger Federer']	Nadal	{"answer": "Nadal"}
+eval_0036	how many judges currently serve on the supreme court	['nine']	7	{"answer": "7"}
+eval_0037	who is the youngest judge currently sitting on the u.s. supreme court	['Neil Gorsuch']	Clarence Thomas	{"answer": "Clarence Thomas"}
+eval_0038	who does the voice for love island australia	['Eoghan McDermott']	Eoghan McDermott	{"answer": "Eoghan McDermott"}
+eval_0039	when did beauty and the beast come out on dvd	['June 6 , 2017']	June 6, 2017	{"answer": "June 6, 2017"}

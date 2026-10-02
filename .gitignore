@@ -1,0 +1,62 @@
+# --- secrets -----------------------------------------------------------
+# HF_TOKEN lives here
+.env
+*.env
+!.env.example
+
+# --- datasets and caches (≈ 95 GB) -------------------------------------
+defaultproject/cache/
+defaultproject/local_cache/
+defaultproject/output/pretraining/
+defaultproject/output/pretraining_random/
+defaultproject/output/summary/
+defaultproject/output/summary_scratch/
+defaultproject/output/classification/
+defaultproject/output/classification_scratch/
+defaultproject/output/rag/
+defaultproject/output/rag_scratch/
+defaultproject/output/reranker/
+
+# --- trained weights ---------------------------------------------------
+# LoRA adapters are reproducible from the scripts; the base model is on the Hub
+*.safetensors
+*.bin
+*.pt
+*.pth
+defaultproject/output/reader_rft/
+defaultproject/output/selector/grpo_r1/
+defaultproject/output/multi_select/grpo_r1/
+!defaultproject/output/multi_select/grpo_r1/grpo_stats.json
+
+# --- large intermediate artefacts --------------------------------------
+# retrieval pools and per-passage scores: regenerate with the prepare_* scripts
+defaultproject/output/results/bm25_top100.jsonl
+defaultproject/output/results/bm25_train.jsonl
+defaultproject/output/results/upr_scores*.jsonl
+defaultproject/output/results/proxy_dig_scores.jsonl
+defaultproject/output/results/oracle_dig_*.jsonl
+defaultproject/output/results/sentence_scores.jsonl
+defaultproject/output/results/cross_encoder_scores.jsonl
+defaultproject/output/results/dig_train.jsonl
+defaultproject/output/results/rollouts_*.jsonl
+defaultproject/output/results/*_train.jsonl
+defaultproject/output/results/multi_train_*.txt
+defaultproject/output/results/multi_train_*.jsonl
+
+# --- course material ---------------------------------------------------
+# the handout belongs to the course, not to this repository
+defaultproject/defaultproject_handout.pdf
+
+# --- build and editor --------------------------------------------------
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+*.bak_*
+runs/
+report/*.aux
+report/*.log
+report/*.out
+report/*.toc
+report/*.fls
+report/*.fdb_latexmk
+report/*.synctex.gz

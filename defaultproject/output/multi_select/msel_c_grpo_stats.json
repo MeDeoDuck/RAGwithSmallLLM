@@ -1,0 +1,31 @@
+{
+ "groups": 1500,
+ "zero_variance": 647,
+ "malformed": 88,
+ "scored": 12000,
+ "reward_sum": 4214.689682539682,
+ "k_sum": 28263,
+ "k_counts": {
+  "3": 4971,
+  "4": 1506,
+  "2": 2484,
+  "1": 768,
+  "0": 1865,
+  "5": 318
+ },
+ "zero_variance_rate": 0.43133333333333335,
+ "used_groups": 853,
+ "malformed_rate": 0.007333333333333333,
+ "mean_reward": 0.3512241402116401,
+ "mean_k_valid": 2.3726494291470788,
+ "config": {
+  "group": 8,
+  "temperature": 0.9,
+  "beta_kl": 0.04,
+  "epsilon_clip": 0.2,
+  "lr": 1e-05,
+  "rank": 16,
+  "trainable_params": 3407872,
+  "total_params": 1239222272
+ }
+}

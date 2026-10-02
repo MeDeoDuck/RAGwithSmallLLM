@@ -1,0 +1,34 @@
+{
+    "accuracy": 0.28580199539524176,
+    "rouge1": 0.35532589820003524,
+    "rouge2": 0.19403491664811695,
+    "rougeL": 0.3545910663907603,
+    "rougeLsum": 0.3547953202250983,
+    "hasanswer_retrieved@5": 0.3829623944742901,
+    "hasanswer_in_prompt": 0.3829623944742901,
+    "mean_pred_words": 1.8176515732924021,
+    "pct_empty": 0.00015349194167306216,
+    "parse_stats": {
+        "n": 6515,
+        "valid_format_rate": 0.9987720644666155,
+        "mean_pred_words": 1.8176515732924021,
+        "pct_empty": 0.00015349194167306216
+    },
+    "assembly_stats": {
+        "selector_adapter": "none",
+        "reader_adapter": "output/reader_rft/r3",
+        "selections": 6515,
+        "selector_valid_rate": 0.9349194167306216,
+        "mean_selected": 2.0474290099769763,
+        "n>0_empty_rate": 0.22143579373104147,
+        "n=0_abstain_rate": 0.2864400156311059,
+        "adapter": "output/reader_rft/r3",
+        "parsed": 6515,
+        "valid_format_rate": 0.9987720644666155,
+        "slot_order": "edge_last",
+        "use_proxy": true,
+        "fuse": true,
+        "k_pool": 50
+    },
+    "n": 6515
+}

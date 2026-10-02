@@ -1,0 +1,40 @@
+eval_0000	who sings does he love me with reba	['Linda Davis']	Linda Davis	{"answer": "Linda Davis", "source": 2}
+eval_0001	where do the great lakes meet the ocean	['the Saint Lawrence River']	Saint Lawrence River	{"answer": "Saint Lawrence River", "source": 1}
+eval_0002	when does the new my hero academia movie come out	['July 5 , 2018']	March 26, 2019	{"answer": "March 26, 2019", "source": 3}
+eval_0003	who was the creator of victoria 's secret	['Roy Raymond']	Nicholas Kirkwood	{"answer": "Nicholas Kirkwood", "source": 3}
+eval_0004	when did wesley leave last of the summer wine	['2002']	1982	{"answer": "1982", "source": 1}
+eval_0005	who introduced the system of civil services in india	['Charles Cornwallis']	Charles Cornwallis	{"answer": "Charles Cornwallis", "source": 3}
+eval_0006	southern soul was considered the sound of what independent record label	['Motown']	Stax Records	{"answer": "Stax Records", "source": 1}
+eval_0007	who is the bad guy in lord of the rings	['Sauron']	Sauron	{"answer": "Sauron", "source": 3}
+eval_0008	where is the most distortion on a robinson projection	['close to the poles']	at the poles	{"answer": "at the poles", "source": 3}
+eval_0009	what is the name of wonder womans mother	['Queen Hippolyta']	Hippolyta	{"answer": "Hippolyta", "source": 1}
+eval_0010	which apostle had a thorn in his side	['Paul']	Paul	{"answer": "Paul", "source": 2}
+eval_0011	where is each type of cartilage located in the body	['ear', 'nose', 'intervertebral discs', 'many other body components', 'bronchial tubes', 'rib cage']	outer ear	{"answer": "outer ear", "source": 1}
+eval_0012	who wrote the song two out of three ai n 't bad	['Meat Loaf']	Jim Steinman	{"answer": "Jim Steinman", "source": 3}
+eval_0013	where is human sperm stored in the body	['in the epididymis']	epididymis	{"answer": "epididymis", "source": 1}
+eval_0014	when did bat out of hell get released	['September 1977']	September 1977	{"answer": "September 1977", "source": 3}
+eval_0015	when were manatees put on the endangered list	['1966']	1973	{"answer": "1973", "source": 1}
+eval_0016	when was the first manmade object sent into space	['3 October 1942']	Sputnik 1	{"answer": "Sputnik 1", "source": 3}
+eval_0017	who is the chief legal advisor to the government	['Law Officers of the Crown']	Attorney General	{"answer": "Attorney General", "source": 1}
+eval_0018	what do they call snowboarders in johnny tsunami	['Urchins']	Urchins	{"answer": "Urchins", "source": 1}
+eval_0019	who is tanyas husband in real housewives of cheshire	['Phil Bardsley']	Phil Bardsley	{"answer": "Phil Bardsley", "source": 1}
+eval_0020	where are tight junctions found in the human body	['vertebrates']	endothelial cell sheets	{"answer": "endothelial cell sheets", "source": 1}
+eval_0021	where was the mona lisa kept during ww2	['the Ingres Museum', "Château d'Amboise", 'Château de Chambord', 'the Loc - Dieu Abbey']	Louvre	{"answer": "Louvre", "source": 1}
+eval_0022	who is the old man in waiting on a woman	['Andy Griffith']	Andy Griffith	{"answer": "Andy Griffith", "source": 3}
+eval_0023	who have won the world cup the most times	['Brazil']	Netherlands	{"answer": "Netherlands", "source": 1}
+eval_0024	who sang the original version of true colors	['Cyndi Lauper']	Tim James	{"answer": "Tim James", "source": 1}
+eval_0025	what is the horses name in never-ending story	['Artax']	Athansor	{"answer": "Athansor", "source": 3}
+eval_0026	who made the first telephone in the world	['Alexander Graham Bell']	Charles Bourseul	{"answer": "Charles Bourseul", "source": 3}
+eval_0027	who is charles off of pretty little liars	['Drake', 'CeCe']	CeCe Drake	{"answer": "CeCe Drake", "source": 3}
+eval_0028	who got pregnant in gossip girl season 5	['Blair']	Ivy Dickens	{"answer": "Ivy Dickens", "source": 3}
+eval_0029	where is the new england patriots stadium located	['Foxborough , Massachusetts']	Foxborough, Massachusetts	{"answer": "Foxborough, Massachusetts", "source": 1}
+eval_0030	who played jason in friday the 13th part 1	['Ari Lehman']	Larry Zerner	{"answer": "Larry Zerner", "source": 3}
+eval_0031	who won the pittsburgh steeler baltimore raven game	['Pittsburgh Steelers']	Steelers	{"answer": "Steelers", "source": 1}
+eval_0032	who wrote the song the beat goes on	['Sonny Bono']	Sonny Bono	{"answer": "Sonny Bono", "source": 1}
+eval_0033	who won women 's cricket world cup 2016	['England']	England	{"answer": "England", "source": 1}
+eval_0034	who played v in the movie v for vendetta	['Hugo Weaving']	Hugo Weaving	{"answer": "Hugo Weaving", "source": 1}
+eval_0035	who wins the 2017 australian open men 's single title	['Roger Federer']	Federer	{"answer": "Federer", "source": 1}
+eval_0036	how many judges currently serve on the supreme court	['nine']	23	{"answer": "23", "source": 3}
+eval_0037	who is the youngest judge currently sitting on the u.s. supreme court	['Neil Gorsuch']	Neil Gorsuch	{"answer": "Neil Gorsuch", "source": 1}
+eval_0038	who does the voice for love island australia	['Eoghan McDermott']	Eoghan McDermott	{"answer": "Eoghan McDermott", "source": 1}
+eval_0039	when did beauty and the beast come out on dvd	['June 6 , 2017']	2002	{"answer": "2002", "source": 2}

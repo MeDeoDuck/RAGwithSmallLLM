@@ -1,0 +1,200 @@
+eval_0000	who sings does he love me with reba	['Linda Davis']	Does He Love You is a song written by Sandy Knox and	 Does He Love You is a song written by Sandy Knox and Billy Stritch,
+eval_0001	where do the great lakes meet the ocean	['the Saint Lawrence River']	The Great Lakes meet the ocean at the Saint Lawrence River	 The Great Lakes meet the ocean at the Saint Lawrence River, which connects the Great
+eval_0002	when does the new my hero academia movie come out	['July 5 , 2018']	The new My Hero Academia movie, titled "My Hero Academia: Two	 The new My Hero Academia movie, titled "My Hero Academia: Two
+eval_0003	who was the creator of victoria 's secret	['Roy Raymond']	Leslie Wexner	 Leslie Wexner Question: what was the name of the company that vict
+eval_0004	when did wesley leave last of the summer wine	['2002']	Wesley left the show in the 28th series of Last of the	 Wesley left the show in the 28th series of Last of the Summer Wine
+eval_0005	who introduced the system of civil services in india	['Charles Cornwallis']	Warren Hastings	 Warren Hastings Question: what was the main objective of the civil service system in
+eval_0006	southern soul was considered the sound of what independent record label	['Motown']	Capricorn Records	 Capricorn Records  The answer is Capricorn Records. Southern soul was
+eval_0007	who is the bad guy in lord of the rings	['Sauron']	Sauron	 Sauron Question: who is the bad guy in the lord of the
+eval_0008	where is the most distortion on a robinson projection	['close to the poles']	The most distortion on a Robinson projection occurs near the poles, where	 The most distortion on a Robinson projection occurs near the poles, where the merid
+eval_0009	what is the name of wonder womans mother	['Queen Hippolyta']	Queen Hippolyta	 Queen Hippolyta The answer is Queen Hippolyta. She is the
+eval_0010	which apostle had a thorn in his side	['Paul']	Paul	 Paul Question: what is the meaning of the phrase "thorn in the
+eval_0011	where is each type of cartilage located in the body	['ear', 'nose', 'intervertebral discs', 'many other body components', 'bronchial tubes', 'rib cage']	Fibrocartilage: intervertebral discs, external ear, and	  Fibrocartilage: intervertebral discs, external ear, and
+eval_0012	who wrote the song two out of three ai n 't bad	['Meat Loaf']	Esham	 Esham The song "Two Out of Three Ai" is a song
+eval_0013	where is human sperm stored in the body	['in the epididymis']	The human sperm is stored in the epididymis	 The human sperm is stored in the epididymis, which is a tube
+eval_0014	when did bat out of hell get released	['September 1977']	Bat Out of Hell was released in September 1977	 Bat Out of Hell was released in September 1977.
+eval_0015	when were manatees put on the endangered list	['1966']	Manatees were put on the endangered list in 1967, when the	 Manatees were put on the endangered list in 1967, when the
+eval_0016	when was the first manmade object sent into space	['3 October 1942']	1957	 1957 Question: what is the primary function of the 21st
+eval_0017	who is the chief legal advisor to the government	['Law Officers of the Crown']	Dipendra Jha	 Dipendra Jha Question: who is the first legal advisor of the War
+eval_0018	what do they call snowboarders in johnny tsunami	['Urchins']	Urchins	 Urchins.
+eval_0019	who is tanyas husband in real housewives of cheshire	['Phil Bardsley']	Phil Bardsley	 Phil Bardsley Title: The Real Housewives of Cheshire Pass
+eval_0020	where are tight junctions found in the human body	['vertebrates']	Tight junctions are found in the epithelial layers of the body, particularly	 Tight junctions are found in the epithelial layers of the body, particularly in
+eval_0021	where was the mona lisa kept during ww2	['the Ingres Museum', "Château d'Amboise", 'Château de Chambord', 'the Loc - Dieu Abbey']	The Mona Lisa was kept in France during the Second World War	 The Mona Lisa was kept in France during the Second World War.
+eval_0022	who is the old man in waiting on a woman	['Andy Griffith']	Daniel, the old man who greets Constance in the Hall of Mirrors	 Daniel, the old man who greets Constance in the Hall of Mirrors
+eval_0023	who have won the world cup the most times	['Brazil']	Germany	 Germany The correct answer is Germany. They have won the FIFA World Cup four
+eval_0024	who sang the original version of true colors	['Cyndi Lauper']	Tim James	 Tim James Question: who sang the original version of true colors Answer:
+eval_0025	what is the horses name in never-ending story	['Artax']	The name of the horse in "The Never-Ending Story" is Atrey	 The name of the horse in "The Never-Ending Story" is Atrey
+eval_0026	who made the first telephone in the world	['Alexander Graham Bell']	Alexander Graham Bell	 Alexander Graham Bell Question: who built the first telephone exchange Answer: Thomas
+eval_0027	who is charles off of pretty little liars	['Drake', 'CeCe']	Charles DiLaurentis, also known as Charles DiLaurentis, is	 Charles DiLaurentis, also known as Charles DiLaurentis, is
+eval_0028	who got pregnant in gossip girl season 5	['Blair']	None of the characters got pregnant in Gossip Girl season 5	 None of the characters got pregnant in Gossip Girl season 5.
+eval_0029	where is the new england patriots stadium located	['Foxborough , Massachusetts']	Gillette Stadium is located in Foxborough, Massachusetts, southwest of downtown Boston and	 Gillette Stadium is located in Foxborough, Massachusetts, southwest of downtown Boston and
+eval_0030	who played jason in friday the 13th part 1	['Ari Lehman']	Kane Hodder	 Kane Hodder Question: who played jason in friday the 13th
+eval_0031	who won the pittsburgh steeler baltimore raven game	['Pittsburgh Steelers']	The Pittsburgh Steelers won the game 15–6	 The Pittsburgh Steelers won the game 15–6.
+eval_0032	who wrote the song the beat goes on	['Sonny Bono']	Sonny Bono and Cher	 Sonny Bono and Cher  The song "The Beat Goes On" was
+eval_0033	who won women 's cricket world cup 2016	['England']	England	 England Question: who won women's cricket world cup 2016 Answer
+eval_0034	who played v in the movie v for vendetta	['Hugo Weaving']	Hugo Weaving played the role of V in the movie V for	 Hugo Weaving played the role of V in the movie V for Vendetta.
+eval_0035	who wins the 2017 australian open men 's single title	['Roger Federer']	Novak Djokovic won the 2017 Australian Open men's singles title	 Novak Djokovic won the 2017 Australian Open men's singles title
+eval_0036	how many judges currently serve on the supreme court	['nine']	There are currently 15 judges serving on the Supreme Court of the	 There are currently 15 judges serving on the Supreme Court of the United States.
+eval_0037	who is the youngest judge currently sitting on the u.s. supreme court	['Neil Gorsuch']	Sandra Day O'Connor	 Sandra Day O'Connor Question: who is the youngest judge currently sitting on the
+eval_0038	who does the voice for love island australia	['Eoghan McDermott']	Georgia Nicholas	 Georgia Nicholas
+eval_0039	when did beauty and the beast come out on dvd	['June 6 , 2017']	The Special Edition DVD and VHS of Beauty and the Beast were	 The Special Edition DVD and VHS of Beauty and the Beast were released on November
+eval_0040	when was the last time the 76ers went to the finals	['2001']	1983	 1983 Title: 1983 NBA Finals Passage: The
+eval_0041	who wrote variations on twinkle twinkle little star	['Jane Taylor']	There are several variations of the song "Twinkle, Twinkle, Little Star	 There are several variations of the song "Twinkle, Twinkle, Little Star
+eval_0042	when did the king kong ride burn down	['2008']	The King Kong Encounter attraction at Universal Studios Tour theme park in	 The King Kong Encounter attraction at Universal Studios Tour theme park in Hollywood burned down in
+eval_0043	who plays mrs. potato head in toy story	['Estelle Harris']	Estelle Harris	 Estelle Harris Question: who plays mrs. potato head in toy story
+eval_0044	who sang the original me and bobby mcgee	['Roger Miller']	Jenny Douglas-McRae	 Jenny Douglas-McRae Question: Who sang the original me and b
+eval_0045	who plays the fairy god mother in shrek 2	['Jennifer Saunders']	The Fairy Godmother in Shrek 2 is voiced by Jennifer Saunders	 The Fairy Godmother in Shrek 2 is voiced by Jennifer Saunders.
+eval_0046	5 types of control that could be programmed on a gui	['Slider', 'Button', 'List box', 'Spinner', 'Drop - down list']	buttons, text fields, draw and paint graphics, timers, and spreadsheet fields	 buttons, text fields, draw and paint graphics, timers, and spreadsheet fields.
+eval_0047	p diddy nicki minaj hello good morning lyrics	['Official Remix']	The lyrics of "Hello Good Morning" by Diddy and Dirty Money are	 The lyrics of "Hello Good Morning" by Diddy and Dirty Money are somewhat
+eval_0048	who plays caroline on the bold and beautiful	['Linsey Godfrey']	Joanna Johnson	 Joanna Johnson Question: who plays bill on the bold and the beautiful Answer
+eval_0049	when does the second part of season 3 fuller house	['December 22 , 2017']	The second part of season 3 of Fuller House was released on	 The second part of season 3 of Fuller House was released on December 22
+eval_0050	who narrated the original 1966 how the grinch stole christmas	['Boris Karloff']	Boris Karloff	 Boris Karloff The original 1966 how the grinch stole christmas was
+eval_0051	i 've got a brand new pair of roller skates original artist	['Melanie']	Roller Derby	 Roller Derby Question: i've got a brand new pair of roller sk
+eval_0052	who is the head coach of the minnesota timberwolves	['Thomas Joseph Thibodeau Jr.']	Sam Mitchell	 Sam Mitchell Question: who is the head coach of the minnesota timberw
+eval_0053	who plays zack and cody in the suite life	['Dylan and Cole Sprouse']	The twins, Dylan and Cole Sprouse, play the roles of Zack and	 The twins, Dylan and Cole Sprouse, play the roles of Zack and
+eval_0054	who was the last person executed in ireland	['Michael Manning']	Robert McGladdery	 Robert McGladdery Question: who was the last person to be executed
+eval_0055	where are the fruits of the spirit found in the bible	['Epistle to the Galatians']	The fruits of the Spirit are listed in Galatians 5:22-	 The fruits of the Spirit are listed in Galatians 5:22-
+eval_0056	when was the planning commission set up to prepare a blue print of development for the country	['15 March 1950']	The Second Administrative Reforms Commission was set up on 31 August 2005	 The Second Administrative Reforms Commission was set up on 31 August 2005
+eval_0057	who is the coach of arizona state men 's basketball	['Bobby Hurley']	Sean Miller	 Sean Miller Question: who is the head coach of arizona state men '
+eval_0058	who won i want to work for diddy	['Suzanne Siegel']	Suzanne Siegel was chosen to be Sean Combs' assistant in the second	 Suzanne Siegel was chosen to be Sean Combs' assistant in the second season
+eval_0059	who played mason on wizards of waverly place	['Sulkin']	Gregg Sulkin	 Gregg Sulkin Question: who played Justin on wizards of waverly place
+eval_0060	where is the mesophyll located in a plant	['In leaves']	The mesophyll is located in the leaf, specifically in the spongy	 The mesophyll is located in the leaf, specifically in the spongy
+eval_0061	who directed one flew over the cuckoos nest	['Miloš Forman']	Miloš Forman	 Miloš Forman Question: who played the role of Randle McMur
+eval_0062	who plays mayor hamilton on ncis new orleans	['Steven Robert Weber']	The character of Mayor Hamilton is played by actor Rob Kerkovich	 The character of Mayor Hamilton is played by actor Rob Kerkovich.
+eval_0063	who is the owner of phoenix mall pune	['Phoenix Mills Limited']	The owner of Phoenix Marketcity (Pune) is Phoenix Mills Limited	 The owner of Phoenix Marketcity (Pune) is Phoenix Mills Limited.
+eval_0064	what is the postal code for warri nigeria	['332']	332.	 332.
+eval_0065	who wrote somebody like you by keith urban	['John Shanks', 'Keith Urban']	Radney Foster	 Radney Foster Question: What is the name of the song that Keith Urban
+eval_0066	when was the last time loyola made march madness	['2018']	2014	 2014 Title: David Bailey (basketball) Passage: Mad
+eval_0067	who plays christian grey in 50 shades of grey	['James Dornan']	Luke Grimes	 Luke Grimes Luke Timothy Grimes is an American actor. He is best
+eval_0068	where was sir gawain and the green knight written	['late 14th - century']	The poem "Sir Gawain and the Green Knight" was written by Sir	 The poem "Sir Gawain and the Green Knight" was written by Sir Gaw
+eval_0069	in what year did japan attack pearl harbor	['1941']	The attack on Pearl Harbor occurred on December 7, 1941	 The attack on Pearl Harbor occurred on December 7, 1941.
+eval_0070	when did country boy can survive come out	['January 1982']	The song "A Country Boy Can Survive" by Hank Williams Jr. was	 The song "A Country Boy Can Survive" by Hank Williams Jr. was
+eval_0071	when did michael jordan retired from basketball for good	['2003']	January 13, 1999	 January 13, 1999 Question: what was the name of the
+eval_0072	the story idea for the yellow wallpaper was based on a civil war treatment called	['rest cure']	the rest cure	 the rest cure.
+eval_0073	when is the show six coming back on	['May 28 , 2018']	The show "Six Degrees of Inner Turbulence" is a documentary series that	 The show "Six Degrees of Inner Turbulence" is a documentary series that
+eval_0074	when was the first time the word catholic was used	['in the early 2nd century']	The first time the word "catholic" was used was in the letter	 The first time the word "catholic" was used was in the letter to
+eval_0075	how many o'reilly auto parts stores are there	['5,100']	There are over 5,100 O'Reilly Auto Parts stores in the United	 There are over 5,100 O'Reilly Auto Parts stores in the United
+eval_0076	when did ipad pro 2nd generation come out	['June 5 , 2017']	The second-generation iPad Pro was announced on June 5, 2017	 The second-generation iPad Pro was announced on June 5, 2017,
+eval_0077	what is the name of the college in the classic movie animal house	['Faber College']	Dartmouth College	 Dartmouth College.
+eval_0078	who was the first woman appointed to the supreme court	["Sandra Day O'Connor"]	Ruby Kless Sondock	 Ruby Kless Sondock Question: who was the first woman elected to
+eval_0079	who sang the song i love to love	['Tina Charles']	Frank Sinatra	 Frank Sinatra Question: who wrote the song i love to love Answer:
+eval_0080	who controlled blue cross when it was formed	['1929']	The Blue Cross was formed in 1945 by the merger of the	 The Blue Cross was formed in 1945 by the merger of the Blue Cross
+eval_0081	who sings i 'm back in the saddle again	['Gene Autry']	Gene Autry	 Gene Autry Question: who sings "back in the saddle again" Answer
+eval_0082	which type of triangle must have perpendicular lines	['a right triangle']	a right triangle	 a right triangle Explanation: In a right triangle, the three altitudes (
+eval_0083	the most readily absorbed form of iron in the diet is	['animal products']	heme iron	 heme iron Question: the most effective treatment for arsenic contamination of groundwater
+eval_0084	who plays lorelai in hannah montana the movie	['Melora Hardin']	Melora Hardin plays Lorelai in Hannah Montana: The Movie	 Melora Hardin plays Lorelai in Hannah Montana: The Movie.
+eval_0085	where does salt come from in the sea	['the evaporation of seawater']	salt comes from the evaporation of seawater	 salt comes from the evaporation of seawater, which leaves behind a layer of
+eval_0086	when did the second amendment go into effect	['December 15 , 1791']	The Second Amendment of the United States Constitution went into effect on	 The Second Amendment of the United States Constitution went into effect on May 7,
+eval_0087	who has the highest minimum wage in the usa	['Washington']	Washington has the highest minimum wage in the usa, at $11.50 per	 Washington has the highest minimum wage in the usa, at $11.50 per
+eval_0088	who is the only kaurava who survived the kurukshetra war	['Yuyutsu']	Shalya	 Shalya
+eval_0089	where does tap water in london come from	['River Lea', 'River Thames']	Tap water in London comes from a network of underground pipes that	 Tap water in London comes from a network of underground pipes that supply water to the
+eval_0090	when does fairy tail dragon cry come out in canada	['August 14 , 2017']	The film "Fairy Tail: Dragon Cry" was released in Canada on August	 The film "Fairy Tail: Dragon Cry" was released in Canada on August
+eval_0091	what cities are in santa rosa county florida	['Gulf Breeze', 'Milton']	The cities in Santa Rosa County, Florida are	 The cities in Santa Rosa County, Florida are: 1. Milton 2.
+eval_0092	who is known as the father of humanism	['Petrarch']	Plato	 Plato Question: What is the name of the main antagonist in the novel "
+eval_0093	who played young bobby brown in new edition	['Tyler Marcel Williams']	Tyler Marcel Williams	 Tyler Marcel Williams The correct answer is Tyler Marcel Williams. He played the role
+eval_0094	who plays helena cassa dine on general hospital	['Constance Towers']	Constance Towers played the role of Helena Cassadine on General Hospital	 Constance Towers played the role of Helena Cassadine on General Hospital.
+eval_0095	who said and down the stretch they come	['Dave Johnson']	Perret	 Perret.
+eval_0096	where does the pulmonary artery take blood to	['the lungs']	The pulmonary artery takes blood to the lungs for oxygenation	 The pulmonary artery takes blood to the lungs for oxygenation.  Question: what is
+eval_0097	where did the doctrine of once saved always saved come from	['1689']	The doctrine of once saved always saved, or "once saved, always saved	 The doctrine of once saved always saved, or "once saved, always saved,"
+eval_0098	when did piracy hit its apex in the caribbean	['1660s to 1730s']	Piracy in the Caribbean peaked in the 1660s to 1730	 Piracy in the Caribbean peaked in the 1660s to 1730
+eval_0099	how long do finch eggs take to hatch	['12 to 14 days']	12 to 14 days	 12 to 14 days Question: how long do female weta lay
+eval_0100	where does the president 's helicopter land at the white house	['The south lawn']	The president's helicopter lands on the South Lawn of the White House	 The president's helicopter lands on the South Lawn of the White House.
+eval_0101	what is the deepest depth in the oceans	['Mariana Trench']	Litke Deep, Salsvatnet, Indian Ocean, Ocean, Biosphere	 Litke Deep, Salsvatnet, Indian Ocean, Ocean, Biosphere
+eval_0102	who is talking at the beginning of wale matrimony	['Jerry Seinfeld']	Jerry Seinfeld is talking at the beginning of Wale's song "The Mat	 Jerry Seinfeld is talking at the beginning of Wale's song "The Mat
+eval_0103	where did the french national anthem come from	['Strasbourg']	The French national anthem, ""La Marseillaise"", was written by Claude	 The French national anthem, ""La Marseillaise"", was written by Claude
+eval_0104	what is the style of arch found at the great mosque at cordoba	['an upper semi-circular arch', 'a lower horseshoe arch']	horseshoe arch	 horseshoe arch  Question: what is the style of arch found at the
+eval_0105	dwarfs in snow white and the huntsman movie	['Bob Hoskins', 'Ray Winstone', 'Ian McShane', 'Nick Frost', 'Eddie Marsan', 'Toby Jones', 'Brian Gleeson', 'Johnny Harris']	The Seven Dwarfs in the Snow White and the Huntsman movie are	 The Seven Dwarfs in the Snow White and the Huntsman movie are not
+eval_0106	who sings the song where have all the flowers gone	['Pete Seeger']	Judy Collins sings the song "Where Have All the Flowers Gone?" in	 Judy Collins sings the song "Where Have All the Flowers Gone?" in 196
+eval_0107	when did they put warnings on cigarette packs	['2003']	In 2012, a controversy arose when it was discovered an image of	 In 2012, a controversy arose when it was discovered an image of English
+eval_0108	what afl teams home ground is the mcg	['Collingwood', 'Essendon', 'Richmond', 'North Melbourne', 'Hawthorn']	Melbourne Football Club, Melbourne Cricket Ground (MCG), Docklands Stadium, Adelaide	 Melbourne Football Club, Melbourne Cricket Ground (MCG), Docklands Stadium, Adelaide
+eval_0109	where does it talk about the census in the constitution	['Article I , Section 2']	Article I, Section 2 of the U.S. Constitution states that the census	 Article I, Section 2 of the U.S. Constitution states that the census
+eval_0110	who did the killing in the first friday the 13th movie	['Mrs. Voorhees']	Mrs. Loomis	 Mrs. Loomis Question: who did the killing in the first friday
+eval_0111	when did honolulu become the capital of hawaii	['1845']	Honolulu became the capital of Hawaii in 1845, when King Kameh	 Honolulu became the capital of Hawaii in 1845, when King Kameh
+eval_0112	what episode of law and order svu is mike tyson in	["Monster 's Legacy"]	Mike Tyson is in the episode "Monster's Legacy" (Season 14)	 Mike Tyson is in the episode "Monster's Legacy" (Season 14)
+eval_0113	when did the grand canyon became a national monument	['1908']	The Grand Canyon was established as a national monument in 1908	 The Grand Canyon was established as a national monument in 1908.
+eval_0114	who discovered some islands in the bahamas in 1492	['Christopher Columbus']	Christopher Columbus	 Christopher Columbus Question: what was the name of the island that Columbus first landed
+eval_0115	when did italy host the fifa world cup	['1934', '1990']	Italy hosted the 1934 FIFA World Cup	 Italy hosted the 1934 FIFA World Cup.  The final answer is: 
+eval_0116	how many hockey games are in a season	['82']	45 games	 45 games  Title: 2014–15 Euro Hockey Tour Pass
+eval_0117	when did butterfly effect come out travis scott	['May 15 , 2017']	Butterfly Effect was released on May 15, 2017	 Butterfly Effect was released on May 15, 2017.
+eval_0118	when did the movie uncle drew come out	['on June 29 , 2018']	The movie Uncle Drew came out in 2021. It is a comedy	 The movie Uncle Drew came out in 2021. It is a comedy film
+eval_0119	when did they start using daylight savings time	['April 30 , 1916']	In 1971, New South Wales, Victoria, Queensland, South Australia	 In 1971, New South Wales, Victoria, Queensland, South Australia,
+eval_0120	which technique measures the electrical activity of brain cells directly	['Electroencephalography ( EEG )']	Electroencephalography (EEG)	 Electroencephalography (EEG) Question: which technique measures the electrical
+eval_0121	the part of peripheral nerve tissue that forms the myelin sheath is the	['Schwann cells']	perineurium	 perineurium Question: the part of peripheral nerve tissue that forms the
+eval_0122	who is the actor that plays tobias on ncis	['Joseph Peter Spano']	Giles Matthey	 Giles Matthey The answer is Giles Matthey. He played the role of
+eval_0123	who are the heirs to the british throne	['Charles , Prince of Wales', 'Prince Henry', 'Prince George']	The heirs to the British throne are the descendants of Queen Elizabeth	 The heirs to the British throne are the descendants of Queen Elizabeth II, who asc
+eval_0124	which type of wave requires a medium for transmission	['mechanical waves', 'heat energy', 'Sound']	electromagnetic waves	 electromagnetic waves Question: which type of wave does not require a medium for transmission
+eval_0125	land conversion through burning of biomass releases which gas	['traces of methane', 'carbon monoxide', 'hydrogen']	carbon dioxide	 carbon dioxide Question: What is the primary component of natural gas? Answer:
+eval_0126	the sum of the kinetic and potential energies of all particles in the system is called the	['internal energy']	Hamiltonian	 Hamiltonian  Question: the kinetic energy of particles in the center of momentum frame
+eval_0127	who used the springfield rifle in the civil war	['United States', 'Confederate States of America']	The Springfield rifle was used by the United States during the American	 The Springfield rifle was used by the United States during the American Civil War.
+eval_0128	who is the chair person of rajya sabha	['Venkaiah Naidu )']	Rajiv Gandhi	 Rajiv Gandhi Question: who is the leader of the house in rajya
+eval_0129	where is the university of northern iowa located	['Cedar Falls , Iowa']	The University of Northern Iowa is located in Cedar Falls, Iowa	 The University of Northern Iowa is located in Cedar Falls, Iowa.
+eval_0130	who played jack frost in the santa clause movie	['Martin Short']	Martin Short played the role of Jack Frost in the Santa Clause	 Martin Short played the role of Jack Frost in the Santa Clause movie.
+eval_0131	how many volumes of darkwing duck are there	['six volumes']	There are 6 volumes of darkwing duck in Germany, and 1 volume	 There are 6 volumes of darkwing duck in Germany, and 1 volume
+eval_0132	who does rachel end up with in friends	['Ross Geller']	Ross	 Ross
+eval_0133	who wrote my mama do n 't like you	['Ed Sheeran']	I am not sure who wrote the song "My Mama Don't Like	 I am not sure who wrote the song "My Mama Don't Like You"
+eval_0134	how many sword art online games are there	['Six']	There are several Sword Art Online games, including	 There are several Sword Art Online games, including:  1. Sword Art Online (
+eval_0135	who did the us lend money to in ww1	['Germany']	The United States lent money to the United Kingdom, and also to	 The United States lent money to the United Kingdom, and also to France, and
+eval_0136	who did seattle beat in the super bowl	['Denver Broncos']	Seattle beat the Denver Broncos in Super Bowl XLIX, 43-8	 Seattle beat the Denver Broncos in Super Bowl XLIX, 43-8.
+eval_0137	what is the american indian name for mount rushmore	['The Six Grandfathers']	Paha Sapa	 Paha Sapa Question: what is the name of the american indian leader
+eval_0138	when was the last time university of michigan won the ncaa men 's basketball tournament	['1989']	The University of Michigan men's basketball team last won the NCAA Division	 The University of Michigan men's basketball team last won the NCAA Division I Men's
+eval_0139	who was the voice of sally in a charlie brown christmas	['Kathy Steinberg']	Stacy Ferguson	 Stacy Ferguson Title: Charlie Brown's Christmas Tales Passage: Sally is
+eval_0140	how many episodes are going to be in game of thrones season 7	['seven']	7 episodes	 7 episodes.
+eval_0141	name of bad witch on wizard of oz	['Wicked Witch of the West']	Mombi	 Mombi The name of the Good Witch of the North in Baum's
+eval_0142	who sang the original shake your tail feather	['The Five Du - Tones']	The Five Du-Tones	 The Five Du-Tones The song was originally recorded in 1963 by
+eval_0143	who plays davy jones in pirates of the caribbean	['Bill Nighy']	Bill Nighy	 Bill Nighy The character of Davy Jones in the Pirates of the
+eval_0144	what is the name of the girl romeo loved before juliet	['Rosaline']	Rosaline	 Rosaline Answer: Rosaline is the name of the girl Romeo
+eval_0145	who was the first person killed in a car accident	['Bridget Driscoll']	Jessica Jacobs, a 25-year-old club star, died instantly from her injuries	 Jessica Jacobs, a 25-year-old club star, died instantly from her injuries
+eval_0146	who was entombed in the great pyramid of giza	['fourth dynasty Egyptian Pharaoh Khufu']	Nyuserre	 Nyuserre The best answer is A
+eval_0147	when did dodge caravan start stow and go	['2005']	The Dodge Caravan started the Stow 'n Go system in 2004	 The Dodge Caravan started the Stow 'n Go system in 2004
+eval_0148	who will get relegated from the premier league 2016/17	['Middlesbrough', 'Sunderland', 'Hull City']	Al-Sareeh and Sahab were relegated from the Premier League 2016	 Al-Sareeh and Sahab were relegated from the Premier League 2016
+eval_0149	what part of the carrot is the seed	['mericarp']	The seed is the part of the carrot that is not the	 The seed is the part of the carrot that is not the taproot. The
+eval_0150	when did daylight savings begin in the united states	['March 19 , 1918']	Daylight saving time began in the United States in 1918. It was	 Daylight saving time began in the United States in 1918. It was
+eval_0151	who stars in the movie the quiet place	['John Krasinski', 'Noah Jupe', 'Emily Blunt', 'Millicent Simmonds']	Mila Kunis and John Krasinski	 Mila Kunis and John Krasinski The movie the quiet place (
+eval_0152	when was tasmania cut off from the mainland	['10,000 years ago']	10,000 years ago	 10,000 years ago Question: what was the estimated population of tas
+eval_0153	who wrote the song do n 't give up on me	['Solomon Burke']	The song "Don't Give Up on Me" was written by David Bowie	 The song "Don't Give Up on Me" was written by David Bowie
+eval_0154	where did most of the fighting take place in ww1	['European theatre']	most of the fighting took place in the East Africa Campaign, specifically	 most of the fighting took place in the East Africa Campaign, specifically in the region
+eval_0155	when does not going out series 9 start	['8 March 2018']	2007	 2007
+eval_0156	who led an armed uprising and seized fort garry	['Louis Riel']	Louis Riel	 Louis Riel The best answer is A
+eval_0157	when did wet n wild close las vegas	['2004']	Wet 'n Wild (Las Vegas) closed in 2004	 Wet 'n Wild (Las Vegas) closed in 2004.
+eval_0158	who sings i want to rock with you	['Michael Jackson']	The song "I Want to Rock with You" is performed by Elvis	 The song "I Want to Rock with You" is performed by Elvis Presley
+eval_0159	what is the botanical name of lady finger	['Abelmoschus esculentus']	Musa acuminata	 Musa acuminata  The botanical name of lady finger is Musa ac
+eval_0160	1 . what city was built as the new capital for the abbasids	['Samarra', 'Baghdad', 'Raqqa']	Baghdad	 Baghdad 2. what dynasty ruled the city of Baghdad Answer: Abbasid
+eval_0161	actress in the girl with the dragon tattoo swedish	['Noomi Rapace']	Noomi Rapace Noomi Rapace Noomi Rapace (; ; born	 Noomi Rapace Noomi Rapace Noomi Rapace (; ; born 
+eval_0162	who played stands with fists in dances with wolves	['Mary Eileen McDonnell']	Mary McDonnell	 Mary McDonnell The answer is Mary McDonnell. She played the role of
+eval_0163	when did the first mammal appear on earth	['late Carboniferous period']	The first mammal is believed to have appeared on Earth around 160	 The first mammal is believed to have appeared on Earth around 160 million years
+eval_0164	who drove the number 16 car in nascar	['Gregory Jack Biffle']	Jeff Gordon	 Jeff Gordon Title: 1963 NASCAR Grand National Series Passage:
+eval_0165	when does mlb 2018 the show come out	['March 27 , 2018']	MLB The Show 18 was released on July 17, 2018 for	 MLB The Show 18 was released on July 17, 2018 for
+eval_0166	who kills the main character in happy death day	['Lori']	Patrice Mersault	 Patrice Mersault The correct answer is Patrice Mersault.
+eval_0167	what is the body of water between england and ireland	['The Irish Sea']	the Irish Sea	 the Irish Sea Question: what is the body of water between england and
+eval_0168	one hundred thousand is equal to how many lakhs	['one']	one hundred thousand is equal to 100,000 or 100 lakhs	 one hundred thousand is equal to 100,000 or 100 lakhs.  
+eval_0169	the most common type of rock in earth 's crust is	['igneous']	basalt	 basalt Question: the process of igneous differentiation is responsible for the formation
+eval_0170	a spinning neutron star that appears to give off radio waves is called a	['pulsars']	pulsar	 pulsar Question: a neutron star that is no longer emitting radio waves is
+eval_0171	who played brad carlton on young and the restless	['Don Diamont']	Don Diamont	 Don Diamont Question: when did brad carlton die on
+eval_0172	who does dwight howard play for right now	['the Charlotte Hornets']	Dwight Howard currently plays for the Washington Wizards of the National Basketball	 Dwight Howard currently plays for the Washington Wizards of the National Basketball Association (NBA
+eval_0173	who wrote the song eye of the tiger	['Jim Peterik', 'Frankie Sullivan']	The song "Eye of the Tiger" was written by Survivor guitarist Frankie	 The song "Eye of the Tiger" was written by Survivor guitarist Frankie Sullivan and
+eval_0174	leader of sikh empire who became maharajah of punjab	['Ranjit Singh']	Maharajah Ranjit Singh	 Maharajah Ranjit Singh Question: leader of sikh empire who became
+eval_0175	who 's playing in the rose bowl january 1st 2018	['Georgia Bulldogs', 'Oklahoma Sooners']	The Georgia Bulldogs and the Oklahoma Sooners	 The Georgia Bulldogs and the Oklahoma Sooners.
+eval_0176	when was the last time the seattle seahawks went to the superbowl	['2014']	2014	 2014 Title: Legion of Boom (Seattle Seahawks) Passage:
+eval_0177	what episode of law and order was ludacris on	['Screwed', 'Venom']	Screwed" (Season 8, Episode 16)	 "Screwed" (Season 8, Episode 16)
+eval_0178	who has won the most trophies man utd or liverpool	['Manchester United']	Joe McQue	 Joe McQue Question: who has won the most trophies for Liverpool Answer
+eval_0179	who prayed for saul to regain his sight	['Ananias']	The man who prayed for Saul to regain his sight was the	 The man who prayed for Saul to regain his sight was the one who had been
+eval_0180	what season is the plane crash greys anatomy	['the eighth season']	Season 8 of Grey's Anatomy. The plane crash in Season 8 killed	 Season 8 of Grey's Anatomy. The plane crash in Season 8 killed
+eval_0181	who played alfalfa in the original little rascals	['Carl Dean Switzer']	Bug Hall	 Bug Hall The Little Rascals (animated TV series) The Little R
+eval_0182	who signed the 1900 buganda agreement on behalf of the british	['Sir Harry Johnston']	Sir Harry Johnston	 Sir Harry Johnston Question: what was the main delay in signing the 190
+eval_0183	when did the king size bed come out	['mid-1950s']	The king size bed was introduced in the mid-1950s in the United	 The king size bed was introduced in the mid-1950s in the United
+eval_0184	who founded jamestown in what is now virginia	['the Virginia Company of London']	Francisco Fernández de Écija	 Francisco Fernández de Écija Answer: Francisco Fernández de Éc
+eval_0185	when was the first hydrogen fuel cell created	['1842']	The first hydrogen fuel cell was created in 1839 by Sir Humphry	 The first hydrogen fuel cell was created in 1839 by Sir Humphry Dav
+eval_0186	when did jackie robinson retire from the brooklyn dodgers	['1956']	Jackie Robinson retired from the Brooklyn Dodgers in 1956	 Jackie Robinson retired from the Brooklyn Dodgers in 1956.
+eval_0187	real name of gwen stacy in amazing spiderman	['Emma Stone']	Gwen Stacy was the real name of the second Gwen clone created	 Gwen Stacy was the real name of the second Gwen clone created by Miles Warren.
+eval_0188	who is responsible for preparing the presentence investigation report	['the probation officer']	The presentence investigation report is prepared by the District Attorney's Office. The	 The presentence investigation report is prepared by the District Attorney's Office. The District
+eval_0189	how many teams are in the world cup in russia	['32 teams']	32 teams are participating in the 2018 FIFA World Cup in Russia	 32 teams are participating in the 2018 FIFA World Cup in Russia.
+eval_0190	who sang the original devil went down to georgia	['Charlie Daniels Band']	The original song "The Devil Went Down to Georgia" was written and	 The original song "The Devil Went Down to Georgia" was written and performed by
+eval_0191	when do the college championship game come on	['January 8 , 2018']	The College Football Playoff National Championship game is played on the first	 The College Football Playoff National Championship game is played on the first Monday in January.
+eval_0192	what is the name of the time zone for london	['Europe / London']	Europe/London	 Europe/London.
+eval_0193	when did the last living survivor of the titanic die	['31 May 2009']	Barbara Joyce West died on 16 October 2007	 Barbara Joyce West died on 16 October 2007.
+eval_0194	when did season 6 of voltron come out	['June 15 , 2018']	The sixth season of Voltron, Defender of the Universe, premiered on March	 The sixth season of Voltron, Defender of the Universe, premiered on March 
+eval_0195	where was the movie how to be a latin lover filmed	['Santa Monica']	The movie "How to Be a Latin Lover" was filmed in various	 The movie "How to Be a Latin Lover" was filmed in various locations in
+eval_0196	when does batman gotham by gaslight come out	['January 12 , 2018']	Batman: Gotham by Gaslight was released on January 12, 2018	 Batman: Gotham by Gaslight was released on January 12, 2018
+eval_0197	who played draco malfoy in the harry potter movies	['Thomas Andrew Felton']	Tom Felton	 Tom Felton Question: who is the main character in the harry pot
+eval_0198	who ensures that the states abide by constitutional and federal law	['Supreme Court']	The Supreme Court, through the Supremacy Clause, ensures that the states abide	 The Supreme Court, through the Supremacy Clause, ensures that the states abide
+eval_0199	who was leah married to in the bible	['Jacob']	Leah was married to two brothers, Laban and Simeon, and also	 Leah was married to two brothers, Laban and Simeon, and also

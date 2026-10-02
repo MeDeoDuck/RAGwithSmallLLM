@@ -1,0 +1,27 @@
+{
+    "accuracy": 0.3805065234075211,
+    "rouge1": 0.4525075793993686,
+    "rouge2": 0.2651014420047425,
+    "rougeL": 0.4515043922565037,
+    "rougeLsum": 0.4517467170844003,
+    "hasanswer_retrieved@5": 0.6072141212586339,
+    "hasanswer_in_prompt": 0.6072141212586339,
+    "mean_pred_words": 1.8498848810437452,
+    "pct_empty": 0.00015349194167306216,
+    "parse_stats": {
+        "n": 6515,
+        "valid_format_rate": 0.999846508058327,
+        "mean_pred_words": 1.8498848810437452,
+        "pct_empty": 0.00015349194167306216
+    },
+    "assembly_stats": {
+        "adapter": "output/reader_rft/r3",
+        "parsed": 6515,
+        "valid_format_rate": 0.999846508058327,
+        "slot_order": "edge_last",
+        "use_proxy": true,
+        "fuse": true,
+        "k_pool": 50
+    },
+    "n": 6515
+}
